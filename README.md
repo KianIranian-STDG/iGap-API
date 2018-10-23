@@ -47,10 +47,10 @@ Using the iGap infrastructure and utilizing it in personal and/or organizational
     Homepage: https://www.igap.net/
     Support: https://support.igap.net/en
     Blog: https://blog.igap.net/
-    Issues: https://github.com/RooyeKhat-Media/iGap-API/issues
+    Issues: https://github.com/KianIranian-STDG/iGap-API/issues
 
 ## Partner
-**[RooyeKhat Media](https://rooyekhat.co/en)** was founded in 2015 aiming to create communicative and informative platforms supported by Internet and network on the basis of modern technology. We focus on the fields of designing, programming, supporting communicative and media software on mobile phones and tablets. 
+**[Kian Iranian](https://www.kianiranian.com)** was founded in 2015 aiming to create communicative and informative platforms supported by Internet and network on the basis of modern technology. We focus on the fields of designing, programming, supporting communicative and media software on mobile phones and tablets. 
 
 ## Licence
 iGap is released under the [GNU Affero General Public License](LICENSE) . This Free Software Foundation license is fairly new, and thus we wanted to talk about how this license differs from GPL.
