@@ -1423,8 +1423,10 @@ Bad payload for request [#201](../proto/README.md#action_201)
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
 | 33         	| Random id is invalid                    	| *        	|
-| 34         	| additional_type is invalid                | *        	|
-| 35         	| additional_data invalid                   | *        	|
+| 34         	| additional_type is invalid                    | *        	|
+| 35         	| additional_data invalid                       | *        	|
+| 36         	| Sticker Message invalid                       | *        	|
+| 37         	| Sticker Data invalid                          | *        	|
 
 ### Error 204 - CHAT_SEND_MESSAGE_INTERNAL_SERVER_ERROR
 Internal server error for request [#201](../proto/README.md#action_201)
@@ -1798,9 +1800,10 @@ Bad payload for request [#310](../proto/README.md#action_310)
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
 | 33         	| Random id is invalid                    	| *        	|
-| 34         	| additional_type is invalid                | *        	|
-| 35         	| additional_data invalid                   | *        	|
-
+| 34         	| additional_type is invalid                    | *        	|
+| 35         	| additional_data invalid                       | *        	|
+| 36         	| Sticker Message invalid                       | *        	|
+| 37         	| Sticker Data invalid                          | *        	|
 
 ### Error 307 - GROUP_SEND_MESSAGE_INTERNAL_SERVER_ERROR
 Internal server error for request [#310](../proto/README.md#action_310)
@@ -2511,9 +2514,10 @@ Bad payload for request [#410](../proto/README.md#action_410)
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
 | 33         	| Random id is invalid                    	| *        	|
-| 34         	| additional_type is invalid                | *        	|
-| 35         	| additional_data invalid                   | *        	|
-
+| 34         	| additional_type is invalid                    | *        	|
+| 35         	| additional_data invalid                       | *        	|
+| 36         	| Sticker Message invalid                       | *        	|
+| 37         	| Sticker Data invalid                          | *        	|
 
 ### Error 407 - CHANNEL_SEND_MESSAGE_INTERNAL_SERVER_ERROR
 Internal server error for request [#410](../proto/README.md#action_410)
