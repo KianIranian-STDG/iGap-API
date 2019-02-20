@@ -49,6 +49,7 @@ enum RoomMessageType {
     LOG = 12;
     CONTACT = 13;
     WALLET = 15;
+    STICKER = 16;
 }
 
 enum RoomMessageStatus {
