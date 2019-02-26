@@ -250,6 +250,7 @@ message RoomMessage {
 message RoomDraft {
     string message = 1;
     uint64 reply_to = 2;
+    uint32 draft_time = 3;
 }
 
 enum RoomMute {
