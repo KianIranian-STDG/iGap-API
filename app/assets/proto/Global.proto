@@ -414,3 +414,11 @@ message Pagination {
     uint32 offset = 1;
     uint32 limit = 2;
 }
+
+message Favorite {
+    string name = 1;
+    string textcolor = 2;
+    string bgcolor = 3;
+    string value = 4;
+    string image = 5;
+}

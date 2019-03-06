@@ -885,6 +885,10 @@
 * 663 - [CLIENT_GET_PROMOTE_BAD_PAYLOAD](README.md#error-663-client_get_promote_bad_payload)
 * 664 - [CLIENT_GET_PROMOTE_INTERNAL_SERVER_ERROR](README.md#error-664-client_get_promote_internal_server_error)
 
+---
+
+* 665 - [CLIENT_GET_FAVORITE_MENU_INTERNAL_SERVER_ERROR](README.md#error-665-client_get_favorite_menu_internal_server_error)
+
 # File errors 7xx
 
 * 700 - [FILE_UPLOAD_OPTION_BAD_PAYLOAD](README.md#error-700-file_upload_option_bad_payload)
@@ -1090,6 +1094,14 @@
 * 9105 - [MPL_GET_TOPUP_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9105-mpl_get_topup_token_internal_server_error)
 * 9106 - [MPL_GET_TOPUP_TOKEN_BAD_GATEWAY](README.md#error-9106-mpl_get_topup_token_bad_gateway)
 * 9107 - [MPL_GET_TOPUP_TOKEN_FORBIDDEN](README.md#error-9107-mpl_get_topup_token_forbidden)
+
+---
+
+* 9104 - [MPL_GET_SALES_TOKEN_BAD_PAYLOAD](README.md#error-9108-mpl_get_sales_token_bad_payload)
+* 9105 - [MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9109-mpl_get_sales_token_internal_server_error)
+* 9106 - [MPL_GET_SALES_TOKEN_BAD_GATEWAY](README.md#error-9110-mpl_get_sales_token_bad_gateway)
+* 9107 - [MPL_GET_SALES_TOKEN_FORBIDDEN](README.md#error-9111-mpl_get_sales_token_forbidden)
+
 
 # BillInquiry 92xx
 

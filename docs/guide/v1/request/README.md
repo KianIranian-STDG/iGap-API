@@ -162,6 +162,7 @@
 * [RoomReport](client/RoomReport.md)
 * [RegisterDevice](client/RegisterDevice.md)
 * [GetPromote](client/GetPromote.md)
+* [GetFavoriteMenu](client/GetFavoriteMenu.md)
 
 # File
 * [Upload](file/Upload.md)

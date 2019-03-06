@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientGetFavoriteMenu";
+
+message ClientGetFavoriteMenu {
+    Request request = 1;
+}
+
+message ClientGetFavoriteMenuResponse {
+    Response response = 1;
+    repeated Favorite favorites = 2;
+}

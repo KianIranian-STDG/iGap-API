@@ -3719,6 +3719,13 @@ You are forbidden to do the action for request [#618](../proto/README.md#action_
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 665 - CLIENT_GET_FAVORITE_MENU_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#619](../proto/README.md#action_619)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 # File Errors(7xx)
 
 ### Error 700 - FILE_UPLOAD_OPTION_BAD_PAYLOAD.
@@ -4568,6 +4575,40 @@ Server was not able to get a valid or any response from the Mpl server for reque
 
 ### Error 9107 - MPL_GET_TOPUP_TOKEN_FORBIDDEN
 You are forbidden to do the action for request [#9101](../proto/README.md#action_9101)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9108 - MPL_GET_SALES_TOKEN_BAD_PAYLOAD
+Bad payload for request [#9102](../proto/README.md#action_9102)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| amount is invalid                     | *        	|
+| 2          	| botid is invalid                      | *        	|
+| 3          	| type is invalid                       | *        	|
+
+
+### Error 9109 - MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR
+Internal server error for request [#9102](../proto/README.md#action_9102)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9110 - MPL_GET_SALES_TOKEN_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9102](../proto/README.md#action_9102)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9111 - MPL_GET_SALES_TOKEN_FORBIDDEN
+You are forbidden to do the action for request [#9102](../proto/README.md#action_9102)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|

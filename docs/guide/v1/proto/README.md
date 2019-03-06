@@ -323,6 +323,8 @@
 | <a name="action_30617">30617</a> 	| [Details](ClientRegisterDeviceResponse.md)      | [ClientRegisterDeviceResponse](../../../../app/assets/proto/ClientRegisterDevice.proto)                     |
 | <a name="action_618">618</a> 	    | [Details](ClientGetPromote.md)                  | [ClientGetPromote](../../../../app/assets/proto/ClientGetPromote.proto)               	                    |
 | <a name="action_30618">30618</a> 	| [Details](ClientGetPromoteResponse.md)          | [ClientGetPromoteResponse](../../../../app/assets/proto/ClientGetPromote.proto)                             |
+| <a name="action_619">619</a> 	    | [Details](ClientGetFavoriteMenu.md)             | [ClientGetFavoriteMenu](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)               	        |
+| <a name="action_30619">30619</a> 	| [Details](ClientGetFavoriteMenuResponse.md)     | [ClientGetFavoriteMenuResponse](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                   |
 
 # File 7xx , 307xx
 
@@ -423,7 +425,8 @@
 | <a name="action_39100">39100</a> 	| [Details](MplGetBillTokenResponse.md)             | [MplGetBillTokenResponse](../../../../app/assets/proto/MplGetBillToken.proto)                         |
 | <a name="action_9101">9101</a> 	| [Details](MplGetTopupToken.md)                    | [MplGetTopupToken](../../../../app/assets/proto/MplGetTopupToken.proto)               	            |
 | <a name="action_39101">39101</a> 	| [Details](MplGetTopupTokenResponse.md)            | [MplGetTopupTokenResponse](../../../../app/assets/proto/MplGetTopupToken.proto)                       |
-
+| <a name="action_9102">9102</a> 	| [Details](MplGetSalesToken.md)                    | [MplGetSalesToken](../../../../app/assets/proto/MplGetSalesToken.proto)               	            |
+| <a name="action_39102">39102</a> 	| [Details](MplGetSalesTokenResponse.md)            | [MplGetSalesTokenResponse](../../../../app/assets/proto/MplGetSalesToken.proto)                       |
 
 
 # BillInquiry 92xx
