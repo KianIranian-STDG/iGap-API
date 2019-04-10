@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientGetDiscovery";
+
+message ClientGetDiscovery {
+    Request request = 1;
+    uint32 page_id = 2;
+}
+
+message ClientGetDiscoveryResponse {
+    Response response = 1;
+    string title = 2;
+    repeated Discovery discoveries = 3;
+}

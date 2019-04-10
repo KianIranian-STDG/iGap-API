@@ -3726,6 +3726,34 @@ You are forbidden to do the action for request [#619](../proto/README.md#action_
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 666 - CLIENT_GET_DISCOVERY_BAD_PAYLOAD
+Bad payload for request [#620](../proto/README.md#action_620)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 667 - CLIENT_GET_DISCOVERY_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#620](../proto/README.md#action_620)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 668 - CLIENT_SET_DISCOVERY_ITEM_CLICK_BAD_PAYLOAD
+Bad payload for request [#621](../proto/README.md#action_621)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 669 - CLIENT_SET_DISCOVERY_ITEM_CLICK_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#621](../proto/README.md#action_621)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 # File Errors(7xx)
 
 ### Error 700 - FILE_UPLOAD_OPTION_BAD_PAYLOAD.

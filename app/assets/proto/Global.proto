@@ -422,3 +422,55 @@ message Favorite {
     string value = 4;
     string image = 5;
 }
+
+message DiscoveryField {
+    string imageurl = 1;
+    string value = 2;
+
+    enum ButtonActionType {
+        NONE = 0;
+        JOIN_LINK = 1;
+        BOT_ACTION = 2;
+        USERNAME_LINK = 3;
+        WEB_LINK = 4;
+        WEB_VIEW_LINK = 5;
+        STREAM_PLAY = 6;
+        PAY_BY_WALLET = 7;
+        PAY_DIRECT = 8;
+        REQUEST_PHONE = 9;
+        REQUEST_LOCATION = 10;
+        SHOW_ALERT = 11;
+        PAGE = 12;
+        FINANCIAL_MENU = 13;
+        BILL_MENU = 14;
+        TRAFFIC_BILL_MENU = 15;
+        MOBILE_BILL_MENU = 16;
+        PHONE_BILL_MENU = 17;
+        TOPUP_MENU = 18;
+        WALLET_MENU = 19;
+        NEARBY_MENU = 20;
+        CALL = 21;
+        STICKER_SHOP = 22;
+    }
+
+    ButtonActionType actiontype = 3;
+    uint32 orderid = 4;
+    uint32 id = 5;
+}
+
+message Discovery {
+
+    enum DiscoveryModel {
+        MODEL1 = 0;
+        MODEL2 = 1;
+        MODEL3 = 2;
+        MODEL4 = 3;
+        MODEL5 = 4;
+        MODEL6 = 5;
+        MODEL7 = 6;
+    }
+
+    DiscoveryModel model = 1;
+    string scale = 2;
+    repeated DiscoveryField discoveryfields = 3;
+}

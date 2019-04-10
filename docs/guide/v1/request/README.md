@@ -163,6 +163,8 @@
 * [RegisterDevice](client/RegisterDevice.md)
 * [GetPromote](client/GetPromote.md)
 * [GetFavoriteMenu](client/GetFavoriteMenu.md)
+* [GetDiscovery](client/GetDiscovery.md)
+* [SetDiscoveryItemClick](client/SetDiscoveryItemClick.md)
 
 # File
 * [Upload](file/Upload.md)

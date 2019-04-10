@@ -325,6 +325,11 @@
 | <a name="action_30618">30618</a> 	| [Details](ClientGetPromoteResponse.md)          | [ClientGetPromoteResponse](../../../../app/assets/proto/ClientGetPromote.proto)                             |
 | <a name="action_619">619</a> 	    | [Details](ClientGetFavoriteMenu.md)             | [ClientGetFavoriteMenu](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)               	        |
 | <a name="action_30619">30619</a> 	| [Details](ClientGetFavoriteMenuResponse.md)     | [ClientGetFavoriteMenuResponse](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                   |
+| <a name="action_620">620</a> 	    | [Details](ClientGetDiscovery.md)                | [ClientGetDiscovery](../../../../app/assets/proto/ClientGetDiscovery.proto)               	                |
+| <a name="action_30620">30620</a> 	| [Details](ClientGetDiscoveryResponse.md)        | [ClientGetDiscoveryResponse](../../../../app/assets/proto/ClientGetDiscovery.proto)                         |
+| <a name="action_621">621</a> 	    | [Details](ClientSetDiscoveryItemClick.md)       | [ClientSetDiscoveryItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)               |
+| <a name="action_30621">30621</a> 	| [Details](ClientSetDiscoveryItemClickResponse.md)| [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)      |
+
 
 # File 7xx , 307xx
 

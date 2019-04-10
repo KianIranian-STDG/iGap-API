@@ -889,6 +889,16 @@
 
 * 665 - [CLIENT_GET_FAVORITE_MENU_INTERNAL_SERVER_ERROR](README.md#error-665-client_get_favorite_menu_internal_server_error)
 
+---
+
+* 666 - [CLIENT_GET_DISCOVERY_BAD_PAYLOAD](README.md#error-666-client_get_discovery_internal_server_error)
+* 667 - [CLIENT_GET_DISCOVERY_INTERNAL_SERVER_ERROR](README.md#error-667-client_get_discovery_internal_server_error)
+
+---
+
+* 668 - [CLIENT_SET_DISCOVERY_ITEM_CLICK_BAD_PAYLOAD](README.md#error-668-client_set_discovery_item_click_internal_server_error)
+* 669 - [CLIENT_SET_DISCOVERY_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-669-client_set_discovery_item_click_internal_server_error)
+
 # File errors 7xx
 
 * 700 - [FILE_UPLOAD_OPTION_BAD_PAYLOAD](README.md#error-700-file_upload_option_bad_payload)
