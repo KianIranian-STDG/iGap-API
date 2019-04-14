@@ -117,7 +117,11 @@
 | <a name="action_149">149</a> 	    | [Details](UserReport.md)                                                          | [UserReport](../../../../app/assets/proto/UserReport.proto)                                                                                       | 
 | <a name="action_30149">30149</a> 	| [Details](UserReportResponse.md)                                                  | [UserReportResponse](../../../../app/assets/proto/UserReport.proto)                                                                               | 
 | <a name="action_150">150</a> 	    | [Details](UserSetBot.md)                                                          | [UserSetBot](../../../../app/assets/proto/UserSetBot.proto)                                                                                       | 
-| <a name="action_30150">30150</a> 	| [Details](UserSetBotResponse.md)                                                  | [UserSetBotResponse](../../../../app/assets/proto/UserSetBot.proto)                                                                               | 
+| <a name="action_30150">30150</a> 	| [Details](UserSetBotResponse.md)                                                  | [UserSetBotResponse](../../../../app/assets/proto/UserSetBot.proto)                                                                               |
+| <a name="action_151">151</a> 	    | [Details](UserProfileGetRepresentative.md)                                        | [UserProfileGetRepresentative](../../../../app/assets/proto/UserProfileGetRepresentative.proto)               	                                |
+| <a name="action_30151">30151</a> 	| [Details](UserProfileGetRepresentativeResponse.md)                                | [UserProfileGetRepresentativeResponse](../../../../app/assets/proto/UserProfileGetRepresentative.proto)                                           | 
+| <a name="action_152">152</a> 	    | [Details](UserProfileSetRepresentative.md)                                        | [UserProfileSetRepresentative](../../../../app/assets/proto/UserProfileSetRepresentative.proto)               	                                |
+| <a name="action_30152">30152</a> 	| [Details](UserProfileSetRepresentativeResponse.md)                                | [UserProfileSetRepresentativeResponse](../../../../app/assets/proto/UserProfileSetRepresentative.proto)                                           | 
 
 # Chat 2xx , 302xx
 

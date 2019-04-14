@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserProfileGetRepresentative";
+
+message UserProfileGetRepresentative {
+    Request request = 1;
+}
+
+message UserProfileGetRepresentativeResponse {
+    Response response = 1;
+    string phone_number = 2;
+}

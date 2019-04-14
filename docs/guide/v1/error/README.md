@@ -1360,6 +1360,38 @@ Internal server error for request [#150](../proto/README.md#action_150)
 | *          	| *      	| *        	|
 
 
+### Error 10175 - USER_GET_GET_REPRESENTATIVE_BAD_PAYLOAD
+Bad payload for request [#151](../proto/README.md#action_151)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 10176 - USER_GET_GET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
+Internal server error for request [#151](../proto/README.md#action_151)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 10177 - USER_GET_SET_REPRESENTATIVE_BAD_PAYLOAD
+Bad payload for request [#152](../proto/README.md#action_152)
+
+| Minor Code 	| Detail 	                    | Reaction 	|
+|------------	|------------------------	    |----------	|
+| 1          	| phone format is invalid      	| *        	|
+
+
+### Error 10178 - USER_GET_SET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
+Internal server error for request [#152](../proto/README.md#action_152)
+
+| Minor Code 	| Detail 	                     | Reaction 	|
+|------------	|------------------------	     |----------	|
+| 1          	| Cannot Read User Representative| *        	|
+| 2          	| Has Already Registered       	 | *        	|
+| 3          	| Error in update user         	 | *        	|
+
 # Chat Errors(2xx)
 ### Error 200 - CHAT_GET_ROOM_BAD_PAYLOAD
 Bad payload for request [#200](../proto/README.md#action_200)

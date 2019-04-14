@@ -24,6 +24,8 @@
     * :o: [UpdateUsername](user/profile/UpdateUsername.md)
     * :o: [SetBio](user/profile/SetBio.md)
     * [GetBio](user/profile/GetBio.md)
+    * [GetRepresentative](user/profile/GetRepresentative.md)
+    * :o: [SetRepresentative](user/profile/SetRepresentative.md)
 * [Report](user/Report.md)
 * :o: [SetBot](user/SetBot.md)
 * Contacts
