@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserIVandSetActivity";
+
+message UserIVandSetActivity {
+    Request request = 1;
+    string plancode = 2;
+}
+
+message UserIVandSetActivityResponse {
+    Response response = 1;
+    string message = 2;
+    bool state = 3;
+}

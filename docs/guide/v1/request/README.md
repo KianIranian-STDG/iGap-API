@@ -61,7 +61,10 @@
 * Privacy
     * [GetRule](user/privacy/GetRule.md) 
     * :o: [SetRule](user/privacy/SetRule.md) 
-
+* IVand
+    * [GetActivities](user/ivand/GetActivities.md)
+    * [GetScore](user/ivand/GetScore.md)
+    * :o: [SetActivity](user/ivand/SetActivity.md)
 
 # Chat
 * [GetRoom](chat/GetRoom.md)

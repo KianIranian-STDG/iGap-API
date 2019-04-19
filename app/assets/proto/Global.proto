@@ -451,6 +451,9 @@ message DiscoveryField {
         NEARBY_MENU = 20;
         CALL = 21;
         STICKER_SHOP = 22;
+        IVAND = 23;
+        IVANDQR = 24;
+        IVANDLIST = 25;
     }
 
     ButtonActionType actiontype = 3;
@@ -473,4 +476,10 @@ message Discovery {
     DiscoveryModel model = 1;
     string scale = 2;
     repeated DiscoveryField discoveryfields = 3;
+}
+
+message IVandActivity {
+    string title = 1;
+    uint32 score = 2;
+    uint32 time = 3;
 }

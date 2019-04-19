@@ -1360,7 +1360,7 @@ Internal server error for request [#150](../proto/README.md#action_150)
 | *          	| *      	| *        	|
 
 
-### Error 10175 - USER_GET_GET_REPRESENTATIVE_BAD_PAYLOAD
+### Error 10175 - USER_PROFILE_GET_REPRESENTATIVE_BAD_PAYLOAD
 Bad payload for request [#151](../proto/README.md#action_151)
 
 | Minor Code 	| Detail 	| Reaction 	|
@@ -1368,14 +1368,14 @@ Bad payload for request [#151](../proto/README.md#action_151)
 | *          	| *      	| *        	|
 
 
-### Error 10176 - USER_GET_GET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
+### Error 10176 - USER_PROFILE_GET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
 Internal server error for request [#151](../proto/README.md#action_151)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
-### Error 10177 - USER_GET_SET_REPRESENTATIVE_BAD_PAYLOAD
+### Error 10177 - USER_PROFILE_SET_REPRESENTATIVE_BAD_PAYLOAD
 Bad payload for request [#152](../proto/README.md#action_152)
 
 | Minor Code 	| Detail 	                    | Reaction 	|
@@ -1383,14 +1383,59 @@ Bad payload for request [#152](../proto/README.md#action_152)
 | 1          	| phone format is invalid      	| *        	|
 
 
-### Error 10178 - USER_GET_SET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
+### Error 10178 - USER_PROFILE_SET_REPRESENTATIVE_INTERNAL_SERVER_ERROR
 Internal server error for request [#152](../proto/README.md#action_152)
+
+| Minor Code 	| Detail 	                        | Reaction 	|
+|------------	|------------------------	        |----------	|
+| 1          	| Failed to read user representative| *        	|
+| 2          	| Already Registered           	    | *        	|
+| 3          	| Error in update user         	    | *        	|
+
+
+### Error 10179 - USER_IVAND_GET_ACTIVITIES_BAD_PAYLOAD
+Bad payload for request [#153](../proto/README.md#action_153)
+
+| Minor Code 	| Detail 	                    | Reaction 	|
+|------------	|------------------------	    |----------	|
+| 1          	| Invalid offset               	| *        	|
+| 2          	| Invalid limit              	| *        	|
+
+### Error 10180 - USER_IVAND_GET_ACTIVITIES_INTERNAL_SERVER_ERROR
+Internal server error for request [#153](../proto/README.md#action_153)
 
 | Minor Code 	| Detail 	                     | Reaction 	|
 |------------	|------------------------	     |----------	|
-| 1          	| Cannot Read User Representative| *        	|
-| 2          	| Has Already Registered       	 | *        	|
-| 3          	| Error in update user         	 | *        	|
+| 1          	| Failed to read user activities | *        	|
+
+
+### Error 10181 - USER_IVAND_GET_SCORE_INTERNAL_SERVER_ERROR
+Internal server error for request [#154](../proto/README.md#action_154)
+
+| Minor Code 	| Detail 	                     | Reaction 	|
+|------------	|------------------------	     |----------	|
+| 1          	| Failed to read user score      | *        	|
+
+
+### Error 10182 - USER_IVAND_SET_ACTIVITY_BAD_PAYLOAD
+Bad payload for request [#155](../proto/README.md#action_155)
+
+| Minor Code 	| Detail 	                    | Reaction 	|
+|------------	|------------------------	    |----------	|
+| 1          	| Invalid plan code            	| *        	|
+
+### Error 10183 - USER_IVAND_SET_ACTIVITY_INTERNAL_SERVER_ERROR
+Internal server error for request [#155](../proto/README.md#action_155)
+
+| Minor Code 	| Detail 	                     | Reaction 	|
+|------------	|------------------------	     |----------	|
+| 1          	| Failed to read plan            | *        	|
+| 2          	| Plan not found                 | *        	|
+| 3          	| Failed to read user's activity | *        	|
+| 4          	| Failed to update user's score  | *        	|
+| 5          	| Failed to set activity         | *        	|
+| 6          	| Failed to rollback score       | *        	|
+
 
 # Chat Errors(2xx)
 ### Error 200 - CHAT_GET_ROOM_BAD_PAYLOAD

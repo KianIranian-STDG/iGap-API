@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserIVandGetActivities";
+
+message UserIVandGetActivities {
+    Request request = 1;
+    Pagination pagination = 2;
+}
+
+message UserIVandGetActivitiesResponse {
+    Response response = 1;
+    repeated IVandActivity activities = 2;
+}

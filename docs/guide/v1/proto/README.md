@@ -122,6 +122,12 @@
 | <a name="action_30151">30151</a> 	| [Details](UserProfileGetRepresentativeResponse.md)                                | [UserProfileGetRepresentativeResponse](../../../../app/assets/proto/UserProfileGetRepresentative.proto)                                           | 
 | <a name="action_152">152</a> 	    | [Details](UserProfileSetRepresentative.md)                                        | [UserProfileSetRepresentative](../../../../app/assets/proto/UserProfileSetRepresentative.proto)               	                                |
 | <a name="action_30152">30152</a> 	| [Details](UserProfileSetRepresentativeResponse.md)                                | [UserProfileSetRepresentativeResponse](../../../../app/assets/proto/UserProfileSetRepresentative.proto)                                           | 
+| <a name="action_153">153</a> 	    | [Details](UserIVandGetActivities.md)                                              | [UserIVandGetActivities](../../../../app/assets/proto/UserIVandGetActivities.proto)               	                                            |
+| <a name="action_30153">30153</a> 	| [Details](UserIVandGetActivitiesResponse.md)                                      | [UserIVandGetActivitiesResponse](../../../../app/assets/proto/UserIVandGetActivities.proto)                                                       | 
+| <a name="action_154">154</a> 	    | [Details](UserIVandGetScore.md)                                                   | [UserIVandGetScore](../../../../app/assets/proto/UserIVandGetScore.proto)               	                                                        |
+| <a name="action_30154">30154</a> 	| [Details](UserIVandGetScoreResponse.md)                                           | [UserIVandGetScoreResponse](../../../../app/assets/proto/UserIVandGetScore.proto)                                                                 | 
+| <a name="action_155">155</a> 	    | [Details](UserIVandSetActivity.md)                                                | [UserIVandSetActivity](../../../../app/assets/proto/UserIVandSetActivity.proto)               	                                                |
+| <a name="action_30155">30155</a> 	| [Details](UserIVandSetActivityResponse.md)                                        | [UserIVandSetActivityResponse](../../../../app/assets/proto/UserIVandSetActivity.proto)                                                           | 
 
 # Chat 2xx , 302xx
 

@@ -340,6 +340,21 @@
 * 10177 - [USER_SET_REPRESENTATIVE_BAD_PAYLOAD](README.md#error-10177-user_set_representative_bad_payload)
 * 10178 - [USER_SET_REPRESENTATIVE_INTERNAL_SERVER_ERROR](README.md#error-10178-user_set_representative_internal_server_error)
 
+---
+
+* 10179 - [USER_IVAND_GET_ACTIVITIES_BAD_PAYLOAD](README.md#error-10179-user_ivand_get_activities_bad_payload)
+* 10180 - [USER_IVAND_GET_ACTIVITIES_INTERNAL_SERVER_ERROR](README.md#error-10180-user_ivand_get_activities_internal_server_error)
+
+---
+
+* 10181 - [USER_IVAND_GET_SCORE_BAD_PAYLOAD](README.md#error-10181-user_ivand_get_score_bad_payload)
+
+---
+
+* 10182 - [USER_IVAND_SET_ACTIVITY_BAD_PAYLOAD](README.md#error-10182-user_ivand_set_activity_bad_payload)
+* 10183 - [USER_IVAND_SET_ACTIVITY_INTERNAL_SERVER_ERROR](README.md#error-10183-user_ivand_set_activity_internal_server_error)
+
+
 # Chat room errors 2xx
 
 * 200 - [CHAT_GET_ROOM_BAD_PAYLOAD](README.md#error-200-chat_get_room_bad_payload)
