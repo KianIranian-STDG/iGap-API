@@ -480,6 +480,6 @@ message Discovery {
 
 message IVandActivity {
     string title = 1;
-    uint32 score = 2;
+    int32 score = 2;
     uint32 time = 3;
 }
