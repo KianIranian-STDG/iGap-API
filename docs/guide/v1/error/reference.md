@@ -1134,6 +1134,13 @@
 * 9106 - [MPL_GET_SALES_TOKEN_BAD_GATEWAY](README.md#error-9110-mpl_get_sales_token_bad_gateway)
 * 9107 - [MPL_GET_SALES_TOKEN_FORBIDDEN](README.md#error-9111-mpl_get_sales_token_forbidden)
 
+---
+
+* 9116 - [MPL_GET_CARD_TO_CARD_TOKEN_BAD_PAYLOAD](README.md#error-9116-mpl_get_card_to_card_token_bad_payload)
+* 9117 - [MPL_GET_CARD_TO_CARD_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9117-mpl_get_card_to_card_token_internal_server_error)
+* 9118 - [MPL_GET_CARD_TO_CARD_TOKEN_BAD_GATEWAY](README.md#error-9118-mpl_get_card_to_card_token_bad_gateway)
+* 9119 - [MPL_GET_CARD_TO_CARD_TOKEN_FORBIDDEN](README.md#error-9119-mpl_get_card_to_card_token_forbidden)
+
 
 # BillInquiry 92xx
 

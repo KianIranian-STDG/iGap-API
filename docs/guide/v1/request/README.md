@@ -218,6 +218,7 @@
 # Mpl
 * [GetBillToken](mpl/GetBillToken.md)
 * [GetTopupToken](mpl/GetTopupToken.md)
+* [GetCardToCardToken](mpl/GetCardToCardToken.md)
 
 # BillInquiry
 * [Mci](bill-inquiry/Mci.md)

@@ -454,6 +454,8 @@ message DiscoveryField {
         IVAND = 23;
         IVANDQR = 24;
         IVANDLIST = 25;
+        IVANDSCORE = 26;
+        CARD_TO_CARD = 27;
     }
 
     ButtonActionType actiontype = 3;

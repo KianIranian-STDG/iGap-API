@@ -4719,6 +4719,39 @@ You are forbidden to do the action for request [#9102](../proto/README.md#action
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+
+### Error 9116 - MPL_GET_CARD_TO_CARD_TOKEN_BAD_PAYLOAD
+Bad payload for request [#9106](../proto/README.md#action_9106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9117 - MPL_GET_CARD_TO_CARD_TOKEN_INTERNAL_SERVER_ERROR
+Internal server error for request [#9106](../proto/README.md#action_9106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9118 - MPL_GET_CARD_TO_CARD_TOKEN_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9106](../proto/README.md#action_9106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9119 - MPL_GET_CARD_TO_CARD_TOKEN_FORBIDDEN
+You are forbidden to do the action for request [#9106](../proto/README.md#action_9106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
 # BillInquiry errors 92xx
 
 ### Error 9200 - BILL_INQUIRY_MCI_BAD_PAYLOAD
