@@ -1,0 +1,23 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplSalesConfirm";
+
+message MplSalesConfirm {
+    Request request = 1;
+    uint64 invoice_number = 2;
+    enum Confirm {
+        CONFIRM = 0;
+        REVERSE = 1;
+    }
+    Confirm confirm = 3;
+}
+
+message MplSalesConfirmResponse {
+    Response response = 1;
+    MplSale sale = 2;
+}

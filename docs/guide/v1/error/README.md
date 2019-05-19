@@ -4692,8 +4692,10 @@ Bad payload for request [#9102](../proto/README.md#action_9102)
 | Minor Code 	| Detail         	                    | Reaction 	|
 |------------	|----------------	                    |----------	|
 | 1          	| amount is invalid                     | *        	|
-| 2          	| botid is invalid                      | *        	|
-| 3          	| type is invalid                       | *        	|
+| 2          	| to_id is invalid                      | *        	|
+| 3          	| invoice number is invalid             | *        	|
+| 4          	| description is invalid                | *        	|
+| 5          	| Inquiry is invalid                    | *        	|
 
 
 ### Error 9109 - MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR
@@ -4718,6 +4720,41 @@ You are forbidden to do the action for request [#9102](../proto/README.md#action
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
+
+
+### Error 9112 - MPL_SET_SALES_RESULT_BAD_PAYLOAD
+Bad payload for request [#9103](../proto/README.md#action_9103)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| data in invalid                       | *        	|
+| 2          	| PayData is not exist                  | *        	|
+| 3          	| PayData is invalid                    | *        	|
+
+
+### Error 9113 - MPL_SET_SALES_RESULT_INTERNAL_SERVER_ERROR
+Internal server error for request [#9103](../proto/README.md#action_9103)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9114 - MPL_SET_SALES_RESULT_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9103](../proto/README.md#action_9103)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9115 - MPL_SET_SALES_RESULT_FORBIDDEN
+You are forbidden to do the action for request [#9103](../proto/README.md#action_9103)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 
 
 ### Error 9116 - MPL_GET_CARD_TO_CARD_TOKEN_BAD_PAYLOAD
@@ -4746,6 +4783,47 @@ Server was not able to get a valid or any response from the Mpl server for reque
 
 ### Error 9119 - MPL_GET_CARD_TO_CARD_TOKEN_FORBIDDEN
 You are forbidden to do the action for request [#9106](../proto/README.md#action_9106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9120 - MPL_SALES_CONFIRM_BAD_PAYLOAD
+Bad payload for request [#9104](../proto/README.md#action_9104)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| invoice number is invalid             | *        	|
+| 2          	| Confirm or reverse is invalid         | *        	|
+
+
+### Error 9121 - MPL_SALES_CONFIRM_FORBIDDEN
+You are forbidden to do the action for request [#9104](../proto/README.md#action_9104)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9122 - MPL_SALES_CONFIRM_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9104](../proto/README.md#action_9104)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9123 - MPL_SALES_LIST_BAD_PAYLOAD
+Bad payload for request [#9107](../proto/README.md#action_9107)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| Status is invalid                     | *        	|
+| 2          	| Pagination is invalid                 | *        	|
+
+### Error 9124 - MPL_SALES_LIST_INTERNAL_SERVER_ERROR
+Internal server error for request [#9107](../proto/README.md#action_9107)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|

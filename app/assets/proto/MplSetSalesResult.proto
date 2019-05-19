@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplSetSalesResult";
+
+message MplSetSalesResult {
+    Request request = 1;
+    string data = 2;
+}
+
+message MplSetSalesResultResponse {
+    Response response = 1;
+}

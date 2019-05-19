@@ -219,6 +219,10 @@
 * [GetBillToken](mpl/GetBillToken.md)
 * [GetTopupToken](mpl/GetTopupToken.md)
 * [GetCardToCardToken](mpl/GetCardToCardToken.md)
+* [GetSalesToken](mpl/GetSalesToken.md)
+* [SalesConfirm](mpl/SalesConfirm.md)
+* [SalesList](mpl/SalesList.md)
+* [SetSalesResult](mpl/SetSalesResult.md)
 
 # BillInquiry
 * [Mci](bill-inquiry/Mci.md)

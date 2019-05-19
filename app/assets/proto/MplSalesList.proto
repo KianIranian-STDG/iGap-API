@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplSalesConfirm";
+
+message MplSalesList {
+    Request request = 1;
+    MplSale.Status status = 2;
+    Pagination pagination = 3;
+}
+
+message MplSalesListResponse {
+    Response response = 1;
+    repeated MplSale sale = 2;
+}

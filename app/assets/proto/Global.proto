@@ -114,6 +114,7 @@ message RoomMessageContact {
 message RoomMessageWallet {
     enum Type {
         MONEY_TRANSFER = 0;
+        PAYMENT = 1;
     }
     Type type = 1;
 
@@ -125,6 +126,8 @@ message RoomMessageWallet {
         int64 invoice_number = 5;
         uint32 pay_time = 6;
         string description = 7;
+        string card_number = 8;
+        int64 rrn = 9;
     }
     MoneyTransfer money_transfer = 2;
 }
@@ -484,4 +487,22 @@ message IVandActivity {
     string title = 1;
     int32 score = 2;
     uint32 time = 3;
+}
+
+message MplSale {
+    uint64 invoice_number = 1;
+    uint64 from_user_id = 2;
+    uint64 amount = 3;
+    int64 trace_number = 4;
+    uint32 pay_time = 5;
+    string description = 6;
+    string card_number = 7;
+    int64 rrn = 8;
+    enum Status {
+        PENDING_VERIFY = 0;
+        SUCCESS = 1;
+        FAILED = 2;
+        REVERSED = 3;
+    }
+    Status status = 9;
 }

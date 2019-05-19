@@ -1129,10 +1129,17 @@
 
 ---
 
-* 9104 - [MPL_GET_SALES_TOKEN_BAD_PAYLOAD](README.md#error-9108-mpl_get_sales_token_bad_payload)
-* 9105 - [MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9109-mpl_get_sales_token_internal_server_error)
-* 9106 - [MPL_GET_SALES_TOKEN_BAD_GATEWAY](README.md#error-9110-mpl_get_sales_token_bad_gateway)
-* 9107 - [MPL_GET_SALES_TOKEN_FORBIDDEN](README.md#error-9111-mpl_get_sales_token_forbidden)
+* 9108 - [MPL_GET_SALES_TOKEN_BAD_PAYLOAD](README.md#error-9108-mpl_get_sales_token_bad_payload)
+* 9109 - [MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9109-mpl_get_sales_token_internal_server_error)
+* 9110 - [MPL_GET_SALES_TOKEN_BAD_GATEWAY](README.md#error-9110-mpl_get_sales_token_bad_gateway)
+* 9111 - [MPL_GET_SALES_TOKEN_FORBIDDEN](README.md#error-9111-mpl_get_sales_token_forbidden)
+
+---
+
+* 9112 - [MPL_SET_SALES_RESULT_BAD_PAYLOAD](README.md#error-9112-mpl_set_sales_result_bad_payload)
+* 9113 - [MPL_SET_SALES_RESULT_INTERNAL_SERVER_ERROR](README.md#error-9113-mpl_set_sales_result_internal_server_error)
+* 9114 - [MPL_SET_SALES_RESULT_BAD_GATEWAY](README.md#error-9114-mpl_set_sales_result_bad_gateway)
+* 9115 - [MPL_SET_SALES_RESULT_FORBIDDEN](README.md#error-9115-mpl_set_sales_result_forbidden)
 
 ---
 
@@ -1141,6 +1148,18 @@
 * 9118 - [MPL_GET_CARD_TO_CARD_TOKEN_BAD_GATEWAY](README.md#error-9118-mpl_get_card_to_card_token_bad_gateway)
 * 9119 - [MPL_GET_CARD_TO_CARD_TOKEN_FORBIDDEN](README.md#error-9119-mpl_get_card_to_card_token_forbidden)
 
+---
+
+* 9120 - [MPL_SALES_CONFIRM_BAD_PAYLOAD](README.md#error-9120-mpl_sales_confirm_bad_payload)
+* 9121 - [MPL_SALES_CONFIRM_FORBIDDEN](README.md#error-9121-mpl_sales_confirm_forbidden)
+* 9122 - [MPL_SALES_CONFIRM_BAD_GATEWAY](README.md#error-9122-mpl_sales_confirm_bad_gateway)
+
+---
+
+* 9123 - [MPL_SALES_LIST_BAD_PAYLOAD](README.md#error-9123-mpl_sales_list_bad_payload)
+* 9124 - [MPL_SALES_LIST_INTERNAL_SERVER_ERROR](README.md#error-9124-mpl_sales_list_internal_server_error)
+
+---
 
 # BillInquiry 92xx
 
