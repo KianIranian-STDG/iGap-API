@@ -4830,6 +4830,38 @@ Internal server error for request [#9107](../proto/README.md#action_9107)
 | *          	| *      	| *        	|
 
 
+### Error 9125 - MPL_SET_CARD_TO_CARD_RESULT_BAD_PAYLOAD
+Bad payload for request [#9108](../proto/README.md#action_9108)
+
+| Minor Code 	| Detail 	            | Reaction 	|
+|------------	|--------	            |----------	|
+| 1          	| Data is invalid      	| *        	|
+| 2          	| To user id is invalid | *        	|
+
+
+### Error 9126 - MPL_SET_CARD_TO_CARD_RESULT_INTERNAL_SERVER_ERROR
+Internal server error for request [#9108](../proto/README.md#action_9108)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9127 - MPL_SET_CARD_TO_CARD_RESULT_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9108](../proto/README.md#action_9108)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9128 - MPL_SET_CARD_TO_CARD_RESULT_FORBIDDEN
+You are forbidden to do the action for request [#9108](../proto/README.md#action_9108)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 # BillInquiry errors 92xx
 
 ### Error 9200 - BILL_INQUIRY_MCI_BAD_PAYLOAD

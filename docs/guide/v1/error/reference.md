@@ -1161,6 +1161,13 @@
 
 ---
 
+* 9125 - [MPL_SET_CARD_TO_CARD_RESULT_BAD_PAYLOAD](README.md#error-9125-mpl_set_card_to_card_result_bad_payload)
+* 9126 - [MPL_SET_CARD_TO_CARD_RESULT_SERVER_ERROR](README.md#error-9126-mpl_set_card_to_card_result_internal_server_error)
+* 9127 - [MPL_SET_CARD_TO_CARD_RESULT_FORBIDDEN](README.md#error-9127-mpl_set_card_to_card_result_bad_gateway)
+* 9128 - [MPL_SET_CARD_TO_CARD_RESULT_BAD_GATEWAY](README.md#error-9128-mpl_set_card_to_card_result_forbidden)
+
+---
+
 # BillInquiry 92xx
 
 * 9200 - [BILL_INQUIRY_MCI_BAD_PAYLOAD](README.md#error-9200-bill_inquiry_mci_bad_payload)
