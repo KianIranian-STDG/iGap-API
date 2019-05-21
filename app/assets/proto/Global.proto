@@ -115,6 +115,7 @@ message RoomMessageWallet {
     enum Type {
         MONEY_TRANSFER = 0;
         PAYMENT = 1;
+        CARD_TO_CARD = 2;
     }
     Type type = 1;
 
@@ -130,6 +131,24 @@ message RoomMessageWallet {
         int64 rrn = 9;
     }
     MoneyTransfer money_transfer = 2;
+
+    message CardToCard {
+        uint64 from_user_id = 1;
+        uint64 to_user_id = 2;
+        uint64 order_id = 3;
+        string token = 4;
+        uint64 amount = 5;
+        string source_card_number = 6;
+        string dest_card_number = 7;
+        uint32 request_time = 8;
+        string rrn = 9;
+        string trace_number = 10;
+        string bankName = 11;
+        string destBankName = 12;
+        string cardOwnerName = 13;
+        bool status = 14;
+    }
+    CardToCard card_to_card = 3;
 }
 
 message RoomMessageForwardFrom {

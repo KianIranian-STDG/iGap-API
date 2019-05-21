@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplSetCardToCardResult";
+
+message MplSetCardToCardResult {
+    Request request = 1;
+    string data = 2;
+    uint64 to_user_id = 3;
+}
+
+message MplSetCardToCardResultResponse {
+    Response response = 1;
+}
