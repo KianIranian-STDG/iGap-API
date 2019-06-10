@@ -11,6 +11,14 @@ option java_outer_classname = "ProtoSignalingGetLog";
 message SignalingGetLog {
     Request request = 1;
     Pagination pagination = 2;
+    enum Filter {
+        ALL = 0;
+        MISSED = 1;
+        CANCELED = 2;
+        INCOMING = 3;
+        OUTGOING = 4;
+    }
+    Filter filter = 3;
 }
 
 message SignalingGetLogResponse {
