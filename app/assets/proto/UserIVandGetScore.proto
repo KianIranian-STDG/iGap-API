@@ -13,4 +13,13 @@ message UserIVandGetScore {
 message UserIVandGetScoreResponse {
     Response response = 1;
     uint32 score = 2;
+    uint32 user_rank = 3;
+    uint32 total_rank = 4;
+    message IVandScore {
+        uint32 id = 1;
+        string en_name = 2;
+        string fa_name = 3;
+        uint32 score = 4;
+    }
+    repeated IVandScore scores = 5;
 }
