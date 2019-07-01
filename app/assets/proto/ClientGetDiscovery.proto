@@ -10,6 +10,7 @@ option java_outer_classname = "ProtoClientGetDiscovery";
 message ClientGetDiscovery {
     Request request = 1;
     uint32 page_id = 2;
+    uint32 project_id = 3;
 }
 
 message ClientGetDiscoveryResponse {

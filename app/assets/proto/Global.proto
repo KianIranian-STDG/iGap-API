@@ -478,11 +478,17 @@ message DiscoveryField {
         IVANDLIST = 25;
         IVANDSCORE = 26;
         CARD_TO_CARD = 27;
+        FAVORITE_CHANNEL = 28;
+        MUSIC = 29;
     }
 
     ButtonActionType actiontype = 3;
     uint32 orderid = 4;
     uint32 id = 5;
+    string param = 6;
+    bool agreement = 7;
+    bool refresh = 8;
+    string agreementSlug = 9;
 }
 
 message Discovery {

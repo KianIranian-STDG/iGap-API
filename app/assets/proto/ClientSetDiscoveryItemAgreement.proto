@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientSetDiscoveryItemAgreement";
+
+message ClientSetDiscoveryItemAgreement {
+    Request request = 1;
+    uint32 item_id = 2;
+}
+
+message ClientSetDiscoveryItemAgreementResponse {
+    Response response = 1;
+}

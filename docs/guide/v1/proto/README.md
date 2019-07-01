@@ -339,6 +339,8 @@
 | <a name="action_30620">30620</a> 	| [Details](ClientGetDiscoveryResponse.md)        | [ClientGetDiscoveryResponse](../../../../app/assets/proto/ClientGetDiscovery.proto)                         |
 | <a name="action_621">621</a> 	    | [Details](ClientSetDiscoveryItemClick.md)       | [ClientSetDiscoveryItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)               |
 | <a name="action_30621">30621</a> 	| [Details](ClientSetDiscoveryItemClickResponse.md)| [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)      |
+| <a name="action_623">623</a> 	    | [Details](ClientSetDiscoveryItemAgreement.md)       | [ClientSetDiscoveryItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)               |
+| <a name="action_30623">30623</a> 	| [Details](ClientSetDiscoveryItemAgreementResponse.md)| [ClientSetDiscoveryResponseItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)      |
 
 
 # File 7xx , 307xx

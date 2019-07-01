@@ -170,6 +170,7 @@
 * [GetFavoriteMenu](client/GetFavoriteMenu.md)
 * [GetDiscovery](client/GetDiscovery.md)
 * [SetDiscoveryItemClick](client/SetDiscoveryItemClick.md)
+* [SetDiscoveryItemAgreement](client/SetDiscoveryItemAgreement.md)
 
 # File
 * [Upload](file/Upload.md)

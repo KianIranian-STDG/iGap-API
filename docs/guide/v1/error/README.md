@@ -3831,6 +3831,34 @@ You are forbidden to do the action for request [#621](../proto/README.md#action_
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 670 - CLIENT_GET_USER_REPRESENTATIVE_BAD_PAYLOAD
+Bad payload for request [#622](../proto/README.md#action_622)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 671 - CLIENT_GET_USER_REPRESENTATIVE_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#622](../proto/README.md#action_622)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 672 - CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_BAD_PAYLOAD
+Bad payload for request [#623](../proto/README.md#action_623)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 673 - CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#623](../proto/README.md#action_623)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 # File Errors(7xx)
 
 ### Error 700 - FILE_UPLOAD_OPTION_BAD_PAYLOAD.
