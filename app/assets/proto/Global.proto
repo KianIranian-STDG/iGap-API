@@ -480,6 +480,10 @@ message DiscoveryField {
         CARD_TO_CARD = 27;
         FAVORITE_CHANNEL = 28;
         MUSIC = 29;
+        CHARITY = 30;
+        FUN_SERVICE = 31;
+        VIRTUAL_MONEY = 32;
+        CITY_SERVICE = 33;
     }
 
     ButtonActionType actiontype = 3;
