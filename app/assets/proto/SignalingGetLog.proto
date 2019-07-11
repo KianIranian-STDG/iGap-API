@@ -39,6 +39,7 @@ message SignalingGetLogResponse {
         RegisteredUser peer = 4;
         uint32 offer_time = 5;
         uint32 duration = 6;
+        uint64 log_id = 7;
     }
 
     repeated SignalingLog signaling_log = 2;

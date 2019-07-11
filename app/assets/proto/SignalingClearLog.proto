@@ -9,9 +9,11 @@ option java_outer_classname = "ProtoSignalingClearLog";
 message SignalingClearLog {
     Request request = 1;
     uint64 clear_id = 2;
+    repeated uint64 log_id = 3;
 }
 
 message SignalingClearLogResponse {
     Response response = 1;
     uint64 clear_id = 2;
+    repeated uint64 log_id = 3;
 }

@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientSetPollItemClick";
+
+message ClientSetPollItemClick {
+    Request request = 1;
+    uint32 item_id = 2;
+}
+
+message ClientSetPollItemClickResponse {
+    Response response = 1;
+}

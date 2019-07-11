@@ -484,6 +484,7 @@ message DiscoveryField {
         FUN_SERVICE = 31;
         VIRTUAL_MONEY = 32;
         CITY_SERVICE = 33;
+        POLL = 34;
     }
 
     ButtonActionType actiontype = 3;
@@ -506,10 +507,26 @@ message Discovery {
         MODEL6 = 5;
         MODEL7 = 6;
     }
-
     DiscoveryModel model = 1;
     string scale = 2;
     repeated DiscoveryField discoveryfields = 3;
+}
+
+message PollField {
+    string imageurl = 1;
+    uint32 orderid = 2;
+    uint32 id = 3;
+    bool clicked = 4;
+    uint64 sum = 5;
+    bool clickable = 6;
+    string label = 7;
+}
+
+message Poll {
+    Discovery.DiscoveryModel model = 1;
+    string scale = 2;
+    uint32 max = 3;
+    repeated PollField pollfields = 4;
 }
 
 message IVandActivity {

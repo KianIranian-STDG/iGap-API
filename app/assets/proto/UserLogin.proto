@@ -34,4 +34,6 @@ message UserLoginResponse {
     bool wallet_active = 6;
     bool mpl_active = 7;
     bool wallet_agreement_accepted = 8;
+    string access_token = 9;
+    string contact_hash = 10;
 }
