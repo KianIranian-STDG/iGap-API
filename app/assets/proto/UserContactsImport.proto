@@ -17,6 +17,7 @@ message UserContactsImport {
     }
     repeated Contact contacts = 2;
     bool force = 3;
+    string contact_hash = 4;
 }
 
 message UserContactsImportResponse {
