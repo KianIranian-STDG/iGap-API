@@ -3859,6 +3859,42 @@ You are forbidden to do the action for request [#623](../proto/README.md#action_
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 674 - CLIENT_GET_POLL_BAD_PAYLOAD
+Bad payload for request [#624](../proto/README.md#action_624)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| 1          	| Poll ID  	| *        	|
+| 2          	| Project ID| *        	|
+
+### Error 675 - CLIENT_GET_POLL_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#624](../proto/README.md#action_624)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 676 - CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD
+Bad payload for request [#625](../proto/README.md#action_625)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| 1          	| ITEM ID  	| *        	|
+
+### Error 677 - CLIENT_SET_POLL_ITEM_CLICK_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#625](../proto/README.md#action_625)
+
+| Minor Code 	| Detail 	                | Reaction 	|
+|------------	|--------	                |----------	|
+| 1          	| Error in get poll      	| *        	|
+| 2          	| Poll not found         	| *        	|
+| 3          	| Poll not found         	| *        	|
+| 4          	| Error in get poll count  	| *        	|
+| 5          	| Poll count not found  	| *        	|
+| 6          	| Maximum vote limit       	| *        	|
+| 7          	| Cache Error              	| *        	|
+| 8          	| Duplicate entry       	| *        	|
+
 # File Errors(7xx)
 
 ### Error 700 - FILE_UPLOAD_OPTION_BAD_PAYLOAD.

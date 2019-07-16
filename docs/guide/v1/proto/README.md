@@ -341,6 +341,10 @@
 | <a name="action_30621">30621</a> 	| [Details](ClientSetDiscoveryItemClickResponse.md)| [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)      |
 | <a name="action_623">623</a> 	    | [Details](ClientSetDiscoveryItemAgreement.md)       | [ClientSetDiscoveryItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)               |
 | <a name="action_30623">30623</a> 	| [Details](ClientSetDiscoveryItemAgreementResponse.md)| [ClientSetDiscoveryResponseItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)      |
+| <a name="action_624">624</a> 	    | [Details](ClientGetPoll.md)                | [ClientGetPoll](../../../../app/assets/proto/ClientGetPoll.proto)               	                |
+| <a name="action_30624">30624</a> 	| [Details](ClientGetPollResponse.md)        | [ClientGetPollResponse](../../../../app/assets/proto/ClientGetPoll.proto)                         |
+| <a name="action_625">625</a> 	    | [Details](ClientSetPollItemClick.md)       | [ClientSetPollItemClick](../../../../app/assets/proto/ClientSetPollItemClick.proto)               |
+| <a name="action_30625">30625</a> 	| [Details](ClientSetPollItemClickResponse.md)| [ClientSetPollResponseItemClick](../../../../app/assets/proto/ClientSetPollItemClick.proto)      |
 
 
 # File 7xx , 307xx

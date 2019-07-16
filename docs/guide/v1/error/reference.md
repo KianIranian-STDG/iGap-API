@@ -931,6 +931,16 @@
 * 672 - [CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_BAD_PAYLOAD](README.md#error-672-CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_BAD_PAYLOAD)
 * 673 - [CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_INTERNAL_SERVER_ERROR](README.md#error-673-CLIENT_SET_DISCOVERY_ITEM_AGREEMENT_INTERNAL_SERVER_ERROR)
 
+---
+
+* 674 - [CLIENT_GET_POLL_BAD_PAYLOAD](README.md#error-674-client_get_poll_internal_server_error)
+* 675 - [CLIENT_GET_POLL_INTERNAL_SERVER_ERROR](README.md#error-675-client_get_poll_internal_server_error)
+
+---
+
+* 676 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-676-client_set_poll_item_click_internal_server_error)
+* 677 - [CLIENT_SET_POLL_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-677-client_set_poll_item_click_internal_server_error)
+
 
 # File errors 7xx
 
