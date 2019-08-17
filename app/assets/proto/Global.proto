@@ -485,6 +485,8 @@ message DiscoveryField {
         VIRTUAL_MONEY = 32;
         CITY_SERVICE = 33;
         POLL = 34;
+        INTERNET_PACKAGE_MENU = 35;
+        FINANCIAL_HISTORY = 36;
     }
 
     ButtonActionType actiontype = 3;
@@ -551,4 +553,82 @@ message MplSale {
         REVERSED = 3;
     }
     Status status = 9;
+}
+
+message MplTransaction {
+    uint64 order_id = 1;
+    string token = 2;
+    uint32 pay_time = 3;
+    enum Type {
+        NONE = 0;
+        BILL = 1;
+        TOPUP = 2;
+        SALES = 3;
+        CARD_TO_CARD = 4;
+    }
+    Type type = 4;
+
+    message Bill {
+        string BillId = 1;
+        string PayId = 2;
+        string BillType = 3;
+        uint32 Status = 4;
+        uint64 Amount = 5;
+        string CardNumber = 6;
+        string MerchantName = 7;
+        uint64 OrderId = 8;
+        uint64 RequestDateTime = 9;
+        uint64 RRN = 10;
+        string StatusDescription = 11;
+        uint32 TerminalNo = 12;
+        uint32 TraceNo = 13;
+    }
+    Bill bill = 5;
+
+    message Topup {
+        uint64 RequesterMobileNumber = 1;
+        uint64 ChargeMobileNumber = 2;
+        uint32 TopupType = 3;
+        uint32 Status = 4;
+        uint64 Amount = 5;
+        string CardNumber = 6;
+        string MerchantName = 7;
+        uint64 OrderId = 8;
+        uint64 RequestDateTime = 9;
+        uint64 RRN = 10;
+        string StatusDescription = 11;
+        uint32 TerminalNo = 12;
+        uint32 TraceNo = 13;
+    }
+    Topup topup = 6;
+
+    message Sales {
+        uint32 Status = 1;
+        uint64 Amount = 2;
+        string CardNumber = 3;
+        string MerchantName = 4;
+        uint64 OrderId = 5;
+        uint64 RequestDateTime = 6;
+        uint64 RRN = 7;
+        string StatusDescription = 8;
+        uint32 TerminalNo = 9;
+        uint32 TraceNo = 10;
+    }
+    Sales sales = 7;
+
+    message CardToCard {
+        uint32 Status = 1;
+        uint64 Amount = 2;
+        string SourceCardNumber = 3;
+        string DestCardNumber = 4;
+        string BankName = 5;
+        string DestBankName = 6;
+        string CardOwnerName = 7;
+        uint64 OrderId = 8;
+        uint64 RequestDateTime = 9;
+        uint64 RRN = 10;
+        string StatusDescription = 11;
+        uint32 TraceNo = 13;
+    }
+    CardToCard cardtocard = 8;
 }

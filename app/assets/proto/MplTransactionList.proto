@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplTransactionList";
+
+message MplTransactionList {
+    Request request = 1;
+    MplTransaction.Type type = 2;
+    Pagination pagination = 3;
+}
+
+message MplTransactionListResponse {
+    Response response = 1;
+    repeated MplTransaction transaction = 2;
+}
