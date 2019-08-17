@@ -16,6 +16,12 @@ message InfoWallpaper {
         DESKTOP = 2;
     }
     Fit fit = 2;
+
+    enum Type {
+        CHAT_BACKGROUND = 0;
+        PROFILE_WALLPAPER = 1;
+    }
+    Type type = 3;
 }
 
 message InfoWallpaperResponse {
