@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoInfoTime";
+
+message InfoUpdate {
+    Request request = 1;
+    uint32 app_id = 2;
+    uint32 app_build_version = 3;
+}
+
+message InfoUpdateResponse {
+    Response response = 1;
+    string body = 2;
+    uint32 last_version = 3;
+}
