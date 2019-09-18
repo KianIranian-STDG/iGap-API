@@ -8,6 +8,7 @@ option java_outer_classname = "ProtoUserGetDeleteToken";
 
 message UserGetDeleteToken {
     Request request = 1;
+    uint32 app_id = 2;
 }
 
 message UserGetDeleteTokenResponse {

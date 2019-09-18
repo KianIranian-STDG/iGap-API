@@ -17,6 +17,7 @@ message UserRegister {
         VERIFY_CODE_CALL = 2;
     }
     PreferenceMethod preference_method = 4;
+    uint32 app_id = 5;
 }
 
 message UserRegisterResponse {
