@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserRefreshToken";
+
+message UserRefreshToken {
+    Request request = 1;
+}
+
+message UserRefreshTokenResponse {
+    Response response = 1;
+    string access_token = 2;
+}
