@@ -488,6 +488,7 @@ message DiscoveryField {
         INTERNET_PACKAGE_MENU = 35;
         FINANCIAL_HISTORY = 36;
         INVITE_FRIEND = 37;
+        NEWS = 38;
     }
 
     ButtonActionType actiontype = 3;
