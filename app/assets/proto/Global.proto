@@ -490,6 +490,8 @@ message DiscoveryField {
         INVITE_FRIEND = 37;
         NEWS = 38;
         ELECTRIC_BILL_MENU = 39;
+        BLOCKCHAIN = 40;
+        PARSLAND = 41;
     }
 
     ButtonActionType actiontype = 3;
