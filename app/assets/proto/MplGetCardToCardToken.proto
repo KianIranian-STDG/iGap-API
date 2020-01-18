@@ -8,6 +8,7 @@ option java_outer_classname = "ProtoMplGetCardToCardToken";
 
 message MplGetCardToCardToken {
     Request request = 1;
+    uint64 to_user_id = 2;
 }
 
 message MplGetCardToCardTokenResponse {

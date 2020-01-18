@@ -116,6 +116,8 @@ message RoomMessageWallet {
         MONEY_TRANSFER = 0;
         PAYMENT = 1;
         CARD_TO_CARD = 2;
+        TOPUP = 3;
+        BILL = 4;
     }
     Type type = 1;
 
@@ -149,6 +151,55 @@ message RoomMessageWallet {
         bool status = 14;
     }
     CardToCard card_to_card = 3;
+
+    message Topup {
+        enum Type {
+            IRANCELL_PREPAID = 0;
+            IRANCELL_WOW = 1;
+            IRANCELL_WIMAX = 2;
+            IRANCELL_POSTPAID = 3;
+            MCI = 4;
+            RIGHTEL = 5;
+        }
+
+        uint64 from_user_id = 1;
+        uint64 order_id = 2;
+        string my_token = 3;
+        uint64 token = 4;
+        uint64 amount = 5;
+        string requester_mobile_number = 6;
+        string charge_mobile_number = 7;
+        Type topup_type = 8;
+        string card_number = 9;
+        string merchant_name = 10;
+        uint64 terminal_no = 11;
+        uint64 rrn = 12;
+        uint64 trace_number = 13;
+        uint32 request_time = 14;
+        bool status = 15;
+        string status_description = 16;
+    }
+    Topup topup = 4;
+
+    message Bill {
+        uint64 from_user_id = 1;
+        uint64 order_id = 2;
+        string my_token = 3;
+        uint64 token = 4;
+        uint64 amount = 5;
+        string pay_id = 6;
+        string bill_id = 7;
+        string bill_type = 8;
+        string card_number = 9;
+        string merchant_name = 10;
+        uint64 terminal_no = 11;
+        uint64 rrn = 12;
+        uint64 trace_number = 13;
+        uint32 request_time = 14;
+        bool status = 15;
+        string status_description = 16;
+    }
+    Bill bill = 5;
 }
 
 message RoomMessageForwardFrom {
