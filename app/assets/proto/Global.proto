@@ -543,6 +543,7 @@ message DiscoveryField {
         ELECTRIC_BILL_MENU = 39;
         BLOCKCHAIN = 40;
         PARSLAND = 41;
+        POLL_RESULT = 42;
     }
 
     ButtonActionType actiontype = 3;
