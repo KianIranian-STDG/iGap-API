@@ -544,6 +544,7 @@ message DiscoveryField {
         BLOCKCHAIN = 40;
         PARSLAND = 41;
         POLL_RESULT = 42;
+        VIRTUAL_GIFT_CARD = 43;
     }
 
     ButtonActionType actiontype = 3;
