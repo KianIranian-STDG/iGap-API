@@ -545,6 +545,7 @@ message DiscoveryField {
         PARSLAND = 41;
         POLL_RESULT = 42;
         VIRTUAL_GIFT_CARD = 43;
+        NEWS_DETAIL = 44;
     }
 
     ButtonActionType actiontype = 3;
