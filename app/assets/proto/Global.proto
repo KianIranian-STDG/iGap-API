@@ -357,6 +357,7 @@ message Room {
     GroupRoom group_room_extra = 12;
     ChannelRoom channel_room_extra = 13;
 
+    uint32 app_id = 19;
 }
 
 message ChatRoom {

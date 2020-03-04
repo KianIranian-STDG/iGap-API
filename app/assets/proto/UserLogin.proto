@@ -23,6 +23,7 @@ message UserLogin {
     string device_name = 10;
 
     Language language = 11;
+    bytes symmetric_key = 12;
 }
 
 message UserLoginResponse {
@@ -36,4 +37,5 @@ message UserLoginResponse {
     bool wallet_agreement_accepted = 8;
     string access_token = 9;
     string contact_hash = 10;
+    int32 role = 11;
 }
