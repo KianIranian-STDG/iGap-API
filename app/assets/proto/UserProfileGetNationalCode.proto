@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserProfileGetNationalCode";
+
+message UserProfileGetNationalCode {
+    Request request = 1;
+}
+
+message UserProfileGetNationalCodeResponse {
+    Response response = 1;
+    string national_code = 2;
+}

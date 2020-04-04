@@ -358,6 +358,7 @@ message Room {
     ChannelRoom channel_room_extra = 13;
 
     uint32 app_id = 19;
+    RoomAccess permission = 20;
 }
 
 message ChatRoom {
@@ -477,6 +478,18 @@ enum PrivacyLevel {
     ALLOW_ALL = 0;
     DENY_ALL = 1;
     ALLOW_CONTACTS = 2;
+}
+
+message RoomAccess {
+    bool modify_room = 1;
+    bool post_message = 2;
+    bool edit_message = 3;
+    bool delete_message = 4;
+    bool pin_message = 5;
+    bool add_member = 6;
+    bool ban_member = 7;
+    bool get_member = 8;
+    bool add_admin = 9;
 }
 
 message Wallpaper {
