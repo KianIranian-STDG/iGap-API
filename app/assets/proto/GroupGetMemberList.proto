@@ -27,6 +27,7 @@ message GroupGetMemberListResponse {
     message Member {
         uint64 userId = 1;
         GroupRoom.Role role = 2;
+        RoomAccess permission = 3;
     }
     repeated Member member = 2;
 }
