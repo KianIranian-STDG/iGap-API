@@ -3,6 +3,8 @@ package proto;
 import "Request.proto";
 import "Response.proto";
 import "Global.proto";
+import "GroupAddAdmin.proto";
+import "GroupChangeMemberRights.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupGetMemberList";
@@ -27,7 +29,8 @@ message GroupGetMemberListResponse {
     message Member {
         uint64 userId = 1;
         GroupRoom.Role role = 2;
-        RoomAccess permission = 3;
+        GroupAddAdmin.AdminRights adminRights = 3;
+        GroupChangeMemberRights.MemberRights memberRights = 4;
     }
     repeated Member member = 2;
 }

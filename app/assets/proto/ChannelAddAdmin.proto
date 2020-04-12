@@ -11,12 +11,23 @@ message ChannelAddAdmin {
     Request request = 1;
     uint64 room_id = 2;
     uint64 member_id = 3;
-    RoomAccess permission = 4;
+    message AdminRights {
+        bool modify_room = 1;
+        bool post_message = 2;
+        bool edit_message = 3;
+        bool delete_message = 4;
+        bool pin_message = 5;
+        bool add_member = 6;
+        bool ban_member = 7;
+        bool get_member = 8;
+        bool add_admin = 9;
+    }
+    AdminRights permission = 4;
 }
 
 message ChannelAddAdminResponse {
     Response response = 1;
     uint64 room_id = 2;
     uint64 member_id = 3;
-    RoomAccess permission = 4;
+    ChannelAddAdmin.AdminRights permission = 4;
 }

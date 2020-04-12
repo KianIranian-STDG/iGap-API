@@ -3,6 +3,7 @@ package proto;
 import "Request.proto";
 import "Response.proto";
 import "Global.proto";
+import "ChannelAddAdmin.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoChannelGetMemberList";
@@ -27,7 +28,7 @@ message ChannelGetMemberListResponse {
     message Member {
         uint64 userId = 1;
         ChannelRoom.Role role = 2;
-        RoomAccess permission = 3;
+        ChannelAddAdmin.AdminRights adminRights = 3;
     }
     repeated Member member = 2;
 }

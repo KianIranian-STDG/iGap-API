@@ -480,9 +480,17 @@ enum PrivacyLevel {
     ALLOW_CONTACTS = 2;
 }
 
+message PostMessageRights {
+    bool send_text = 1;
+    bool send_media = 3;
+    bool send_gif = 4;
+    bool send_sticker= 5;
+    bool send_link = 6;
+}
+
 message RoomAccess {
     bool modify_room = 1;
-    bool post_message = 2;
+    PostMessageRights post_message = 2;
     bool edit_message = 3;
     bool delete_message = 4;
     bool pin_message = 5;

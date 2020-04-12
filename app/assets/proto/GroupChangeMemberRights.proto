@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGroupChangeMemberRights";
+
+message GroupChangeMemberRights {
+    Request request = 1;
+    uint64 room_id = 2;
+    uint64 user_id = 3;
+    message MemberRights {
+        bool send_text = 1;
+        bool send_media = 3;
+        bool send_gif = 4;
+        bool send_sticker= 5;
+        bool send_link = 6;
+        bool pin_message = 7;
+        bool add_member = 8;
+        bool get_member = 9;
+    }
+    MemberRights permission = 4;
+}
+
+message GroupChangeMemberRoleResponse {
+    Response response = 1;
+    uint64 room_id = 2;
+    uint64 user_id = 3;
+    GroupChangeMemberRights.MemberRights permission = 4;
+}
