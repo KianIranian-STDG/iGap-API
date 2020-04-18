@@ -2,6 +2,7 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
+import "GroupChangeMemberRights.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupKickAdmin";
@@ -16,4 +17,5 @@ message GroupKickAdminResponse {
     Response response = 1;
     uint64 room_id = 2;
     uint64 member_id = 3;
+    GroupChangeMemberRights.MemberRights permission = 4;
 }

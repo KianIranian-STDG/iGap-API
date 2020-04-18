@@ -2,7 +2,6 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
-import "Global.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupChangeMemberRights";
@@ -24,7 +23,7 @@ message GroupChangeMemberRights {
     MemberRights permission = 4;
 }
 
-message GroupChangeMemberRoleResponse {
+message GroupChangeMemberRightsResponse {
     Response response = 1;
     uint64 room_id = 2;
     uint64 user_id = 3;
