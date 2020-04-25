@@ -1,5 +1,6 @@
 syntax = "proto3";
 package proto;
+import "GroupChangeMemberRights.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGlobal";
@@ -398,6 +399,7 @@ message GroupRoom {
         string username = 1;
     }
     PublicExtra public_extra = 11;
+    GroupChangeMemberRights.MemberRights room_rights = 12;
 }
 
 message ChannelRoom {
