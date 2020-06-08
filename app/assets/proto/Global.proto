@@ -591,6 +591,7 @@ message Discovery {
         MODEL5 = 4;
         MODEL6 = 5;
         MODEL7 = 6;
+        MODEL8 = 7;
     }
     DiscoveryModel model = 1;
     string scale = 2;
