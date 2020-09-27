@@ -1,0 +1,39 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoInfoConfig";
+
+message InfoConfig {
+    Request request = 1;
+}
+
+message InfoConfigResponse {
+    Response response = 1;
+    bool debug_mode = 2;
+    uint32 default_timeout = 3;
+    bool optimize_mode = 4;
+    uint64 max_file_size = 5;
+    uint64 caption_length_max = 6;
+    uint64 message_length_max = 7;
+    uint32 group_add_member_limit = 8;
+    uint32 channel_add_member_limit = 9;
+    repeated MicroService micro_service = 10;
+    enum Debugger {
+        CRASHLYTICS = 0;
+        SENTRY = 1;
+    }
+    Debugger debugger = 11;
+    string base_url = 12;
+}
+
+message MicroService {
+    string name = 1;
+    enum ConnectionType {
+        HTTPS = 0;
+        SOCKET = 1;
+    }
+    ConnectionType type = 2;
+}
