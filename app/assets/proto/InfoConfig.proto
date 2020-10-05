@@ -27,6 +27,7 @@ message InfoConfigResponse {
     }
     Debugger debugger = 11;
     string base_url = 12;
+    bool show_advertising = 13;
 }
 
 message MicroService {
