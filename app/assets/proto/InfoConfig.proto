@@ -29,10 +29,10 @@ message InfoConfigResponse {
     string base_url = 12;
     bool show_advertising = 13;
     enum Tab {
-        CHAT = 0;
-        ILAND = 1;
-        CALL = 2;
-        CONTACT = 3;
+        CONTACT = 0;
+        CALL = 1;
+        CHAT = 2;
+        ILAND = 3;
         SETTING = 4;
     }
     Tab defaultTab = 14;
