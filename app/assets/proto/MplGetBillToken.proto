@@ -11,8 +11,9 @@ message MplGetBillToken {
     uint64 bill_id = 2;
     uint64 pay_id = 3;
     enum Type {
-        MID_TERM = 0;
-        LAST_TERM = 1;
+        NONE = 0;
+        MID_TERM = 1;
+        LAST_TERM = 2;
     }
     Type type = 4;
 }
