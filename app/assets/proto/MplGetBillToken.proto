@@ -27,4 +27,5 @@ message MplGetBillTokenResponse {
     uint32 discount_amount = 6;
     uint32 original_amount = 7;
     uint32 new_pay_id = 8;
+    string organization_name = 9;
 }
