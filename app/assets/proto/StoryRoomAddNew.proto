@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+import "StoryUserAddNew.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoStoryRoomAddNew";
+
+message StoryRoomAddNew {
+    Request request = 1;
+    uint64 room_id = 2 [jstype=JS_STRING];
+    repeated StoryAddRequest token_batch = 3;
+}
+
+message StoryRoomAddNewResponse {
+    Response response = 1;
+    repeated Story story = 2;
+
+}

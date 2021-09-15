@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoStoryGetStories";
+
+message StoryGetStories {
+    Request request = 1;
+    Pagination pagination = 2;
+}
+
+message GroupedStories {
+    enum Originator {
+        User = 0;
+        Room = 1;
+    }
+    Originator originator = 1;
+    uint64 originator_id = 2 [jstype=JS_STRING];
+    string originator_name = 3;
+    bool seen_all_group_stories = 4;
+    repeated Story stories = 5;
+    bool self = 6;
+}
+
+message StoryGetStoriesResponse {
+    Response response = 1;
+    bool seen_all_stories = 2;
+    repeated GroupedStories grouped_stories = 3;
+}

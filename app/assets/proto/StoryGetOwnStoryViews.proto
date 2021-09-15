@@ -1,0 +1,29 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoStoryGetOwnStoryViews";
+
+message StoryGetOwnStoryViews {
+    Request request = 1;
+    Pagination pagination = 3;
+}
+
+message StoryView {
+    uint64 user_id = 1 [jstype=JS_STRING];
+    uint32 viewed_at = 2;
+}
+
+message GroupedViews {
+    uint64 story_id = 1 [jstype=JS_STRING];
+    uint32 views = 2;
+    repeated StoryView story_views = 3;
+}
+
+message StoryGetOwnStoryViewsResponse {
+    Response response = 1;
+    repeated GroupedViews grouped_views = 3;
+}

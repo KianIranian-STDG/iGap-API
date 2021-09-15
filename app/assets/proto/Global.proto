@@ -51,6 +51,8 @@ enum RoomMessageType {
     CONTACT = 13;
     WALLET = 15;
     STICKER = 16;
+    STORY = 17;
+    STORY_REPLY = 18;
 }
 
 enum RoomMessageStatus {
@@ -99,7 +101,7 @@ message RoomMessageLog {
     ExtraType extra_type = 2;
 
     message TargetUser {
-        uint64 id = 1;
+        uint64 id = 1 [jstype=JS_STRING];
     }
     TargetUser target_user = 3;
 }
@@ -123,9 +125,9 @@ message RoomMessageWallet {
     Type type = 1;
 
     message MoneyTransfer {
-        uint64 from_user_id = 1;
-        uint64 to_user_id = 2;
-        uint64 amount = 3;
+        uint64 from_user_id = 1 [jstype=JS_STRING];
+        uint64 to_user_id = 2 [jstype=JS_STRING];
+        uint64 amount = 3 [jstype=JS_STRING];
         int64 trace_number = 4;
         int64 invoice_number = 5;
         uint32 pay_time = 6;
@@ -136,11 +138,11 @@ message RoomMessageWallet {
     MoneyTransfer money_transfer = 2;
 
     message CardToCard {
-        uint64 from_user_id = 1;
-        uint64 to_user_id = 2;
-        uint64 order_id = 3;
+        uint64 from_user_id = 1 [jstype=JS_STRING];
+        uint64 to_user_id = 2 [jstype=JS_STRING];
+        uint64 order_id = 3 [jstype=JS_STRING];
         string token = 4;
-        uint64 amount = 5;
+        uint64 amount = 5 [jstype=JS_STRING];
         string source_card_number = 6;
         string dest_card_number = 7;
         uint32 request_time = 8;
@@ -163,19 +165,19 @@ message RoomMessageWallet {
             RIGHTEL = 5;
         }
 
-        uint64 from_user_id = 1;
-        uint64 order_id = 2;
+        uint64 from_user_id = 1 [jstype=JS_STRING];
+        uint64 order_id = 2 [jstype=JS_STRING];
         string my_token = 3;
-        uint64 token = 4;
-        uint64 amount = 5;
+        uint64 token = 4 [jstype=JS_STRING];
+        uint64 amount = 5 [jstype=JS_STRING];
         string requester_mobile_number = 6;
         string charge_mobile_number = 7;
         Type topup_type = 8;
         string card_number = 9;
         string merchant_name = 10;
-        uint64 terminal_no = 11;
-        uint64 rrn = 12;
-        uint64 trace_number = 13;
+        uint64 terminal_no = 11 [jstype=JS_STRING];
+        uint64 rrn = 12 [jstype=JS_STRING];
+        uint64 trace_number = 13 [jstype=JS_STRING];
         uint32 request_time = 14;
         bool status = 15;
         string status_description = 16;
@@ -183,19 +185,19 @@ message RoomMessageWallet {
     Topup topup = 4;
 
     message Bill {
-        uint64 from_user_id = 1;
-        uint64 order_id = 2;
+        uint64 from_user_id = 1 [jstype=JS_STRING];
+        uint64 order_id = 2 [jstype=JS_STRING];
         string my_token = 3;
-        uint64 token = 4;
-        uint64 amount = 5;
+        uint64 token = 4 [jstype=JS_STRING];
+        uint64 amount = 5 [jstype=JS_STRING];
         string pay_id = 6;
         string bill_id = 7;
         string bill_type = 8;
         string card_number = 9;
         string merchant_name = 10;
-        uint64 terminal_no = 11;
-        uint64 rrn = 12;
-        uint64 trace_number = 13;
+        uint64 terminal_no = 11 [jstype=JS_STRING];
+        uint64 rrn = 12 [jstype=JS_STRING];
+        uint64 trace_number = 13 [jstype=JS_STRING];
         uint32 request_time = 14;
         bool status = 15;
         string status_description = 16;
@@ -204,14 +206,53 @@ message RoomMessageWallet {
 }
 
 message RoomMessageForwardFrom {
-    uint64 room_id = 1;
-    uint64 message_id = 2;
+    uint64 room_id = 1 [jstype=JS_STRING];
+    uint64 message_id = 2 [jstype=JS_STRING];
+}
+
+message RoomMessageStory {
+    enum Status {
+        ACTIVE = 0;
+        EXPIRED = 1;
+        PRIVATE = 2;
+        DELETED = 3;
+    }
+    Status status = 1;
+    Story story = 2;
+}
+
+message RoomMessageStoryReply {
+    uint64 story_id = 1 [jstype=JS_STRING];
+    string caption = 2;
+}
+
+message RoomMessageStoryForward {
+    uint64 story_id = 1 [jstype=JS_STRING];
+}
+
+message Story {
+    uint64 id = 1 [jstype=JS_STRING];
+    string file_token = 2;
+    File file_details = 3;
+    enum Type {
+        STORY = 0;
+        LIVE = 1;
+    }
+    Type type = 4;
+    uint64 user_id = 5 [jstype=JS_STRING];
+    uint64 room_id = 6 [jstype=JS_STRING];
+    string caption = 7;
+    string link = 8;
+    uint32 created_at = 9;
+    uint32 end_at = 10;
+    bool seen = 11;
+    bool duplicated = 12;
 }
 
 message RegisteredUser {
-    uint64 id = 1;
+    uint64 id = 1 [jstype=JS_STRING];
     string username = 2;
-    uint64 phone = 3;
+    uint64 phone = 3 [jstype=JS_STRING];
     string first_name = 4;
     string last_name = 5;
     string display_name = 6;
@@ -258,15 +299,16 @@ enum ClientAction {
 }
 
 message Avatar {
-    uint64 id = 1;
+    uint64 id = 1 [jstype=JS_STRING];
     File file = 2;
 }
 
 message RoomMessage {
-    uint64 message_id = 1;
-    uint64 message_version = 2;
+    uint64 room_id = 26;
+    uint64 message_id = 1 [jstype=JS_STRING];
+    uint64 message_version = 2 [jstype=JS_STRING];
     RoomMessageStatus status = 3;
-    uint64 status_version = 4;
+    uint64 status_version = 4 [jstype=JS_STRING];
     RoomMessageType message_type = 5;
     string message = 6;
     File attachment = 7;
@@ -275,13 +317,13 @@ message RoomMessage {
         string hash = 1;
 
         message User {
-            uint64 user_id = 1;
+            uint64 user_id = 1 [jstype=JS_STRING];
             string cache_id = 2;
         }
         User user = 2;
 
         message Room {
-            uint64 room_id = 1;
+            uint64 room_id = 1 [jstype=JS_STRING];
         }
         Room room = 3;
     }
@@ -298,9 +340,10 @@ message RoomMessage {
 
     RoomMessage forward_from = 16;
     RoomMessage reply_to = 17;
+    RoomMessageStory story = 25;
 
-    uint64 previous_message_id = 18;
-    uint64 random_id = 21;
+    uint64 previous_message_id = 18 [jstype=JS_STRING];
+    uint64 random_id = 21 [jstype=JS_STRING];
 
     uint32 additional_type = 23;
     string additional_data = 24;
@@ -323,7 +366,7 @@ message RoomMessage {
 
 message RoomDraft {
     string message = 1;
-    uint64 reply_to = 2;
+    uint64 reply_to = 2 [jstype=JS_STRING];
     uint32 draft_time = 3;
 }
 
@@ -333,7 +376,7 @@ enum RoomMute {
 }
 
 message Room {
-    uint64 id = 1;
+    uint64 id = 1 [jstype=JS_STRING];
     enum Type {
         CHAT = 0;
         GROUP = 1;
@@ -350,7 +393,7 @@ message Room {
     RoomDraft draft = 10;
     RoomMessage first_unread_message = 14;
     RoomMute room_mute = 15;
-    uint64 pin_id = 16;
+    uint64 pin_id = 16 [jstype=JS_STRING];
     RoomMessage pinned_message = 17;
     uint32 priority = 18;
 
@@ -434,7 +477,7 @@ message ChannelRoom {
     PublicExtra public_extra = 9;
 
     bool signature = 10;
-    uint64 seen_id = 11;
+    uint64 seen_id = 11 [jstype=JS_STRING];
     bool verified = 12;
     bool reaction_status = 13;
 }
@@ -606,7 +649,7 @@ message PollField {
     uint32 orderid = 2;
     uint32 id = 3;
     bool clicked = 4;
-    uint64 sum = 5;
+    uint64 sum = 5 [jstype=JS_STRING];
     bool clickable = 6;
     string label = 7;
 }
@@ -625,9 +668,9 @@ message IVandActivity {
 }
 
 message MplSale {
-    uint64 invoice_number = 1;
-    uint64 from_user_id = 2;
-    uint64 amount = 3;
+    uint64 invoice_number = 1 [jstype=JS_STRING];
+    uint64 from_user_id = 2 [jstype=JS_STRING];
+    uint64 amount = 3 [jstype=JS_STRING];
     int64 trace_number = 4;
     uint32 pay_time = 5;
     string description = 6;
@@ -643,7 +686,7 @@ message MplSale {
 }
 
 message MplTransaction {
-    uint64 order_id = 1;
+    uint64 order_id = 1 [jstype=JS_STRING];
     string token = 2;
     uint32 pay_time = 3;
     enum Type {
@@ -660,12 +703,12 @@ message MplTransaction {
         string PayId = 2;
         string BillType = 3;
         uint32 Status = 4;
-        uint64 Amount = 5;
+        uint64 Amount = 5 [jstype=JS_STRING];
         string CardNumber = 6;
         string MerchantName = 7;
-        uint64 OrderId = 8;
-        uint64 RequestDateTime = 9;
-        uint64 RRN = 10;
+        uint64 OrderId = 8 [jstype=JS_STRING];
+        uint64 RequestDateTime = 9 [jstype=JS_STRING];
+        uint64 RRN = 10 [jstype=JS_STRING];
         string StatusDescription = 11;
         uint32 TerminalNo = 12;
         uint32 TraceNo = 13;
@@ -673,16 +716,16 @@ message MplTransaction {
     Bill bill = 5;
 
     message Topup {
-        uint64 RequesterMobileNumber = 1;
-        uint64 ChargeMobileNumber = 2;
+        uint64 RequesterMobileNumber = 1 [jstype=JS_STRING];
+        uint64 ChargeMobileNumber = 2 [jstype=JS_STRING];
         uint32 TopupType = 3;
         uint32 Status = 4;
-        uint64 Amount = 5;
+        uint64 Amount = 5 [jstype=JS_STRING];
         string CardNumber = 6;
         string MerchantName = 7;
-        uint64 OrderId = 8;
-        uint64 RequestDateTime = 9;
-        uint64 RRN = 10;
+        uint64 OrderId = 8 [jstype=JS_STRING];
+        uint64 RequestDateTime = 9 [jstype=JS_STRING];
+        uint64 RRN = 10 [jstype=JS_STRING];
         string StatusDescription = 11;
         uint32 TerminalNo = 12;
         uint32 TraceNo = 13;
@@ -691,12 +734,12 @@ message MplTransaction {
 
     message Sales {
         uint32 Status = 1;
-        uint64 Amount = 2;
+        uint64 Amount = 2 [jstype=JS_STRING];
         string CardNumber = 3;
         string MerchantName = 4;
-        uint64 OrderId = 5;
-        uint64 RequestDateTime = 6;
-        uint64 RRN = 7;
+        uint64 OrderId = 5 [jstype=JS_STRING];
+        uint64 RequestDateTime = 6 [jstype=JS_STRING];
+        uint64 RRN = 7 [jstype=JS_STRING];
         string StatusDescription = 8;
         uint32 TerminalNo = 9;
         uint32 TraceNo = 10;
@@ -705,15 +748,15 @@ message MplTransaction {
 
     message CardToCard {
         uint32 Status = 1;
-        uint64 Amount = 2;
+        uint64 Amount = 2 [jstype=JS_STRING];
         string SourceCardNumber = 3;
         string DestCardNumber = 4;
         string BankName = 5;
         string DestBankName = 6;
         string CardOwnerName = 7;
-        uint64 OrderId = 8;
-        uint64 RequestDateTime = 9;
-        uint64 RRN = 10;
+        uint64 OrderId = 8 [jstype=JS_STRING];
+        uint64 RequestDateTime = 9 [jstype=JS_STRING];
+        uint64 RRN = 10 [jstype=JS_STRING];
         string StatusDescription = 11;
         uint32 TraceNo = 13;
     }
