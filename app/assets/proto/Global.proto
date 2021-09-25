@@ -613,6 +613,7 @@ message DiscoveryField {
         POLL_RESULT = 42;
         VIRTUAL_GIFT_CARD = 43;
         NEWS_DETAIL = 44;
+        QRPAY = 45;
     }
 
     ButtonActionType actiontype = 3;
