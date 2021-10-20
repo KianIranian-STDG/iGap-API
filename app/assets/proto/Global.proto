@@ -208,6 +208,8 @@ message RoomMessageWallet {
 message RoomMessageForwardFrom {
     uint64 room_id = 1 [jstype=JS_STRING];
     uint64 message_id = 2 [jstype=JS_STRING];
+    uint64 document_id = 3 [jstype=JS_STRING];
+
 }
 
 message RoomMessageStory {
@@ -362,6 +364,8 @@ message RoomMessage {
         string thumbs_down_label = 4;
     }
     ChannelExtra channel_extra = 20;
+    uint64 document_id = 27;
+    uint64 version_document_id = 28;
 }
 
 message RoomDraft {

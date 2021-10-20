@@ -21,6 +21,7 @@ message ClientRoomReport {
     Reason reason = 4;
 
     string description = 5;
+    uint64 document_id = 6;
 }
 
 message ClientRoomReportResponse {

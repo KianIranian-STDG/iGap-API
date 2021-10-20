@@ -24,6 +24,7 @@ message ClientSearchRoomHistory {
     Filter filter = 4;
 
     uint64 offset_message_id = 5;
+    uint64 offset_document_id = 6;
 }
 
 message ClientSearchRoomHistoryResponse {

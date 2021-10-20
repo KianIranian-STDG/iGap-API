@@ -9,7 +9,13 @@ option java_outer_classname = "ProtoChannelGetMessagesStats";
 message ChannelGetMessagesStats {
     Request request = 1;
     uint64 room_id = 2;
-    repeated uint64 message_id = 3;
+    repeated uint64 message_id = 3 [deprecated = true];
+
+    message messageIdInfo {
+        uint64 message_id = 1;
+        uint64 document_id = 2;
+    }
+    repeated messageIdInfo message_id_info = 4;
 }
 
 message ChannelGetMessagesStatsResponse {
@@ -20,6 +26,7 @@ message ChannelGetMessagesStatsResponse {
         string views_label = 2;
         string thumbs_up_label = 3;
         string thumbs_down_label = 4;
+        uint64 document_id = 5;
     }
     repeated Stats stats = 2;
 }

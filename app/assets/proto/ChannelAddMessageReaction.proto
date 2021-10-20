@@ -12,6 +12,7 @@ message ChannelAddMessageReaction {
     uint64 room_id = 2;
     uint64 message_id = 3;
     RoomMessageReaction reaction = 4;
+    uint64 document_id = 5;
 }
 
 message ChannelAddMessageReactionResponse {

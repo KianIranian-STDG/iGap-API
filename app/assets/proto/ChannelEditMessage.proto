@@ -12,6 +12,7 @@ message ChannelEditMessage {
     uint64 room_id = 2;
     uint64 message_id = 3;
     string message = 4;
+    uint64 document_id = 5;
 }
 
 message ChannelEditMessageResponse {
@@ -21,4 +22,5 @@ message ChannelEditMessageResponse {
     uint64 message_version = 4;
     string message = 5;
     RoomMessageType message_type = 6;
+    uint64 document_id = 7;
 }

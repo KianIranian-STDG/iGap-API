@@ -12,6 +12,7 @@ message ChatUpdateStatus {
     uint64 room_id = 2;
     uint64 message_id = 3;
     RoomMessageStatus status = 4;
+    uint64 document_id = 5;
 }
 
 message ChatUpdateStatusResponse {
@@ -21,4 +22,6 @@ message ChatUpdateStatusResponse {
     RoomMessageStatus status = 4;
     uint64 status_version = 5;
     string updater_author_hash = 6;
+    uint64 document_id = 7;
+    uint64 version_document_id = 8;
 }

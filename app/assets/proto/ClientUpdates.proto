@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto.updatequeue;
+import "ClientUpdate.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientUpdates";
+
+message ClientUpdates {
+  uint64 user_id = 1;
+  uint64 room_id = 2;
+  uint64 last_pts = 3;
+  uint32 pts_count =4;
+
+  repeated Update updates = 5;
+}
