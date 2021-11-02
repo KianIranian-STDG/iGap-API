@@ -249,6 +249,12 @@ message Story {
     uint32 end_at = 10;
     bool seen = 11;
     bool duplicated = 12;
+    Originator originator = 13;
+}
+
+enum Originator {
+    USER = 0;
+    ROOM = 1;
 }
 
 message RegisteredUser {
