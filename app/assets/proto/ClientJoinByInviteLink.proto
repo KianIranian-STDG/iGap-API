@@ -13,4 +13,6 @@ message ClientJoinByInviteLink {
 
 message ClientJoinByInviteLinkResponse {
     Response response = 1;
+    uint64 room_id = 2;
+    uint64 user_id = 3;
 }
