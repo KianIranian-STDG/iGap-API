@@ -38,4 +38,6 @@ message UserLoginResponse {
     string access_token = 9;
     string contact_hash = 10;
     int32 role = 11;
+    bool need_fcm_token = 12;
+
 }
