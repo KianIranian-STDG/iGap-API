@@ -250,6 +250,7 @@ message Story {
     bool seen = 11;
     bool duplicated = 12;
     Originator originator = 13;
+    uint32 views = 14;
 }
 
 enum Originator {
