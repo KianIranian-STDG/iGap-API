@@ -91,6 +91,7 @@ message RoomMessageLog {
         MISSED_SCREEN_SHARE = 12;
         MISSED_SECRET_CHAT = 13;
         PINNED_MESSAGE = 14;
+        CHANGE_PHONE_NUMBER = 15;
     }
     Type type = 1;
 
@@ -310,6 +311,14 @@ enum ClientAction {
 message Avatar {
     uint64 id = 1 [jstype=JS_STRING];
     File file = 2;
+}
+
+enum RoomType {
+    CHAT = 0;
+    PRIVATE_GROUP = 1;
+    PUBLIC_GROUP = 2;
+    PRIVATE_CHANNEL = 3;
+    PUBLIC_CHANNEL = 4;
 }
 
 message RoomMessage {
@@ -554,6 +563,9 @@ message RoomAccess {
     bool ban_member = 7;
     bool get_member = 8;
     bool add_admin = 9;
+    bool add_story = 10;
+    bool delete_story = 11;
+    bool show_story_views = 12;
 }
 
 message Wallpaper {

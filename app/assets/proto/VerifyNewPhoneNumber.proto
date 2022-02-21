@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoVerifyNewPhoneNumber";
+
+message VerifyNewPhoneNumber {
+    Request request = 1;
+    string verifyCode = 2;
+}
+
+message VerifyNewPhoneNumberResponse {
+    Response response = 1;
+}

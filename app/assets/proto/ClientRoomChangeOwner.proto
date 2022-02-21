@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientPinRoom";
+
+message ClientPinRoom {
+    Request request = 1;
+    uint64 room_id = 2;
+    bool pin = 3;
+}
+
+message ClientPinRoomResponse {
+    Response response = 1;
+    uint64 room_id = 2;
+    uint64 pin_id = 3;
+}

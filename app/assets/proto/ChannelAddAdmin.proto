@@ -20,6 +20,9 @@ message ChannelAddAdmin {
         bool ban_member = 7;
         bool get_member = 8;
         bool add_admin = 9;
+        bool add_story = 10;
+        bool delete_story = 11;
+        bool show_story_views = 12;
     }
     AdminRights permission = 4;
 }
