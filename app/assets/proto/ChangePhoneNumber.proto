@@ -9,8 +9,8 @@ option java_outer_classname = "ProtoChangePhoneNumber";
 
 message ChangePhoneNumber {
     Request request = 1;
-    string phoneNumber = 2;
-    string countryCode = 3;
+    string phone_number = 2;
+    string country_code = 3;
 }
 
 message ChangePhoneNumberResponse {

@@ -8,7 +8,7 @@ option java_outer_classname = "ProtoVerifyNewPhoneNumber";
 
 message VerifyNewPhoneNumber {
     Request request = 1;
-    string verifyCode = 2;
+    string verify_code = 2;
 }
 
 message VerifyNewPhoneNumberResponse {
