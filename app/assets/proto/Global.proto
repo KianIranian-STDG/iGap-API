@@ -313,6 +313,14 @@ message Avatar {
     File file = 2;
 }
 
+enum RoomType {
+    CHAT = 0;
+    PRIVATE_GROUP = 1;
+    PUBLIC_GROUP = 2;
+    PRIVATE_CHANNEL = 3;
+    PUBLIC_CHANNEL = 4;
+}
+
 message RoomMessage {
     uint64 room_id = 26;
     uint64 message_id = 1 [jstype=JS_STRING];
