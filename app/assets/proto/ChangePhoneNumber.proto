@@ -9,7 +9,7 @@ option java_outer_classname = "ProtoChangePhoneNumber";
 
 message ChangePhoneNumber {
     Request request = 1;
-    string phone_number = 2;
+    uint64 phone_number = 2;
     string country_code = 3;
 }
 
