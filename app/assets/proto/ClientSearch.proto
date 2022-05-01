@@ -27,7 +27,7 @@ message ClientSearchResponse {
             ROOM = 1;
         }
 
-        Category info = 1;
+        Category category = 1;
         Type type = 2;
         RegisteredUser user = 3;
         Room room = 4;
