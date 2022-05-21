@@ -17,6 +17,7 @@ message ClientRegisterDevice {
         WEB = 3;
     }
     Type type = 3;
+    string metrix = 4;
 }
 
 message ClientRegisterDeviceResponse {
