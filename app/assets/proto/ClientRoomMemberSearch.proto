@@ -1,0 +1,33 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientRoomMemberSearch";
+
+message ClientRoomMemberSearch {
+    Request request = 1;
+    string query = 2;
+    Role role = 3;
+}
+
+message ClientRoomMemberSearchResponse {
+    Response response = 1;
+
+    message Info {
+        RegisteredUser user = 1;
+        RoomAccess room_access = 2;
+        Role role = 3;
+    }
+
+    repeated Info infos = 2;
+}
+
+enum Role {
+    MEMBER = 0;
+    MODERATOR = 1;
+    ADMIN = 2;
+    OWNER = 3;
+}
