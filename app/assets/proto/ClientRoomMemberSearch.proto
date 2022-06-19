@@ -9,20 +9,21 @@ option java_outer_classname = "ProtoClientRoomMemberSearch";
 
 message ClientRoomMemberSearch {
     Request request = 1;
-    string query = 2;
-    Role role = 3;
+    int64 room_id = 2;
+    string query = 3;
+    Role role = 4;
 }
 
 message ClientRoomMemberSearchResponse {
     Response response = 1;
+    int64 room_id = 2;
 
     message Info {
         RegisteredUser user = 1;
         RoomAccess room_access = 2;
         Role role = 3;
     }
-
-    repeated Info infos = 2;
+    repeated Info infos = 3;
 }
 
 enum Role {
