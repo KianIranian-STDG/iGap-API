@@ -9,14 +9,14 @@ option java_outer_classname = "ProtoClientRoomMemberSearch";
 
 message ClientRoomMemberSearch {
     Request request = 1;
-    int64 room_id = 2;
+    uint64 room_id = 2;
     string query = 3;
     Role role = 4;
 }
 
 message ClientRoomMemberSearchResponse {
     Response response = 1;
-    int64 room_id = 2;
+    uint64 room_id = 2;
 
     message Info {
         RegisteredUser user = 1;

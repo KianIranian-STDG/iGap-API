@@ -9,12 +9,12 @@ option java_outer_classname = "ProtoGroupRoomMemberMention";
 
 message GroupRoomMemberMention {
     Request request = 1;
-    int64 room_id = 2;
+    uint64 room_id = 2;
     string query = 3;
 }
 
 message GroupRoomMemberMentionResponse {
     Response response = 1;
-    int64 room_id = 2;
+    uint64 room_id = 2;
     repeated RegisteredUser users = 3;
 }
