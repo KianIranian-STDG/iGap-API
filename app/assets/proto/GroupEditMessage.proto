@@ -2,7 +2,6 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
-import "Global.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupEditMessage";
@@ -13,6 +12,7 @@ message GroupEditMessage {
     uint64 message_id = 3;
     string message = 4;
     uint64 document_id = 5;
+    Mention mentions = 6;
 }
 
 message GroupEditMessageResponse {
@@ -23,4 +23,5 @@ message GroupEditMessageResponse {
     string message = 5;
     RoomMessageType message_type = 6;
     uint64 document_id = 7;
+    Mention mentions = 8;
 }

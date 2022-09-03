@@ -2,6 +2,7 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
+import "Global.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoClientCondition";
@@ -20,6 +21,7 @@ message ClientCondition {
             uint64 message_id = 1;
             string message = 2;
             uint64 document_id = 3;
+            Mention mentions = 4;
         }
         repeated OfflineEdited offline_edited = 7;
 

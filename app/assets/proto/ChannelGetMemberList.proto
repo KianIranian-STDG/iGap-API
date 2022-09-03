@@ -2,7 +2,6 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
-import "Global.proto";
 import "ChannelAddAdmin.proto";
 
 option java_package = "net.iGap.proto";
@@ -29,6 +28,7 @@ message ChannelGetMemberListResponse {
         uint64 userId = 1;
         ChannelRoom.Role role = 2;
         ChannelAddAdmin.AdminRights adminRights = 3;
+        RegisteredUser userInfo = 4;
     }
     repeated Member member = 2;
 }

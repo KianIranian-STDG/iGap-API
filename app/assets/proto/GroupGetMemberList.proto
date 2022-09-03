@@ -2,7 +2,6 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
-import "Global.proto";
 import "GroupAddAdmin.proto";
 import "GroupChangeMemberRights.proto";
 
@@ -31,6 +30,7 @@ message GroupGetMemberListResponse {
         GroupRoom.Role role = 2;
         GroupAddAdmin.AdminRights adminRights = 3;
         GroupChangeMemberRights.MemberRights memberRights = 4;
+        RegisteredUser userInfo = 5;
     }
     repeated Member member = 2;
 }

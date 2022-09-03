@@ -2,7 +2,6 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
-import "Global.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupSendMessage";
@@ -23,6 +22,7 @@ message GroupSendMessage {
 
     uint32 additional_type = 11;
     string additional_data = 12;
+    Mention mentions = 15;
 }
 
 message GroupSendMessageResponse {

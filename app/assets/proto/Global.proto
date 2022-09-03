@@ -382,6 +382,11 @@ message RoomMessage {
     ChannelExtra channel_extra = 20;
     uint64 document_id = 27;
     uint64 version_document_id = 28;
+
+    message GroupExtra {
+        Mention mentions = 1;
+    }
+    GroupExtra group_extra = 29;
 }
 
 message RoomDraft {
@@ -427,6 +432,7 @@ message Room {
 
 message ChatRoom {
     RegisteredUser peer = 1;
+    BotInfo botInfo = 2;
 }
 
 message GroupRoom {
@@ -785,4 +791,21 @@ message MplTransaction {
         uint32 TraceNo = 13;
     }
     CardToCard cardtocard = 8;
+}
+
+message BotInfo {
+
+    uint64 id = 1;
+    string welcomeMessage = 2;
+
+    message BotAction {
+        string key = 1;
+        string value = 2;
+    }
+
+    repeated BotAction actions = 3;
+}
+
+message Mention{
+    repeated uint64 userIds = 1;
 }
