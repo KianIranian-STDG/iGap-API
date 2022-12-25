@@ -447,10 +447,12 @@
 
 # Update Queue 11xx , 311xx
 
-| Id                               | Details                              | Proto file                                                                  |
-|----------------------------------|--------------------------------------|-----------------------------------------------------------------------------|
-| <a name="action_1100">1100</a>   | [Details](ClientGetState.md)         | [ClientGetState](../../../../app/assets/proto/ClientGetState.proto)         |
-| <a name="action_31100">31100</a> | [Details](ClientGetStateResponse.md) | [ClientGetStateResponse](../../../../app/assets/proto/ClientGetState.proto) |
+| Id                               | Details                                   | Proto file                                                                            |
+|----------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------|
+| <a name="action_1100">1100</a>   | [Details](ClientGetState.md)              | [ClientGetState](../../../../app/assets/proto/ClientGetState.proto)                   |
+| <a name="action_31100">31100</a> | [Details](ClientGetStateResponse.md)      | [ClientGetStateResponse](../../../../app/assets/proto/ClientGetState.proto)           |
+| <a name="action_1101">1101</a>   | [Details](ClientGetDifference.md)         | [ClientGetDifference](../../../../app/assets/proto/ClientGetDifference.proto)         |
+| <a name="action_31101">31101</a> | [Details](ClientGetDifferenceResponse.md) | [ClientGetDifferenceResponse](../../../../app/assets/proto/ClientGetDifference.proto) |
 
 # Wallet 90xx , 390xx
 
