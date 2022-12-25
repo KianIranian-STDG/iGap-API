@@ -445,7 +445,14 @@
 | <a name="action_1007">1007</a>   | [Details](GeoGetConfiguration.md)            | [GeoGetConfiguration](../../../../app/assets/proto/GeoGetConfiguration.proto)               |
 | <a name="action_31007">31007</a> | [Details](GeoGetConfigurationResponse.md)    | [GeoGetConfigurationResponse](../../../../app/assets/proto/GeoGetConfiguration.proto)       |
 
-# Wallet 90xx
+# Update Queue 11xx , 311xx
+
+| Id                               | Details                              | Proto file                                                                  |
+|----------------------------------|--------------------------------------|-----------------------------------------------------------------------------|
+| <a name="action_1100">1100</a>   | [Details](ClientGetState.md)         | [ClientGetState](../../../../app/assets/proto/ClientGetState.proto)         |
+| <a name="action_31100">31100</a> | [Details](ClientGetStateResponse.md) | [ClientGetStateResponse](../../../../app/assets/proto/ClientGetState.proto) |
+
+# Wallet 90xx , 390xx
 
 | Id                               | Details                                       | Proto file                                                                                    |
 |----------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------|
