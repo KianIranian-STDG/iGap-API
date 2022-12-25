@@ -454,6 +454,13 @@
 | <a name="action_1101">1101</a>   | [Details](ClientGetDifference.md)         | [ClientGetDifference](../../../../app/assets/proto/ClientGetDifference.proto)         |
 | <a name="action_31101">31101</a> | [Details](ClientGetDifferenceResponse.md) | [ClientGetDifferenceResponse](../../../../app/assets/proto/ClientGetDifference.proto) |
 
+# Story 12xx , 312xx
+
+| Id                               | Details                               | Proto file                                                                    |
+|----------------------------------|---------------------------------------|-------------------------------------------------------------------------------|
+| <a name="action_1201">1201</a>   | [Details](StoryUserAddNew.md)         | [StoryUserAddNew](../../../../app/assets/proto/StoryUserAddNew.proto)         |
+| <a name="action_31201">31201</a> | [Details](StoryUserAddNewResponse.md) | [StoryUserAddNewResponse](../../../../app/assets/proto/StoryUserAddNew.proto) |
+
 # Wallet 90xx , 390xx
 
 | Id                               | Details                                       | Proto file                                                                                    |
