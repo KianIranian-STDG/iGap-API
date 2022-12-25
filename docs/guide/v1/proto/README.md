@@ -299,6 +299,8 @@
 | <a name="action_30503">30503</a> | [Details](InfoPageResponse.md)      | [InfoPageResponse](../../../../app/assets/proto/InfoPage.proto)           |
 | <a name="action_504">504</a>     | [Details](InfoWallpaper.md)         | [InfoWallpaper](../../../../app/assets/proto/InfoWallpaper.proto)         |
 | <a name="action_30504">30504</a> | [Details](InfoWallpaperResponse.md) | [InfoWallpaperResponse](../../../../app/assets/proto/InfoWallpaper.proto) |
+| <a name="action_505">505</a>     | [Details](InfoUpdate.md)            | [InfoUpdate](../../../../app/assets/proto/InfoUpdate.proto)               |
+| <a name="action_30505">30505</a> | [Details](InfoUpdateResponse.md)    | [InfoUpdateResponse](../../../../app/assets/proto/InfoUpdate.proto)       |
 
 # Client 6xx , 306xx
 
