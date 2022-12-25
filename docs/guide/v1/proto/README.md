@@ -382,18 +382,18 @@
 
 # QR Code 8xx , 806xx
 
-| Id                               | Details                                | Proto file                                                                      |
-|----------------------------------|----------------------------------------|---------------------------------------------------------------------------------|
-| <a name="action_800">800</a>     | [Details](QrCodeJoin.md)               | [QrCodeJoin](../../../../app/assets/proto/QrCodeJoin.proto)                     |
-| <a name="action_30800">30800</a> | [Details](QrCodeJoinResponse.md)       | [QrCodeJoinResponse](../../../../app/assets/proto/QrCodeJoin.proto)             |
-| <a name="action_801">801</a>     | [Details](QrCodeResolve.md)            | [QrCodeResolve](../../../../app/assets/proto/QrCodeResolve.proto)               |
-| <a name="action_30801">30801</a> | [Details](QrCodeResolveResponse.md)    | [QrCodeResolveResponse](../../../../app/assets/proto/QrCodeResolve.proto)       |
-| <a name="action_802">802</a>     | [Details](QrCodeNewDevice.md)          | [QrCodeNewDevice](../../../../app/assets/proto/QrCodeNewDevice.proto)           |
-| <a name="action_30802">30802</a> | [Details](QrCodeNewDeviceResponse.md)  | [QrCodeNewDeviceResponse](../../../../app/assets/proto/QrCodeNewDevice.proto)   |
-| <a name="action_803">803</a>     | [Details](QrCodeAddContact.md)         | [QrCodeAddContact](../../../../app/assets/proto/QrCodeAddContact.proto)         |
-| <a name="action_30803">30803</a> | [Details](QrCodeAddContactResponse.md) | [QrCodeAddContactResponse](../../../../app/assets/proto/QrCodeAddContact.proto) |
-| <a name="action_804">804</a>     | [Details](QrCodeAddMe.md)              | [QrCodeAddMe](../../../../app/assets/proto/QrCodeAddMe.proto)                   |
-| <a name="action_30804">30804</a> | [Details](QrCodeAddMeResponse.md)      | [QrCodeAddMeResponse](../../../../app/assets/proto/QrCodeAddMe.proto)           |
+| Id                                      | Details                                    | Proto file                                                                          |
+|-----------------------------------------|--------------------------------------------|-------------------------------------------------------------------------------------|
+| <a name="action_800">800</a>            | [Details](QrCodeJoin.md)                   | [QrCodeJoin](../../../../app/assets/proto/QrCodeJoin.proto)                         |
+| <a name="action_30800">30800</a>        | [Details](QrCodeJoinResponse.md)           | [QrCodeJoinResponse](../../../../app/assets/proto/QrCodeJoin.proto)                 |
+| <a name="action_801">801</a>            | [Details](QrCodeResolve.md)                | [QrCodeResolve](../../../../app/assets/proto/QrCodeResolve.proto)                   |
+| <a name="action_30801">30801</a>        | [Details](QrCodeResolveResponse.md)        | [QrCodeResolveResponse](../../../../app/assets/proto/QrCodeResolve.proto)           |
+| <a name="action_802">802</a>            | [Details](QrCodeNewDevice.md)              | [QrCodeNewDevice](../../../../app/assets/proto/QrCodeNewDevice.proto)               |
+| <a name="action_30802">30802</a>        | [Details](QrCodeNewDeviceResponse.md)      | [QrCodeNewDeviceResponse](../../../../app/assets/proto/QrCodeNewDevice.proto)       |
+| <a name="action_803"><s>803</s></a>     | ~~[Details](QrCodeAddContact.md)~~         | ~~[QrCodeAddContact](../../../../app/assets/proto/QrCodeAddContact.proto)~~         |
+| <a name="action_30803"><s>30803</s></a> | ~~[Details](QrCodeAddContactResponse.md)~~ | ~~[QrCodeAddContactResponse](../../../../app/assets/proto/QrCodeAddContact.proto)~~ |
+| <a name="action_804"><s>804</s></a>     | ~~[Details](QrCodeAddMe.md)~~              | ~~[QrCodeAddMe](../../../../app/assets/proto/QrCodeAddMe.proto)~~                   |
+| <a name="action_30804"><s>30804</s></a> | ~~[Details](QrCodeAddMeResponse.md)~~      | ~~[QrCodeAddMeResponse](../../../../app/assets/proto/QrCodeAddMe.proto)~~           |
 
 # Signaling 9xx , 309xx
 
@@ -419,6 +419,8 @@
 | <a name="action_30908">30908</a> | [Details](SignalingClearLogResponse.md)         | [SignalingClearLogResponse](../../../../app/assets/proto/SignalingClearLog.proto)                 |
 | <a name="action_909">909</a>     | [Details](SignalingRate.md)                     | [SignalingRate](../../../../app/assets/proto/SignalingRate.proto)                                 |
 | <a name="action_30909">30909</a> | [Details](SignalingRateResponse.md)             | [SignalingRateResponse](../../../../app/assets/proto/SignalingRate.proto)                         |
+| <a name="action_910">910</a>     | [Details](CallRequest.md)                       | [CallRequest](../../../../app/assets/proto/CallRequest.proto)                                     |
+| <a name="action_30910">30910</a> | [Details](CallRequestResponse.md)               | [CallRequestResponse](../../../../app/assets/proto/CallRequest.proto)                             |
 
 # Geo 10xx , 310xx
 
