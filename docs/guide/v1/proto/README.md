@@ -358,6 +358,8 @@
 | <a name="action_30625">30625</a> | [Details](ClientSetPollItemClickResponse.md)          | [ClientSetPollResponseItemClick](../../../../app/assets/proto/ClientSetPollItemClick.proto)                   |
 | <a name="action_626">626</a>     | [Details](ClientRoomChangeOwner.md)                   | [ClientRoomChangeOwner](../../../../app/assets/proto/ClientRoomChangeOwnerResponse.proto)                     |
 | <a name="action_30626">30626</a> | [Details](ClientRoomChangeOwnerResponse.md)           | [ClientRoomChangeOwnerResponse](../../../../app/assets/proto/ClientRoomChangeOwnerResponse.proto)             |
+| <a name="action_627">627</a>     | [Details](ClientSearch.md)                            | [ClientSearch](../../../../app/assets/proto/ClientSearch.proto)                                               |
+| <a name="action_30627">30627</a> | [Details](ClientSearchResponse.md)                    | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                       |
 
 # File 7xx , 307xx
 
