@@ -360,6 +360,8 @@
 | <a name="action_30626">30626</a> | [Details](ClientRoomChangeOwnerResponse.md)           | [ClientRoomChangeOwnerResponse](../../../../app/assets/proto/ClientRoomChangeOwnerResponse.proto)             |
 | <a name="action_627">627</a>     | [Details](ClientSearch.md)                            | [ClientSearch](../../../../app/assets/proto/ClientSearch.proto)                                               |
 | <a name="action_30627">30627</a> | [Details](ClientSearchResponse.md)                    | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                       |
+| <a name="action_628">628</a>     | [Details](ClientRoomMemberSearch.md)                  | [ClientRoomMemberSearch](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                           |
+| <a name="action_30628">30628</a> | [Details](ClientRoomMemberSearchResponse.md)          | [ClientRoomMemberSearchResponse](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                   |
 
 # File 7xx , 307xx
 
