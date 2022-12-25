@@ -131,6 +131,8 @@
 | <a name="action_30156">30156</a> | [Details](UserRefreshTokenResponse.md)                                | [UserRefreshTokenResponse](../../../../app/assets/proto/UserRefreshToken.proto)                                                               |
 | <a name="action_162">162</a>     | [Details](ChangePhoneNumber.md)                                       | [ChangePhoneNumber](../../../../app/assets/proto/ChangePhoneNumber.proto)                                                                     |
 | <a name="action_30162">30162</a> | [Details](ChangePhoneNumberResponse.md)                               | [ChangePhoneNumberResponse](../../../../app/assets/proto/ChangePhoneNumber.proto)                                                             |
+| <a name="action_163">163</a>     | [Details](VerifyNewPhoneNumber.md)                                    | [VerifyNewPhoneNumber](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                               |
+| <a name="action_30163">30163</a> | [Details](VerifyNewPhoneNumberResponse.md)                            | [VerifyNewPhoneNumberResponse](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                       |
 
 # Chat 2xx , 302xx
 
