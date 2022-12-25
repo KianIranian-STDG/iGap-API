@@ -127,6 +127,8 @@
 | <a name="action_30154">30154</a> | [Details](UserIVandGetScoreResponse.md)                               | [UserIVandGetScoreResponse](../../../../app/assets/proto/UserIVandGetScore.proto)                                                             | 
 | <a name="action_155">155</a>     | [Details](UserIVandSetActivity.md)                                    | [UserIVandSetActivity](../../../../app/assets/proto/UserIVandSetActivity.proto)                                                               |
 | <a name="action_30155">30155</a> | [Details](UserIVandSetActivityResponse.md)                            | [UserIVandSetActivityResponse](../../../../app/assets/proto/UserIVandSetActivity.proto)                                                       |
+| <a name="action_156">156</a>     | [Details](UserRefreshToken.md)                                        | [UserRefreshToken](../../../../app/assets/proto/UserRefreshToken.proto)                                                                       |
+| <a name="action_30156">30156</a> | [Details](UserRefreshTokenResponse.md)                                | [UserRefreshTokenResponse](../../../../app/assets/proto/UserRefreshToken.proto)                                                               |
 
 # Chat 2xx , 302xx
 
