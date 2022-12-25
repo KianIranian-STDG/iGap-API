@@ -421,6 +421,8 @@
 | <a name="action_30909">30909</a> | [Details](SignalingRateResponse.md)             | [SignalingRateResponse](../../../../app/assets/proto/SignalingRate.proto)                         |
 | <a name="action_910">910</a>     | [Details](CallRequest.md)                       | [CallRequest](../../../../app/assets/proto/CallRequest.proto)                                     |
 | <a name="action_30910">30910</a> | [Details](CallRequestResponse.md)               | [CallRequestResponse](../../../../app/assets/proto/CallRequest.proto)                             |
+| <a name="action_911">911</a>     | [Details](CallInfo.md)                          | [CallInfo](../../../../app/assets/proto/CallInfo.proto)                                           |
+| <a name="action_30911">30911</a> | [Details](CallInfoResponse.md)                  | [CallInfoResponse](../../../../app/assets/proto/CallInfo.proto)                                   |
 
 # Geo 10xx , 310xx
 

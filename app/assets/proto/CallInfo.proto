@@ -1,0 +1,30 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.igap.proto";
+option java_outer_classname = "ProtoCallInfo";
+
+message CallInfo {
+  Request request = 1;
+  int64 call_id = 2;
+}
+
+message CallInfoResponse {
+  Response response = 1;
+  int64 create_at = 2;
+  int64 call_id = 3;
+  int64 phone_number = 4;
+  uint32 duration = 5;
+  uint32 price = 6;
+  FinalStateEnum finalState = 7;
+
+  enum FinalStateEnum {
+    UNKNOWN = 0;
+    DONE = 1;
+    BUSY = 2;
+    ROUTE_ERROR = 3;
+    REJECT = 4;
+  }
+}
