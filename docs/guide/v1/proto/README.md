@@ -221,6 +221,8 @@
 | <a name="action_30326">30326</a> | [Details](GroupPinMessageResponse.md)         | [GroupPinMessageResponse](../../../../app/assets/proto/GroupPinMessage.proto)                 |
 | <a name="action_327">327</a>     | [Details](GroupChangeMemberRights.md)         | [GroupChangeMemberRights](../../../../app/assets/proto/GroupChangeMemberRights.proto)         |
 | <a name="action_30327">30327</a> | [Details](GroupChangeMemberRightsResponse.md) | [GroupChangeMemberRightsResponse](../../../../app/assets/proto/GroupChangeMemberRights.proto) |
+| <a name="action_328">328</a>     | [Details](GroupRoomMemberMention.md)          | [GroupRoomMemberMention](../../../../app/assets/proto/GroupRoomMemberMention.proto)           |
+| <a name="action_30328">30328</a> | [Details](GroupRoomMemberMentionResponse.md)  | [GroupRoomMemberMentionResponse](../../../../app/assets/proto/GroupRoomMemberMention.proto)   |
 
 # Channel 4xx , 304xx
 
