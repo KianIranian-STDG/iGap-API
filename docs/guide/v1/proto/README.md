@@ -504,6 +504,8 @@
 | <a name="action_39107">39107</a> | [Details](MplSalesListResponse.md)           | [MplSalesListResponse](../../../../app/assets/proto/MplSalesList.proto)                     |
 | <a name="action_9108">9108</a>   | [Details](MplSetCardToCardResult.md)         | [MplSetCardToCardResult](../../../../app/assets/proto/MplSetCardToCardResult.proto)         |
 | <a name="action_39108">39108</a> | [Details](MplSetCardToCardResultResponse.md) | [MplSetCardToCardResultResponse](../../../../app/assets/proto/MplSetCardToCardResult.proto) |
+| <a name="action_9109">9109</a>   | [Details](MplTransactionList.md)             | [MplTransactionList](../../../../app/assets/proto/MplTransactionList.proto)                 |
+| <a name="action_39109">39109</a> | [Details](MplTransactionListResponse.md)     | [MplTransactionListResponse](../../../../app/assets/proto/MplTransactionList.proto)         |
 
 # BillInquiry 92xx
 
