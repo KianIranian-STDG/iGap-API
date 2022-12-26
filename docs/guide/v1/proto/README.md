@@ -496,6 +496,8 @@
 | <a name="action_39102">39102</a> | [Details](MplGetSalesTokenResponse.md)  | [MplGetSalesTokenResponse](../../../../app/assets/proto/MplGetSalesToken.proto)   |
 | <a name="action_9103">9103</a>   | [Details](MplSetSalesResult.md)         | [MplSetSalesResult](../../../../app/assets/proto/MplSetSalesResult.proto)         |
 | <a name="action_39103">39103</a> | [Details](MplSetSalesResultResponse.md) | [MplSetSalesResultResponse](../../../../app/assets/proto/MplSetSalesResult.proto) |
+| <a name="action_9104">9104</a>   | [Details](MplSalesConfirm.md)           | [MplSalesConfirm](../../../../app/assets/proto/MplSalesConfirm.proto)             |
+| <a name="action_39104">39104</a> | [Details](MplSalesConfirmResponse.md)   | [MplSalesConfirmResponse](../../../../app/assets/proto/MplSalesConfirm.proto)     |
 
 # BillInquiry 92xx
 
