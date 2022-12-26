@@ -1,4 +1,4 @@
-# System xx
+# System xx , 300xx
 
 | Id                               | Details                                      | Proto file                                                                              |
 |----------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -380,7 +380,7 @@
 | <a name="action_705">705</a>     | [Details](FileDownload.md)             | [FileDownload](../../../../app/assets/proto/FileDownload.proto)                 |
 | <a name="action_30705">30705</a> | [Details](FileDownloadResponse.md)     | [FileDownloadResponse](../../../../app/assets/proto/FileDownload.proto)         |
 
-# QR Code 8xx , 806xx
+# QR Code 8xx , 308xx
 
 | Id                                      | Details                                    | Proto file                                                                          |
 |-----------------------------------------|--------------------------------------------|-------------------------------------------------------------------------------------|
@@ -484,7 +484,7 @@
 | <a name="action_9003">9003</a>   | [Details](WalletIdMapping.md)                 | [WalletIdMapping](../../../../app/assets/proto/WalletIdMapping.proto)                         |
 | <a name="action_39003">39003</a> | [Details](WalletIdMappingResponse.md)         | [WalletIdMappingResponse](../../../../app/assets/proto/WalletIdMapping.proto)                 |
 
-# Mpl 91xx
+# Mpl 91xx , 391xx
 
 | Id                               | Details                                      | Proto file                                                                                  |
 |----------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -509,7 +509,7 @@
 | <a name="action_9110">9110</a>   | [Details](MplTransactionInfo.md)             | [MplTransactionInfo](../../../../app/assets/proto/MplTransactionInfo.proto)                 |
 | <a name="action_39110">39110</a> | [Details](MplTransactionInfoResponse.md)     | [MplTransactionInfoResponse](../../../../app/assets/proto/MplTransactionInfo.proto)         |
 
-# BillInquiry 92xx
+# BillInquiry 92xx , 392xx
 
 | Id                               | Details                                  | Proto file                                                                          |
 |----------------------------------|------------------------------------------|-------------------------------------------------------------------------------------|
