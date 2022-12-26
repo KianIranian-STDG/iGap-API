@@ -456,16 +456,18 @@
 
 # Story 12xx , 312xx
 
-| Id                               | Details                               | Proto file                                                                    |
-|----------------------------------|---------------------------------------|-------------------------------------------------------------------------------|
-| <a name="action_1201">1201</a>   | [Details](StoryUserAddNew.md)         | [StoryUserAddNew](../../../../app/assets/proto/StoryUserAddNew.proto)         |
-| <a name="action_31201">31201</a> | [Details](StoryUserAddNewResponse.md) | [StoryUserAddNewResponse](../../../../app/assets/proto/StoryUserAddNew.proto) |
-| <a name="action_1202">1202</a>   | [Details](StoryRoomAddNew.md)         | [StoryRoomAddNew](../../../../app/assets/proto/StoryRoomAddNew.proto)         |
-| <a name="action_31202">31202</a> | [Details](StoryRoomAddNewResponse.md) | [StoryRoomAddNewResponse](../../../../app/assets/proto/StoryRoomAddNew.proto) |
-| <a name="action_1203">1203</a>   | [Details](StoryGetStories.md)         | [StoryGetStories](../../../../app/assets/proto/StoryGetStories.proto)         |
-| <a name="action_31203">31203</a> | [Details](StoryGetStoriesResponse.md) | [StoryGetStoriesResponse](../../../../app/assets/proto/StoryGetStories.proto) |
-| <a name="action_1204">1204</a>   | [Details](StoryAddView.md)            | [StoryAddView](../../../../app/assets/proto/StoryAddView.proto)               |
-| <a name="action_31204">31204</a> | [Details](StoryAddViewResponse.md)    | [StoryAddViewResponse](../../../../app/assets/proto/StoryAddView.proto)       |
+| Id                               | Details                                     | Proto file                                                                                |
+|----------------------------------|---------------------------------------------|-------------------------------------------------------------------------------------------|
+| <a name="action_1201">1201</a>   | [Details](StoryUserAddNew.md)               | [StoryUserAddNew](../../../../app/assets/proto/StoryUserAddNew.proto)                     |
+| <a name="action_31201">31201</a> | [Details](StoryUserAddNewResponse.md)       | [StoryUserAddNewResponse](../../../../app/assets/proto/StoryUserAddNew.proto)             |
+| <a name="action_1202">1202</a>   | [Details](StoryRoomAddNew.md)               | [StoryRoomAddNew](../../../../app/assets/proto/StoryRoomAddNew.proto)                     |
+| <a name="action_31202">31202</a> | [Details](StoryRoomAddNewResponse.md)       | [StoryRoomAddNewResponse](../../../../app/assets/proto/StoryRoomAddNew.proto)             |
+| <a name="action_1203">1203</a>   | [Details](StoryGetStories.md)               | [StoryGetStories](../../../../app/assets/proto/StoryGetStories.proto)                     |
+| <a name="action_31203">31203</a> | [Details](StoryGetStoriesResponse.md)       | [StoryGetStoriesResponse](../../../../app/assets/proto/StoryGetStories.proto)             |
+| <a name="action_1204">1204</a>   | [Details](StoryAddView.md)                  | [StoryAddView](../../../../app/assets/proto/StoryAddView.proto)                           |
+| <a name="action_31204">31204</a> | [Details](StoryAddViewResponse.md)          | [StoryAddViewResponse](../../../../app/assets/proto/StoryAddView.proto)                   |
+| <a name="action_1205">1205</a>   | [Details](StoryGetOwnStoryViews.md)         | [StoryGetOwnStoryViews](../../../../app/assets/proto/StoryGetOwnStoryViews.proto)         |
+| <a name="action_31205">31205</a> | [Details](StoryGetOwnStoryViewsResponse.md) | [StoryGetOwnStoryViewsResponse](../../../../app/assets/proto/StoryGetOwnStoryViews.proto) |
 
 # Wallet 90xx , 390xx
 
