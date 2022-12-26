@@ -462,6 +462,8 @@
 | <a name="action_31201">31201</a> | [Details](StoryUserAddNewResponse.md) | [StoryUserAddNewResponse](../../../../app/assets/proto/StoryUserAddNew.proto) |
 | <a name="action_1202">1202</a>   | [Details](StoryRoomAddNew.md)         | [StoryRoomAddNew](../../../../app/assets/proto/StoryRoomAddNew.proto)         |
 | <a name="action_31202">31202</a> | [Details](StoryRoomAddNewResponse.md) | [StoryRoomAddNewResponse](../../../../app/assets/proto/StoryRoomAddNew.proto) |
+| <a name="action_1203">1203</a>   | [Details](StoryGetStories.md)         | [StoryGetStories](../../../../app/assets/proto/StoryGetStories.proto)         |
+| <a name="action_31203">31203</a> | [Details](StoryGetStoriesResponse.md) | [StoryGetStoriesResponse](../../../../app/assets/proto/StoryGetStories.proto) |
 
 # Wallet 90xx , 390xx
 
