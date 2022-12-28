@@ -596,6 +596,12 @@
 * 382 - [GROUP_PIN_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-382-group_pin_message_internal_server_error)
 * 383 - [GROUP_PIN_MESSAGE_FORBIDDEN](README.md#error-383-group_pin_message_forbidden)
 
+---
+
+* 384 - [GROUP_CHANGE_MEMBER_ROLE_BAD_PAYLOAD](README.md#error-384-group_change_member_role_bad_payload)
+
+---
+
 # Channel room errors 4xx
 
 * 400 - [CHANNEL_CREATE_BAD_PAYLOAD](README.md#error-400-channel_create_bad_payload)

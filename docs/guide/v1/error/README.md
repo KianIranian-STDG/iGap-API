@@ -2716,6 +2716,15 @@ You are forbidden to do the action for request [#326](../proto/README.md#action_
 |------------|--------|----------|
 | *          | *      | *        |
 
+### Error 384 - GROUP_CHANGE_MEMBER_ROLE_BAD_PAYLOAD
+
+Bad payload for request [#384](../proto/README.md#action_327)
+
+| Minor Code | Detail             | Reaction |
+|------------|--------------------|----------|
+| 1          | Invalid room id    | *        |
+| 2          | Hase no permission | *        |
+
 # Channel Errors(4xx)
 
 ### Error 400 - CHANNEL_CREATE_BAD_PAYLOAD
