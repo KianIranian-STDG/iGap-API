@@ -587,6 +587,47 @@ Account destruction token you entered has expired for request [#119](../proto/RE
 |------------|--------|----------|
 | *          | *      | *        |
 
+### Error 1103 - USER_VERIFY_NEW_PHONE_NUMBER_BAD_PAYLOAD
+
+Phone number exists [#1103](../proto/README.md#action_163)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 1104 - USER_VERIFY_NEW_PHONE_NUMBER_INTERNAL_SERVER_ERROR
+
+Identifier is null or empty [#1104](../proto/README.md#action_163)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 1105 - USER_VERIFY_NEW_PHONE_NUMBER_INVALID_CODE
+
+Verification code is invalid [#1105](../proto/README.md#action_163)
+
+| Minor Code | Detail       | Reaction |
+|------------|--------------|----------|
+| 1          | Invalid code | *        |
+| 2          | Not verified | *        |
+
+### Error 1106 - USER_VERIFY_NEW_PHONE_NUMBER_MAX_TRY_LOCK
+
+You tried more than limitation for new phone number  [#1106](../proto/README.md#action_163)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 1107 - USER_VERIFY_NEW_PHONE_NUMBER_BLOCKED_USER
+
+You are blocked in iGap [#1107](../proto/README.md#action_163)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 ### :triangular_flag_on_post: :one: Error 158 - USER_DELETE_MAX_TRY_LOCK
 
 Destruction Code for deleting user account has been entered incorrectly too many times for

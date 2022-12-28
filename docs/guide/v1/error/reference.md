@@ -219,6 +219,14 @@
 
 ---
 
+* 1103 - [USER_VERIFY_NEW_PHONE_NUMBER_BAD_PAYLOAD](README.md#error-1103-user_verify_new_phone_number_bad_payload)
+* 1104 - [USER_VERIFY_NEW_PHONE_NUMBER_INTERNAL_SERVER_ERROR](README.md#error-1104-user_verify_new_phone_number_internal_server_error)
+* 1105 - [USER_VERIFY_NEW_PHONE_NUMBER_INVALID_CODE](README.md#error-1105-user_verify_new_phone_number_invalid_code)
+* 1106 - [USER_VERIFY_NEW_PHONE_NUMBER_MAX_TRY_LOCK](README.md#error-1106-user_verify_new_phone_number_max_try_lock)
+* 1107 - [USER_VERIFY_NEW_PHONE_NUMBER_BLOCKED_USER](README.md#error-1107-user_verify_new_phone_number_blocked_user)
+
+---
+
 * 10103 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_BAD_PAYLOAD](README.md#error-10103-user_two_step_verification_check_password_bad_payload)
 * 10104 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_INTERNAL_SERVER_ERROR](README.md#error-10104-user_two_step_verification_check_password_internal_server_error)
 * 10105 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_INVALID_PASSWORD](README.md#error-10105-user_two_step_verification_check_password_invalid_password)
