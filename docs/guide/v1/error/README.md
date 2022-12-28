@@ -2725,6 +2725,24 @@ Bad payload for request [#384](../proto/README.md#action_327)
 | 1          | Invalid room id    | *        |
 | 2          | Hase no permission | *        |
 
+### Error 387 - GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD
+
+Bad payload for request [#387](../proto/README.md#action_328)
+
+| Minor Code | Detail          | Reaction |
+|------------|-----------------|----------|
+| 1          | Invalid room id | *        |
+| 2          | Room is private | *        |
+
+### Error 389 - GROUP_MEMBER_MENTION_LIST_FORBIDDEN
+
+Forbidden for request [#389](../proto/README.md#action_328)
+
+| Minor Code | Detail                                    | Reaction |
+|------------|-------------------------------------------|----------|
+| 1          | User is not group member                  | *        |
+| 3          | User does not have access to send message | *        |
+
 # Channel Errors(4xx)
 
 ### Error 400 - CHANNEL_CREATE_BAD_PAYLOAD

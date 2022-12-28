@@ -602,6 +602,11 @@
 
 ---
 
+* 387 - [GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD](README.md#error-387-group_member_mention_list_bad_payload)
+* 389 - [GROUP_MEMBER_MENTION_LIST_FORBIDDEN](README.md#error-389-group_member_mention_list_forbidden)
+
+---
+
 # Channel room errors 4xx
 
 * 400 - [CHANNEL_CREATE_BAD_PAYLOAD](README.md#error-400-channel_create_bad_payload)
