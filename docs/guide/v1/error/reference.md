@@ -960,6 +960,12 @@
 * 676 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-676-client_set_poll_item_click_internal_server_error)
 * 677 - [CLIENT_SET_POLL_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-677-client_set_poll_item_click_internal_server_error)
 
+---
+
+* 685 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-685-client_room_change_owner_bad_payload)
+* 687 - [CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN](README.md#error-687-client_room_change_owner_forbidden)
+
+---
 
 # File errors 7xx
 

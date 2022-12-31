@@ -4184,6 +4184,29 @@ You are forbidden to do the action for request [#625](../proto/README.md#action_
 | 7          | Cache Error             | *        |
 | 8          | Duplicate entry         | *        |
 
+
+### Error 685 - CLIENT_ROOM_CHANGE_OWNER_BAD_PAYLOAD
+
+Bad payload for request [#626](../proto/README.md#action_626)
+
+| Minor Code | Detail                    | Reaction |
+|------------|---------------------------|----------|
+| 1          | Invalid room id           | *        |
+| 2          | Invalid user id           | *        |
+| 3          | Current user id           | *        |
+| 4          | Old room owner not exists | *        |
+| 5          | New room owner not exists | *        |
+| 6          | Room not exists           | *        |
+| 7          | Participants count is 0   | *        |
+
+### Error 685 - CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN
+
+You are forbidden to do the action for request [#626](../proto/README.md#action_626)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 # File Errors(7xx)
 
 ### Error 700 - FILE_UPLOAD_OPTION_BAD_PAYLOAD.
