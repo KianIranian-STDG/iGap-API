@@ -962,6 +962,11 @@
 
 ---
 
+* 681 - [CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD](README.md#error-681-client_search_member_list_bad_payload)
+* 683 - [CLIENT_SEARCH_MEMBER_LIST_FORBIDDEN](README.md#error-683-client_search_member_list_forbidden)
+
+---
+
 * 685 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-685-client_room_change_owner_bad_payload)
 * 687 - [CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN](README.md#error-687-client_room_change_owner_forbidden)
 

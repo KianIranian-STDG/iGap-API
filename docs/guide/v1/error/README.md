@@ -4184,6 +4184,22 @@ You are forbidden to do the action for request [#625](../proto/README.md#action_
 | 7          | Cache Error             | *        |
 | 8          | Duplicate entry         | *        |
 
+### Error 681 - CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD
+
+Bad payload for request [#628](../proto/README.md#action_628)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 683 - CLIENT_SEARCH_MEMBER_LIST_FORBIDDEN
+
+You are forbidden to do the action for request [#628](../proto/README.md#action_628)
+
+| Minor Code | Detail           | Reaction |
+|------------|------------------|----------|
+| 1          | Member not found | *        |
+| 2          | No access        | *        |
 
 ### Error 685 - CLIENT_ROOM_CHANGE_OWNER_BAD_PAYLOAD
 
