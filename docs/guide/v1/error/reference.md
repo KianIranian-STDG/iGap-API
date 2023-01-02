@@ -219,6 +219,14 @@
 
 ---
 
+* 1103 - [USER_VERIFY_NEW_PHONE_NUMBER_BAD_PAYLOAD](README.md#error-1103-user_verify_new_phone_number_bad_payload)
+* 1104 - [USER_VERIFY_NEW_PHONE_NUMBER_INTERNAL_SERVER_ERROR](README.md#error-1104-user_verify_new_phone_number_internal_server_error)
+* 1105 - [USER_VERIFY_NEW_PHONE_NUMBER_INVALID_CODE](README.md#error-1105-user_verify_new_phone_number_invalid_code)
+* 1106 - [USER_VERIFY_NEW_PHONE_NUMBER_MAX_TRY_LOCK](README.md#error-1106-user_verify_new_phone_number_max_try_lock)
+* 1107 - [USER_VERIFY_NEW_PHONE_NUMBER_BLOCKED_USER](README.md#error-1107-user_verify_new_phone_number_blocked_user)
+
+---
+
 * 10103 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_BAD_PAYLOAD](README.md#error-10103-user_two_step_verification_check_password_bad_payload)
 * 10104 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_INTERNAL_SERVER_ERROR](README.md#error-10104-user_two_step_verification_check_password_internal_server_error)
 * 10105 - [USER_TWO_STEP_VERIFICATION_CHECK_PASSWORD_INVALID_PASSWORD](README.md#error-10105-user_two_step_verification_check_password_invalid_password)
@@ -588,6 +596,17 @@
 * 382 - [GROUP_PIN_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-382-group_pin_message_internal_server_error)
 * 383 - [GROUP_PIN_MESSAGE_FORBIDDEN](README.md#error-383-group_pin_message_forbidden)
 
+---
+
+* 384 - [GROUP_CHANGE_MEMBER_ROLE_BAD_PAYLOAD](README.md#error-384-group_change_member_role_bad_payload)
+
+---
+
+* 387 - [GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD](README.md#error-387-group_member_mention_list_bad_payload)
+* 389 - [GROUP_MEMBER_MENTION_LIST_FORBIDDEN](README.md#error-389-group_member_mention_list_forbidden)
+
+---
+
 # Channel room errors 4xx
 
 * 400 - [CHANNEL_CREATE_BAD_PAYLOAD](README.md#error-400-channel_create_bad_payload)
@@ -941,6 +960,17 @@
 * 676 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-676-client_set_poll_item_click_internal_server_error)
 * 677 - [CLIENT_SET_POLL_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-677-client_set_poll_item_click_internal_server_error)
 
+---
+
+* 681 - [CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD](README.md#error-681-client_search_member_list_bad_payload)
+* 683 - [CLIENT_SEARCH_MEMBER_LIST_FORBIDDEN](README.md#error-683-client_search_member_list_forbidden)
+
+---
+
+* 685 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-685-client_room_change_owner_bad_payload)
+* 687 - [CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN](README.md#error-687-client_room_change_owner_forbidden)
+
+---
 
 # File errors 7xx
 
