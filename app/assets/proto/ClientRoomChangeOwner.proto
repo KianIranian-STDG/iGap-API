@@ -4,7 +4,7 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-option java_package = "net.iGap.proto";
+option java_package = "net.igap.proto";
 option java_outer_classname = "ProtoClientRoomChangeOwner";
 
 message ClientRoomChangeOwner {
@@ -15,7 +15,8 @@ message ClientRoomChangeOwner {
 
 message ClientRoomChangeOwnerResponse {
     Response response = 1;
-    uint64 user_id = 2;
+    uint64 old_owner_id = 2;
     uint64 room_id = 3;
     RoomAccess permission = 4;
+    uint64 new_owner_id = 5;
 }
