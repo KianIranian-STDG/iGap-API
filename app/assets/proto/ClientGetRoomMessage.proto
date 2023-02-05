@@ -11,7 +11,7 @@ message ClientGetRoomMessage {
     Request request = 1;
     uint64 room_id = 2;
     uint64 message_id = 3;
-    uint64 document_id = 4;
+    uint64 documentId = 4;
 }
 
 message ClientGetRoomMessageResponse {

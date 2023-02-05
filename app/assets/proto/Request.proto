@@ -6,4 +6,5 @@ option java_outer_classname = "ProtoRequest";
 
 message Request {
     string id = 1;
+	string token = 2;
 }

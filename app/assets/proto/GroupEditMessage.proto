@@ -13,7 +13,8 @@ message GroupEditMessage {
     uint64 message_id = 3;
     string message = 4;
     uint64 document_id = 5;
-    Mention mentions = 6;
+    TextSigns text_signs = 6;
+    Mention mentions = 7;
 }
 
 message GroupEditMessageResponse {
@@ -24,5 +25,6 @@ message GroupEditMessageResponse {
     string message = 5;
     RoomMessageType message_type = 6;
     uint64 document_id = 7;
-    Mention mentions = 8;
+    TextSigns text_signs = 8;
+    Mention mentions = 9;
 }

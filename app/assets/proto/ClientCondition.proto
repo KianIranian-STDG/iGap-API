@@ -22,6 +22,7 @@ message ClientCondition {
             string message = 2;
             uint64 document_id = 3;
             Mention mentions = 4;
+            TextSigns text_signs = 5;
         }
         repeated OfflineEdited offline_edited = 7;
 

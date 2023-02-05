@@ -10,6 +10,7 @@ message UserVerify {
     Request request = 1;
     uint32 code = 2;
     string username = 3;
+    string phone_hash = 4;
 }
 
 message UserVerifyResponse {

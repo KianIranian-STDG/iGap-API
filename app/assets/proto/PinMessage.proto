@@ -4,19 +4,18 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-
 option java_package = "net.iGap.proto";
-option java_outer_classname = "ProtoClientPinRoom";
+option java_outer_classname = "ProtoPinMessage";
 
-message ClientPinRoom {
+message PinMessage {
     Request request = 1;
     uint64 room_id = 2;
-    bool pin = 3;
+    uint64 message_id = 3;
+    uint64 document_id = 4;
 }
 
-message ClientPinRoomResponse {
+message PinMessageResponse {
     Response response = 1;
-    uint64 room_id = 2 [deprecated = true];
-    uint64 pin_id = 3;
-    Room room = 4;
+    uint64 room_id = 2;
+    RoomMessage pinned_message = 3;
 }

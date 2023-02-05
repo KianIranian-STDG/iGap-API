@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientSearchMessage";
+
+message ClientSearchMessage {
+    Request request = 1;
+    string query = 2;
+    uint64 roomId = 3;
+    uint64 start_time = 4;
+    uint64 end_time = 5;
+    uint32 room_offset = 6;
+    uint32 room_limit = 7;
+    SearchType type = 8;
+}
+
+message ClientSearchMessageResponse {
+    Response response = 1;
+    repeated Result result = 2;
+    bool rooms_continues = 3;
+    uint32 total = 4;
+
+    message Result {
+        uint64 room_id = 1;
+        RoomMessage message = 2;
+    }
+}
+

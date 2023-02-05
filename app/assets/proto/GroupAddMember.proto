@@ -13,6 +13,7 @@ message GroupAddMember {
     message Member {
         uint64 user_id = 1;
         uint64 start_message_id = 2;
+		    uint64 start_document_id = 3;
     }
     Member member = 3;
 }
