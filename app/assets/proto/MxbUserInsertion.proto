@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Response.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMxbUserInsertion";
+
+message MxbUserInsertion {
+  Request request = 1;
+  uint32 messenger_id = 2;
+  string phone = 3;
+}
+
+message MxbUserInsertionResponse {
+  Response response = 1;
+}

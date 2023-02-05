@@ -9,11 +9,14 @@ option java_outer_classname = "ProtoGroupClearMessage";
 message GroupClearMessage {
     Request request = 1;
     uint64 room_id = 2;
-    uint64 clear_id = 3;
+    uint64 clear_message_id = 3;
+	uint64 clear_document_id = 4;
+
 }
 
 message GroupClearMessageResponse {
     Response response = 1;
     uint64 room_id = 2;
-    uint64 clear_id = 3;
+    uint64 clear_message_id = 3;
+	uint64 clear_document_id = 4;
 }

@@ -2,9 +2,9 @@ syntax = "proto3";
 package proto;
 import "Request.proto";
 import "Response.proto";
+import "Global.proto";
 import "GroupAddAdmin.proto";
 import "GroupChangeMemberRights.proto";
-import "Global.proto";
 
 option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupGetMemberList";

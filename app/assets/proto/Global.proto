@@ -53,6 +53,8 @@ enum RoomMessageType {
     STICKER = 16;
     STORY = 17;
     STORY_REPLY = 18;
+    CARD_TO_CARD = 19;
+    BOT = 20;
 }
 
 enum RoomMessageStatus {
@@ -67,6 +69,18 @@ enum RoomMessageStatus {
 enum RoomMessageReaction {
     THUMBS_UP = 0;
     THUMBS_DOWN = 1;
+}
+
+enum SearchType {
+    SEARCH_ALL_TYPES = 0;
+    SEARCH_IMAGE = 1;
+    SEARCH_VIDEO = 2;
+    SEARCH_AUDIO = 3;
+    SEARCH_FILE = 4;
+    SEARCH_VOICE = 5;
+    SEARCH_GIF = 6;
+    SEARCH_CONTACT = 7;
+    SEARCH_MEDIA = 8; // video & image & gif
 }
 
 message RoomMessageLocation {
@@ -288,6 +302,7 @@ message RegisteredUser {
     string bio = 16;
     bool verified = 17;
     bool bot = 18;
+    bool mxb_enable = 19;
 }
 
 enum ClientAction {
@@ -387,6 +402,10 @@ message RoomMessage {
         Mention mentions = 1;
     }
     GroupExtra group_extra = 29;
+    RoomMessageSticker sticker = 30;
+    RoomMessageCardToCard card_to_card = 31;
+    repeated RoomMessageBotActionList bot_action_lists = 32;
+    TextSigns text_signs = 33;
 }
 
 message RoomDraft {
@@ -469,6 +488,7 @@ message GroupRoom {
     }
     PublicExtra public_extra = 11;
     GroupChangeMemberRights.MemberRights room_rights = 12;
+    bool is_mention = 13;
 }
 
 message ChannelRoom {
@@ -808,4 +828,116 @@ message BotInfo {
 
 message Mention{
     repeated uint64 userIds = 1;
+}
+
+message RoomMessageSticker {
+
+    enum StickerTypeEnum {
+        STICKER = 0;
+        GIFT_STICKER = 1;
+        MOTION_STICKER = 2;
+    }
+    StickerTypeEnum type = 1;
+
+    string message = 2;
+    string id = 3;
+    string name = 4;
+    string path = 5;
+    string token = 6;
+    string group_id = 7;
+    string file_name = 8;
+    int64 file_size = 9;
+    string gift_id = 10;
+    int64 gift_amount = 11;
+    bool is_favorite = 12;
+    int32 sort = 13;
+    int64 ref_id = 14;
+    repeated string tags = 15;
+}
+
+message RoomMessageCardToCard {
+    string message = 1;
+    string label = 2;
+    string image_url = 3;
+    string action_type = 4;
+    string card_number = 5;
+    int64 amount = 6;
+    int64 user_id = 7;
+}
+
+message RoomMessageBotAction {
+
+    enum BotActionEnum {
+        NONE = 0;
+        JOIN_LINK = 1;
+        BOT_ACTION = 2;
+        USERNAME_LINK = 3;
+        WEB_LINK = 4;
+        WEBVIEW_LINK = 5;
+        STREAM_PLAY = 6;
+        PAY_BY_WALLET = 7;
+        PAY_DIRECT = 8;
+        REQUEST_PHONE = 9;
+        REQUEST_LOCATION = 10;
+        SHOW_ALERT = 11;
+        PAGE = 12;
+        FINANCIAL_MENU = 13;
+        BILL_MENU = 14;
+        TRAFFIC_BILL_MENU = 15;
+        MOBILE_BILL_MENU = 16;
+        PHONE_BILL_MENU = 17;
+        TOPUP_MENU = 18;
+        WALLET_MENU = 19;
+        NEARBY_MENU = 20;
+        CALL = 21;
+        STICKER_SHOP = 22;
+        IVAN = 23;
+        IVANQR = 24;
+        IVANDLIST = 25;
+        IVANDSCORE = 26;
+        CARD_TO_CARD = 27;
+    }
+    BotActionEnum action = 1;
+    string label = 2;
+    string value = 3;
+}
+
+message RoomMessageBotActionList {
+    repeated RoomMessageBotAction actions = 1;
+}
+
+message TextSigns {
+
+    message TextSign {
+        enum Type {
+            UNKNOWN = 0;
+            IGAP_DEEP_LINK = 1;
+            IGAP_LINK = 2;
+            WEB_LINK = 3;
+            BOT_COMMAND = 4;
+            IGAP_RESOLVE = 5;
+            DIGIT_LINK = 6;
+            MENTION = 7;
+            HASHTAG = 8;
+            BOLD = 9;
+            ITALIC = 10;
+            UNDERLINE = 11;
+            STRIKE = 12;
+            SPOILER = 13;
+            EMAIL = 14;
+            PHONE = 15;
+            BANK_CARD = 16;
+            TEXT_URL = 17;
+            CODE = 18;
+            MENTION_NAME = 19;
+        }
+
+        Type type = 1;
+        int32 start_index = 2;
+        int32 end_index = 3;
+        string link = 4;
+        int64 user_id = 5;
+    }
+
+    repeated TextSign text_sign = 1;
 }

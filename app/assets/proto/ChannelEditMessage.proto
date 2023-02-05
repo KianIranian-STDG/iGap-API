@@ -13,6 +13,7 @@ message ChannelEditMessage {
     uint64 message_id = 3;
     string message = 4;
     uint64 document_id = 5;
+    TextSigns text_signs = 6;
 }
 
 message ChannelEditMessageResponse {
@@ -23,4 +24,5 @@ message ChannelEditMessageResponse {
     string message = 5;
     RoomMessageType message_type = 6;
     uint64 document_id = 7;
+    TextSigns text_signs = 8;
 }

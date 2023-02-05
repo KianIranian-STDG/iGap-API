@@ -13,4 +13,6 @@ message ClientJoinByUsername {
 
 message ClientJoinByUsernameResponse {
     Response response = 1;
+    uint64 room_id = 2;
+    uint64 user_id = 3;
 }

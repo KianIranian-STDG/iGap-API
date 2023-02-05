@@ -19,7 +19,7 @@ message ClientGetRoomHistory {
     Direction direction = 4;
 
     uint32 limit = 5;
-    uint64 document_id = 6;
+    uint64 documentId = 6;
 }
 
 message ClientGetRoomHistoryResponse {

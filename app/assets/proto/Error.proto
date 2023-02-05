@@ -12,4 +12,6 @@ message ErrorResponse {
 
     uint32 wait = 4;
     string message = 5;
+    uint64 request_action_id =6;
+
 }

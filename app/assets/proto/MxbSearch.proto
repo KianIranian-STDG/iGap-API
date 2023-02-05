@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMxbSearch";
+
+message MxbSearch {
+  Request request = 1;
+  string  phone = 2;
+}
+
+message MxbSearchResponse {
+  Response response = 1;
+  repeated Item items = 2;
+
+  message Item {
+    uint64 id = 1;
+    string nickname = 2;
+    string avatar = 3;
+    uint32 messenger_id = 4;
+    string phone = 5;
+  }
+}
