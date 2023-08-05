@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.igap.proto";
+option java_outer_classname = "ProtoUsersInfo";
+
+message UsersInfo {
+    Request request = 1;
+    repeated uint64 user_ids = 2;
+}
+
+message UsersInfoResponse {
+    Response response = 1;
+    repeated RegisteredUser users = 2;
+    repeated BotInfo botInfo = 3;
+}
