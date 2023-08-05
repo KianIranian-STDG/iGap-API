@@ -4,7 +4,7 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-option java_package = "net.iGap.proto";
+option java_package = "net.igap.proto";
 option java_outer_classname = "ProtoUserLogin";
 
 message UserLogin {
@@ -39,5 +39,6 @@ message UserLoginResponse {
     string contact_hash = 10;
     int32 role = 11;
     bool need_fcm_token = 12;
-
+    string contact_list_version = 13;
+    uint64 user_id = 14;
 }
