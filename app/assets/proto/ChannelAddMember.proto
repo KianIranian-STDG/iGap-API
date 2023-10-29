@@ -13,12 +13,18 @@ message ChannelAddMember {
     message Member {
         uint64 user_id = 1;
     }
-    Member member = 3;
+    Member member = 3 [deprecated = true];
+    repeated Member members = 4;
 }
 
 message ChannelAddMemberResponse {
     Response response = 1;
     uint64 room_id = 2;
-    uint64 user_id = 3;
-    ChannelRoom.Role role = 4;
+    uint64 user_id = 3 [deprecated = true];
+    ChannelRoom.Role role = 4 [deprecated = true];
+    message Member {
+        RegisteredUser member_info = 1;
+        ChannelRoom.Role role = 2;
+    }
+    repeated Member members = 5;
 }
