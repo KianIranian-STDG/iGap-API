@@ -1,0 +1,22 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMxbUserActivation";
+
+message MxbUserActivation {
+  Request request = 1;
+  StatusAction status_action = 2;
+}
+
+message MxbUserActivationResponse {
+  Response response = 1;
+  StatusAction status_action = 2;
+}
+
+enum StatusAction {
+  ACTIVATE = 0;
+  DEACTIVATE = 1;
+}

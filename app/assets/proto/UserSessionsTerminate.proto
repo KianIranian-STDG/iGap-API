@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserSessionsTerminate";
+
+message UserSessionsTerminate {
+    Request request = 1;
+}
+
+message UserSessionsTerminateResponse {
+    Response response = 1;
+}

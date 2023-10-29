@@ -81,6 +81,7 @@ enum SearchType {
     SEARCH_GIF = 6;
     SEARCH_CONTACT = 7;
     SEARCH_MEDIA = 8; // video & image & gif
+    SEARCH_LINK = 9;
 }
 
 message RoomMessageLocation {
@@ -224,7 +225,7 @@ message RoomMessageForwardFrom {
     uint64 room_id = 1 [jstype=JS_STRING];
     uint64 message_id = 2 [jstype=JS_STRING];
     uint64 document_id = 3 [jstype=JS_STRING];
-
+    string forward_from = 4;
 }
 
 message RoomMessageStory {
@@ -303,6 +304,8 @@ message RegisteredUser {
     bool verified = 17;
     bool bot = 18;
     bool mxb_enable = 19;
+    string email = 20;
+    string author_hash = 21;
 }
 
 enum ClientAction {
@@ -359,6 +362,11 @@ message RoomMessage {
             uint64 room_id = 1 [jstype=JS_STRING];
         }
         Room room = 3;
+
+        message ForwardFrom {
+            string title = 1;
+        }
+        ForwardFrom forward = 4;
     }
     Author author = 8;
 
@@ -447,6 +455,7 @@ message Room {
 
     uint32 app_id = 19;
     RoomAccess permission = 20;
+    bool pay = 21;
 }
 
 message ChatRoom {
@@ -488,7 +497,7 @@ message GroupRoom {
     }
     PublicExtra public_extra = 11;
     GroupChangeMemberRights.MemberRights room_rights = 12;
-    bool is_mention = 13;
+    repeated uint64 mentionMessageIds = 13;
 }
 
 message ChannelRoom {
@@ -537,6 +546,16 @@ message Thumbnail {
     string mime = 6;
 }
 
+message Waveform {
+
+    repeated Data data = 1;
+
+    message Data {
+        float pos = 1;
+        float neg = 2;
+    }
+}
+
 message File {
     string token = 1;
     string name = 2;
@@ -550,6 +569,7 @@ message File {
     string cache_id = 10;
     string mime = 11;
     string public_url = 12;
+    Waveform waveform = 13;
 }
 
 
@@ -826,7 +846,7 @@ message BotInfo {
     repeated BotAction actions = 3;
 }
 
-message Mention{
+message Mention {
     repeated uint64 userIds = 1;
 }
 
