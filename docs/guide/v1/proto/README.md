@@ -3,6 +3,7 @@
 | Id                               | Details                                      | Proto file                                                                              |
 |----------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------|
 | <a name="action_0">0</a>         | [Details](ErrorResponse.md)                  | [ErrorResponse](../../../../app/assets/proto/Error.proto)                               |
+| <a name="action_1">1</a>         | [Details](ConnectionSecuringResponse.md)     | [ConnectionSecuring](../../../../app/assets/proto/ConnectionSecuring.proto)             |
 | <a name="action_30001">30001</a> | [Details](ConnectionSecuringResponse.md)     | [ConnectionSecuringResponse](../../../../app/assets/proto/ConnectionSecuring.proto)     |
 | <a name="action_2">2</a>         | [Details](ConnectionSymmetricKey.md)         | [ConnectionSymmetricKey](../../../../app/assets/proto/ConnectionSecuring.proto)         |
 | <a name="action_30002">30002</a> | [Details](ConnectionSymmetricKeyResponse.md) | [ConnectionSymmetricKeyResponse](../../../../app/assets/proto/ConnectionSecuring.proto) |
@@ -22,7 +23,7 @@
 | <a name="action_103">103</a>     | [Details](UserProfileSetEmail.md)                                     | [UserProfileSetEmail](../../../../app/assets/proto/UserProfileSetEmail.proto)                                                                 |
 | <a name="action_30103">30103</a> | [Details](UserProfileSetEmailResponse.md)                             | [UserProfileSetEmailResponse](../../../../app/assets/proto/UserProfileSetEmail.proto)                                                         |
 | <a name="action_104">104</a>     | [Details](UserProfileSetGender.md)                                    | [UserProfileSetGender](../../../../app/assets/proto/UserProfileSetGender.proto)                                                               |
-| <a name="action_30104">30104</a> | [Details](UserProfileSetGenderResponse.md)                            | [UserProfileSetGenderResponse](../../../../app/assets/proto/UserProfileSetGender.proto)                                                       |
+| <a name="action_30104">3004</a>  | [Details](UserProfileSetGenderResponse.md)                            | [UserProfileSetGenderResponse](../../../../app/assets/proto/UserProfileSetGender.proto)                                                       |
 | <a name="action_105">105</a>     | [Details](UserProfileSetNickname.md)                                  | [UserProfileSetNickname](../../../../app/assets/proto/UserProfileSetNickname.proto)                                                           |
 | <a name="action_30105">30105</a> | [Details](UserProfileSetNicknameResponse.md)                          | [UserProfileSetNicknameResponse](../../../../app/assets/proto/UserProfileSetNickname.proto)                                                   |
 | <a name="action_106">106</a>     | [Details](UserContactsImport.md)                                      | [UserContactsImport](../../../../app/assets/proto/UserContactsImport.proto)                                                                   |
@@ -129,10 +130,17 @@
 | <a name="action_30155">30155</a> | [Details](UserIVandSetActivityResponse.md)                            | [UserIVandSetActivityResponse](../../../../app/assets/proto/UserIVandSetActivity.proto)                                                       |
 | <a name="action_156">156</a>     | [Details](UserRefreshToken.md)                                        | [UserRefreshToken](../../../../app/assets/proto/UserRefreshToken.proto)                                                                       |
 | <a name="action_30156">30156</a> | [Details](UserRefreshTokenResponse.md)                                | [UserRefreshTokenResponse](../../../../app/assets/proto/UserRefreshToken.proto)                                                               |
+| <a name="action_159">159</a>     | [Details](UserProfileSetNationalCode.md)                              | [UserProfileSetNationalCode](../../../../app/assets/proto/UserProfileSetNationalCode.proto)                                                                     |
+| <a name="action_160">160</a>     | [Details](UserProfileGetNationalCode.md)                              | [UserProfileGetNationalCode](../../../../app/assets/proto/UserProfileGetNationalCode.proto)                                                                     |
+| <a name="action_161">161</a>     | [Details](UserBan.md)                                                 | [UserBan](../../../../app/assets/proto/UserBan.proto)                                                                     |
 | <a name="action_162">162</a>     | [Details](ChangePhoneNumber.md)                                       | [ChangePhoneNumber](../../../../app/assets/proto/ChangePhoneNumber.proto)                                                                     |
 | <a name="action_30162">30162</a> | [Details](ChangePhoneNumberResponse.md)                               | [ChangePhoneNumberResponse](../../../../app/assets/proto/ChangePhoneNumber.proto)                                                             |
 | <a name="action_163">163</a>     | [Details](VerifyNewPhoneNumber.md)                                    | [VerifyNewPhoneNumber](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                               |
 | <a name="action_30163">30163</a> | [Details](VerifyNewPhoneNumberResponse.md)                            | [VerifyNewPhoneNumberResponse](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                       |
+| <a name="action_164">164</a>     | [Details](UserContactsGetStatus.md)                                   | [UserContactsGetStatus](../../../../app/assets/proto/UserContactsGetStatus.proto)                                                                     |
+| <a name="action_165">165</a>     | [Details](UsersInfo.md)                                               | [UsersInfo](../../../../app/assets/proto/UsersInfo.proto)                                                                     |
+| <a name="action_166">166</a>     | [Details](UserSessionTerminate.md)                                    | [UserSessionTerminate](../../../../app/assets/proto/UserSessionTerminate.proto)                                                                     |
+
 
 # Chat 2xx , 302xx
 
@@ -301,6 +309,9 @@
 | <a name="action_30504">30504</a> | [Details](InfoWallpaperResponse.md) | [InfoWallpaperResponse](../../../../app/assets/proto/InfoWallpaper.proto) |
 | <a name="action_505">505</a>     | [Details](InfoUpdate.md)            | [InfoUpdate](../../../../app/assets/proto/InfoUpdate.proto)               |
 | <a name="action_30505">30505</a> | [Details](InfoUpdateResponse.md)    | [InfoUpdateResponse](../../../../app/assets/proto/InfoUpdate.proto)       |
+| <a name="action_506">506</a>     | [Details](InfoConfig.md)            | [InfoConfig](../../../../app/assets/proto/InfoConfig.proto)               |
+| <a name="action_507">507</a>     | [Details](InfoCharityCampaign.md)   | [InfoCharityCampaign](../../../../app/assets/proto/InfoCharityCampaign.proto)               |
+| <a name="action_508">508</a>     | [Details](InfoAdvertiseConfig.md)   | [InfoAdvertiseConfig](../../../../app/assets/proto/InfoAdvertiseConfig.proto)               |
 
 # Client 6xx , 306xx
 
@@ -350,6 +361,7 @@
 | <a name="action_30620">30620</a> | [Details](ClientGetDiscoveryResponse.md)              | [ClientGetDiscoveryResponse](../../../../app/assets/proto/ClientGetDiscovery.proto)                           |
 | <a name="action_621">621</a>     | [Details](ClientSetDiscoveryItemClick.md)             | [ClientSetDiscoveryItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)                 |
 | <a name="action_30621">30621</a> | [Details](ClientSetDiscoveryItemClickResponse.md)     | [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)         |
+| <a name="action_622">622</a>     | [Details](ClientGetUserRepresentative.md)             | [ClientGetUserRepresentative](../../../../app/assets/proto/ClientGetUserRepresentative.proto)                 |
 | <a name="action_623">623</a>     | [Details](ClientSetDiscoveryItemAgreement.md)         | [ClientSetDiscoveryItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)         |
 | <a name="action_30623">30623</a> | [Details](ClientSetDiscoveryItemAgreementResponse.md) | [ClientSetDiscoveryResponseItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto) |
 | <a name="action_624">624</a>     | [Details](ClientGetPoll.md)                           | [ClientGetPoll](../../../../app/assets/proto/ClientGetPoll.proto)                                             |
@@ -362,6 +374,8 @@
 | <a name="action_30627">30627</a> | [Details](ClientSearchResponse.md)                    | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                       |
 | <a name="action_628">628</a>     | [Details](ClientRoomMemberSearch.md)                  | [ClientRoomMemberSearch](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                           |
 | <a name="action_30628">30628</a> | [Details](ClientRoomMemberSearchResponse.md)          | [ClientRoomMemberSearchResponse](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                   |
+| <a name="action_629">629</a>     | [Details](ClientSearchMessage.md)                     | [ClientSearchMessage](../../../../app/assets/proto/ClientSearchMessage.proto)                           |
+
 
 # File 7xx , 307xx
 
@@ -423,6 +437,8 @@
 | <a name="action_30910">30910</a> | [Details](CallRequestResponse.md)               | [CallRequestResponse](../../../../app/assets/proto/CallRequest.proto)                             |
 | <a name="action_911">911</a>     | [Details](CallInfo.md)                          | [CallInfo](../../../../app/assets/proto/CallInfo.proto)                                           |
 | <a name="action_30911">30911</a> | [Details](CallInfoResponse.md)                  | [CallInfoResponse](../../../../app/assets/proto/CallInfo.proto)                                   |
+| <a name="action_912">912</a>     | [Details](SignalingCallFeature.md)                          | [SignalCallFeature](../../../../app/assets/proto/SignalingCallFeature.proto)                      |
+
 
 # Geo 10xx , 310xx
 
@@ -453,6 +469,11 @@
 | <a name="action_31100">31100</a> | [Details](ClientGetStateResponse.md)      | [ClientGetStateResponse](../../../../app/assets/proto/ClientGetState.proto)           |
 | <a name="action_1101">1101</a>   | [Details](ClientGetDifference.md)         | [ClientGetDifference](../../../../app/assets/proto/ClientGetDifference.proto)         |
 | <a name="action_31101">31101</a> | [Details](ClientGetDifferenceResponse.md) | [ClientGetDifferenceResponse](../../../../app/assets/proto/ClientGetDifference.proto) |
+| <a name="action_1102">1102</a>   | [Details](UpdatesTooLong.md)              | [UpdatesTooLong](../../../../app/assets/proto/UpdatesTooLong.proto)         |
+| <a name="action_1103">1103</a>   | [Details](UpdatesSlice.md)                | [UpdatesSlice](../../../../app/assets/proto/UpdatesSlice.proto)         |
+| <a name="action_1104">1104</a>   | [Details](UpdatesEmpty.md)                | [UpdatesEmpty](../../../../app/assets/proto/UpdatesEmpty.proto)         |
+| <a name="action_1105">1105</a>   | [Details](NewUpdate.md)                   | [NewUpdate](../../../../app/assets/proto/NewUpdate.proto)         |
+
 
 # Story 12xx , 312xx
 
@@ -500,6 +521,7 @@
 | <a name="action_39104">39104</a> | [Details](MplSalesConfirmResponse.md)        | [MplSalesConfirmResponse](../../../../app/assets/proto/MplSalesConfirm.proto)               |
 | <a name="action_9106">9106</a>   | [Details](MplGetCardToCardToken.md)          | [MplGetCardToCardToken](../../../../app/assets/proto/MplGetCardToCardToken.proto)           |
 | <a name="action_39106">39106</a> | [Details](MplGetCardToCardTokenResponse.md)  | [MplGetCardToCardTokenResponse](../../../../app/assets/proto/MplGetCardToCardToken.proto)   |
+| <a name="action_9105">9105</a>   | [Details](MplGetCardToCardInquiry.md)        | [MplGetCardToCardInquiry](../../../../app/assets/proto/MplGetCardToCardInquiry.proto)           |
 | <a name="action_9107">9107</a>   | [Details](MplSalesList.md)                   | [MplSalesList](../../../../app/assets/proto/MplSalesList.proto)                             |
 | <a name="action_39107">39107</a> | [Details](MplSalesListResponse.md)           | [MplSalesListResponse](../../../../app/assets/proto/MplSalesList.proto)                     |
 | <a name="action_9108">9108</a>   | [Details](MplSetCardToCardResult.md)         | [MplSetCardToCardResult](../../../../app/assets/proto/MplSetCardToCardResult.proto)         |
@@ -527,3 +549,31 @@
 | <a name="action_60002">60002</a> | [Details](PushUserInfoExpiredResponse.md)       | [PushUserInfoExpiredResponse](../../../../app/assets/proto/PushUserInfoExpired.proto)             |
 | <a name="action_60003">60003</a> | [Details](PushRateSignalingResponse.md)         | [PushRateSignalingResponse](../../../../app/assets/proto/PushRateSignaling.proto)                 |
 | <a name="action_60004">60004</a> | [Details](PushWalletPaymentVerifiedResponse.md) | [PushWalletPaymentVerifiedResponse](../../../../app/assets/proto/PushWalletPaymentVerified.proto) |
+
+
+
+
+# Hub 13XX
+
+| Id                             | Details                            | Proto file                                                                     |
+|--------------------------------|------------------------------------|--------------------------------------------------------------------------------|
+| <a name="action_1300">1300</a> | [Details](HubCardEnrollment.md)    | [HubCardEnrollment](../../../../app/assets/proto/HubCardEnrollment.proto)      |
+| <a name="action_1301">1301</a> | [Details](HubCardRegister.md)      | [HubCardRegister](../../../../app/assets/proto/HubCardRegister.proto)          |
+| <a name="action_1302">1302</a> | [Details](HubCardReactivation.md)  | [HubCardReactivation](../../../../app/assets/proto/HubCardReactivation.proto)  |
+| <a name="action_1303">1303</a> | [Details](HubCardRenewId.md)       | [HubCardRenewId](../../../../app/assets/proto/HubCardRenewId.proto)            |
+| <a name="action_1304">1304</a> | [Details](HubCardGetAll.md)       | [HubCardGetAll](../../../../app/assets/proto/HubCardGetAll.proto)             |
+| <a name="action_1305">1305</a> | [Details](HubCardHolderInquiry.md) | [HubCardHolderInquiry](../../../../app/assets/proto/HubCardHolderInquiry.proto) |
+| <a name="action_1306">1306</a> | [Details](HubCardTransfer.md)      | [HubCardTransfer](../../../../app/assets/proto/HubCardTransfer.proto)          |
+| <a name="action_1307">1307</a> | [Details](HubCardOTP.md)           | [HubCardOTP](../../../../app/assets/proto/HubCardOtp.proto)                    |
+| <a name="action_1308">1308</a> | [Details](HubGetTransaction.md)    | [HubGetTransaction](../../../../app/assets/proto/HubGetTransaction.proto)      |
+| <a name="action_1309">1309</a> | [Details](HubGetTransactionId.md)  | [HubGetTransactionId](../../../../app/assets/proto/HubGetTransactionId.proto)  |
+
+
+
+# Mxb 14XX
+
+| Id                             | Details                                  | Proto file                                                             |
+|--------------------------------|------------------------------------------|------------------------------------------------------------------------|
+| <a name="action_1400">1400</a> | [Details](MxbUserActivation.md)             | [MxbUserActivation](../../../../app/assets/proto/MxbUserActivation.proto) |
+| <a name="action_1401">1401</a> | [Details](MxbUserInsertion.md)     | [MxbUserInsertion](../../../../app/assets/proto/MxbUserInsertion.proto)  |
+| <a name="action_1402">1402</a> | [Details](MxbUserSearch.md)         | [MxbUserSearch](../../../../app/assets/proto/MxbUserSearch.proto) |
