@@ -1,3 +1,5 @@
-| Parameters 	| Required 	                | Description                                                             	    |
-|------------	|----------	                |-------------------------------------------------------------------------	    |
-| response   	| :white_check_mark:      	| [Response](Response.md)                                                 	    |
+| Parameters 	 | Required 	                | Description                                                             	    |
+|--------------|----------	                |-------------------------------------------------------------------------	    |
+| request   	  | :white_check_mark:      	| [Response](Response.md)                                                 	    |
+| messenger_id |                           |                                                                              |
+| phone        |                           |                                                                              |
