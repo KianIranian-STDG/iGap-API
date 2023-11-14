@@ -146,9 +146,20 @@
 * :triangular_flag_on_post: [Time](info/Time.md)
 * :triangular_flag_on_post: [Page](info/Page.md)
 * [Wallpaper](info/Wallpaper.md)
+* [Update](info/Update.md)
+* [Config](info/Config.md)
+* [CharityCampaign](info/CharityCampaign.md)
+* [AdvertiseConfig](info/AdvertiseConfig.md)
 
 # Client
 * [Condition](client/Condition.md)
+* [GetUserRepresentative](client/GetUserRepresentative.md)
+* [GetPoll](client/GetPoll.md)
+* [SetPollItemClick](client/SetPollItemClick.md)
+* [roomChangeOwner](client/RoomChangeOwner.md)
+* [Search](client/Search.md)
+* [RoomMemberSearch](client/RoomMemberSearch.md)
+* [SearchMessage](client/SearchMessage.md)
 * [GetRoomList](client/GetRoomList.md)
 * [GetRoom](client/GetRoom.md)
 * [GetRoomHistory](client/GetRoomHistory.md)
@@ -198,6 +209,9 @@
 * [GetLog](signaling/GetLog.md)
 * :o: [ClearLog](signaling/ClearLog.md)
 * [Rate](signaling/Rate.md)
+* [NacHubCallRequest](signaling/NacHubCallRequest.md)
+* [NacHubCallLog](signaling/NacHubCallLog.md)
+* [CallFeature](signaling/CallFeature.md)
 
 # Geo
 * [GetConfiguration](geo/GetConfiguration.md)
@@ -225,7 +239,61 @@
 * [SetSalesResult](mpl/SetSalesResult.md)
 * [SalesConfirm](mpl/SalesConfirm.md)
 * [SalesList](mpl/SalesList.md)
+* [GetCardToCardInquiry](mpl/GetCardToCardInquiry.md)
+* [TransactionList](mpl/TransactionList.md)
+* [TransactionInfo](mpl/TransactionInfo.md)
 
 # BillInquiry
 * [Mci](bill-inquiry/Mci.md)
 * [Telecom](bill-inquiry/Telecom.md)
+
+
+# Update Queue
+* [GetStatus](updateQueue/GetStatus.md)
+* [GetDifference](updateQueue/GetDifference.md)
+* [UpdatesTooLong](updateQueue/UpdatesTooLong.md)
+* [UpdatesSlice](updateQueue/UpdatesSlice.md)
+* [UpdatesEmpty](updateQueue/UpdatesEmpty.md)
+* [NewUpdate](updateQueue/NewUpdate.md)
+
+
+# Story
+* [UserAddNew](story/UserAddNew.md)
+* [RoomAddNew](story/RoomAddNew.md)
+* [GetStories](story/GetStories.md)
+* [AddView](story/AddViews.md)
+* [GetOwnStoryViews](story/GetOwnStoryViews.md)
+* [DeleteStory](story/DeleteStory.md)
+
+
+# Hub
+* [CardEnrollment](hub/CardEnrollment.md)
+* [CardRegister](hub/CardRegister.md)
+* [CardReActivation](hub/CardReactivation.md)
+* [CardRenewId](hub/CardRenewId.md)
+* [CardGetAll](hub/CardGetAll.md)
+* [CardHolderInquiry](hub/CardHolderInquiry.md)
+* [CardTransfer](hub/CardTransfer.md)
+* [CardOTP](hub/CardOtp.md)
+* [GetTransaction](hub/GetTransaction.md)
+* [GetTransactionId](hub/GetTransactionId.md)
+
+
+# Mxb
+* [UserActivation](mxb/UserActivation.md)
+* [UserInsertion](mxb/UserInsertion.md)
+* [UserSearch](mxb/UserSearch.md)
+
+
+# Wallet
+* [GetAccessToken](wallet/GetAccessToken.md)
+* [PaymentInit](wallet/payment/Init.md)
+* [Register](wallet/Register.md)
+* [IdMapping](wallet/IdMapping.md)
+
+# Push
+* [LoginToken](push/LoginToken.md)
+* [TwoStepVerification](push/TwoStepVerified.md)
+* [UserInfoExpired](push/UserInfoExpired.md)
+* [RateSignaling](push/RateSignaling.md)
+* [WalletPaymentVerified](push/WalletPaymentVerified.md)
