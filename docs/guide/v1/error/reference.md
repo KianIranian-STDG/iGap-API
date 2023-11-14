@@ -90,6 +90,8 @@
 
 ---
 
+* 132 - [USER_PROFILE_UPDATE_BAD_PAYLOAD](README.md#error-132-user_profile_update_bad_payload)
+
 * 138 - [USER_AVATAR_ADD_BAD_PAYLOAD](README.md#error-138-user_avatar_add_bad_payload)
 * 139 - [USER_AVATAR_ADD_INTERNAL_SERVER_ERROR](README.md#error-139-user_avatar_add_internal_server_error)
 * 140 - [USER_AVATAR_ADD_FORBIDDEN](README.md#error-140-user_avatar_add_forbidden)
@@ -153,6 +155,7 @@
 
 * 166 - [USER_UPDATE_STATUS_BAD_PAYLOAD](README.md#error-166-user_update_status_bad_payload)
 * 167 - [USER_UPDATE_STATUS_INTERNAL_SERVER_ERROR](README.md#error-167-user_update_status_internal_server_error)
+* 10268 - [USER_UPDATE_STATUS_FORBIDDEN](README.md#error-10268-user_update_status_forbidden)
 
 ---
 
@@ -361,6 +364,15 @@
 
 * 10182 - [USER_IVAND_SET_ACTIVITY_BAD_PAYLOAD](README.md#error-10182-user_ivand_set_activity_bad_payload)
 * 10183 - [USER_IVAND_SET_ACTIVITY_INTERNAL_SERVER_ERROR](README.md#error-10183-user_ivand_set_activity_internal_server_error)
+
+---
+
+* 10189 - [USER_PROFILE_SET_NATIONAL_CODE_BAD_PAYLOAD](README.md#error-10189-user_profile_set_national_code_bad_payload)
+
+---
+
+* 10191 - [USER_PROFILE_GET_NATIONAL_CODE_BAD_PAYLOAD](README.md#error-10191-user_profile_get_national_code_internal_server_error)
+* 10192 - [USER_PROFILE_GET_NATIONAL_CODE_INTERNAL_SERVER_ERROR](README.md#error-10192-user_profile_get_national_code_internal_server_error)
 
 
 # Chat room errors 2xx
@@ -599,10 +611,13 @@
 ---
 
 * 384 - [GROUP_CHANGE_MEMBER_ROLE_BAD_PAYLOAD](README.md#error-384-group_change_member_role_bad_payload)
+* 385 - [GROUP_CHANGE_MEMBER_ROLE_INTERNAL_SERVER_ERROR](README.md#error-385-group_change_member_role_internal_server_error)
+* 386 - [GROUP_CHANGE_MEMBER_ROLE_FORBIDDEN](README.md#error-386-group_change_member_role_forbidden)
 
 ---
 
 * 387 - [GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD](README.md#error-387-group_member_mention_list_bad_payload)
+* 388 - [GROUP_MEMBER_MENTION_LIST_INTERNAL_SERVER_ERROR](README.md#error-388-group_member_mention_list_internal_server_error)
 * 389 - [GROUP_MEMBER_MENTION_LIST_FORBIDDEN](README.md#error-389-group_member_mention_list_forbidden)
 
 ---
@@ -795,6 +810,12 @@
 * 504 - [INFO_WALLPAPER_BAD_PAYLOAD](README.md#error-504-info_wallpaper_bad_payload)
 * 505 - [INFO_WALLPAPER_INTERNAL_SERVER_ERROR](README.md#error-505-info_wallpaper_internal_server_error)
 
+---
+
+* 510 - [INFO_ADVERTISE_CONFIG_BAD_PAYLOAD](README.md#error-510-info_adveritise_config_bad_payload)
+* 511 - [INFO_ADVERTISE_CONFIG_INTERNAL_SERVER_ERROR](README.md#error-511-info_adveritise_config_internal_server_error)
+* 512 - [INFO_ADVERTISE_CONFIG_NOT_FOUND](README.md#error-512-info_adveritise_config_not_found)
+
 # Client errors 6xx
 
 * 600 - [CLIENT_CONDITION_BAD_PAYLOAD](README.md#error-600-client_condition_bad_payload)
@@ -937,8 +958,8 @@
 
 ---
 
-* 668 - [CLIENT_SET_DISCOVERY_ITEM_CLICK_BAD_PAYLOAD](README.md#error-668-client_set_discovery_item_click_internal_server_error)
-* 669 - [CLIENT_SET_DISCOVERY_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-669-client_set_discovery_item_click_internal_server_error)
+* 668 - [CLIENT_SEARCH_FORBIDDEN ](README.md#error-668-client_search_forbidden)
+* 669 - [CLIENT_SEARCH_NOT_FOUND ](README.md#error-669-client_search_not_found)
 
 ---
 
@@ -957,17 +978,26 @@
 
 ---
 
-* 676 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-676-client_set_poll_item_click_internal_server_error)
+* 676 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-676-client_set_poll_item_click_bad_payload)
 * 677 - [CLIENT_SET_POLL_ITEM_CLICK_INTERNAL_SERVER_ERROR](README.md#error-677-client_set_poll_item_click_internal_server_error)
 
 ---
 
-* 681 - [CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD](README.md#error-681-client_search_member_list_bad_payload)
-* 683 - [CLIENT_SEARCH_MEMBER_LIST_FORBIDDEN](README.md#error-683-client_search_member_list_forbidden)
+* 678 - [SEARCH_BAD_PAYLOAD](README.md#error-678-search_bad_payload)
+* 679 - [SEARCH_INTERNAL_SERVER_ERROR](README.md#error-679-search_internal_server_error)
+* 680 - [SEARCH_NOT_FOUND](README.md#error-680-searchl_not_found)
 
 ---
 
-* 685 - [CLIENT_SET_POLL_ITEM_CLICK_BAD_PAYLOAD](README.md#error-685-client_room_change_owner_bad_payload)
+* 681 - [CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD](README.md#error-681-client_search_member_list_bad_payload)
+* 682 - [CLIENT_SEARCH_MEMBER_LIST_INTERNAL_SERVER_ERROR](README.md#error-682-client_search_member_list_internal_server_error)
+* 683 - [CLIENT_SEARCH_MEMBER_LIST_FORBIDDEN](README.md#error-683-client_search_member_list_forbidden)
+* 684 - [CLIENT_SEARCH_MEMBER_LIST_NOT_FOUND](README.md#error-684-client_search_member_list_not_found)
+
+---
+
+* 685 - [CLIENT_ROOM_CHANGE_OWNER_BAD_PAYLOAD](README.md#error-685-client_room_change_owner_bad_payload)
+* 686 - [CLIENT_ROOM_CHANGE_OWNER_INTERNAL_SERVER_ERROR](README.md#error-686-client_room_change_owner_internal_server_error)
 * 687 - [CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN](README.md#error-687-client_room_change_owner_forbidden)
 
 ---
@@ -1038,21 +1068,21 @@
 
 ---
 
-* 902 - [SIGNALING_OFFER_BAD_PAYLOAD](README.md#error-902-signaling_offer_bad_payload)
+* 902 - [SIGNALING_CALLED_USER_INVALIED ](README.md#error-902-signaling_call_user_invalied)
 * 903 - [SIGNALING_OFFER_INTERNAL_SERVER_ERROR](README.md#error-903-signaling_offer_internal_server_error)
 * 904 - [SIGNALING_OFFER_FORBIDDEN](README.md#error-904-signaling_offer_forbidden)
-* 905 - [SIGNALING_OFFER_BLOCKED_BY_PEER](README.md#error-905-signaling_offer_blocked_by_peer)
-* 906 - [SIGNALING_OFFER_PRIVACY_PROTECTION](README.md#error-906-signaling_offer_privacy_protection)
+* 905 - [SIGNALING_NAC_HUB_CALL_REQUEST_BAD_PAYLOAD ](README.md#error-905-signaling_nac_hub_call_request_bad_payload)
+* 906 - [SIGNALING_NAC_HUB_CALL_REQUEST_INTERNAL_SERVER_ERROR ](README.md#error-906-signaling_nac_hub_call_request_internal_server_error)
 
 ---
 
-* 907 - [SIGNALING_RINGING_BAD_PAYLOAD](README.md#error-907-signaling_ringing_bad_payload)
+* 907 - [SIGNALING_NAC_HUB_CALL_REQUEST_FORBIDDEN ](README.md#error-907-signaling_nac_hub_call_request_forbidden)
 * 908 - [SIGNALING_RINGING_INTERNAL_SERVER_ERROR](README.md#error-908-signaling_ringing_internal_server_error)
-* 909 - [SIGNALING_RINGING_FORBIDDEN](README.md#error-909-signaling_ringing_forbidden)
+* 909 - [SIGNALING_NAC_HUB_CALL_LOG_INTERNAL_SERVER_ERROR ](README.md#error-909-signaling_nac_hub_call_log_internal_server_error)
 
 ---
 
-* 910 - [SIGNALING_ACCEPT_BAD_PAYLOAD](README.md#error-910-signaling_accept_bad_payload)
+* 910 - [SIGNALING_NAC_HUB_CALL_LOG_FORBIDDEN ](README.md#error-910-signaling_nac_hub_call_log_forbidden)
 * 911 - [SIGNALING_ACCEPT_INTERNAL_SERVER_ERROR](README.md#error-911-signaling_accept_internal_server_error)
 * 912 - [SIGNALING_ACCEPT_FORBIDDEN](README.md#error-912-signaling_accept_forbidden)
 
@@ -1089,6 +1119,12 @@
 * 926 - [SIGNALING_RATE_BAD_PAYLOAD](README.md#error-926-signaling_rate_bad_payload)
 * 927 - [SIGNALING_RATE_INTERNAL_SERVER_ERROR](README.md#error-927-signaling_rate_internal_server_error)
 * 928 - [SIGNALING_RATE_FORBIDDEN](README.md#error-928-signaling_rate_forbidden)
+
+---
+
+* 929 - [SIGNALING_CALL_FEATURE_BAD_PAYLOAD](README.md#error-929-signaling_call_feature_bad_payload)
+* 930 - [SIGNALING_CALL_FEATURE_INTERNAL_SERVER_ERROR](README.md#error-930-signaling_call_feature_internal_server_error)
+* 931 - [SIGNALING_CALL_FEATURE_FORBIDDEN](README.md#error-931-signaling_call_feature_forbidden)
 
 # Geo errors 10xx
 
@@ -1134,6 +1170,10 @@
 
 * 1019 - [GEO_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-1019-geo_get_configuration_bad_payload)
 * 1020 - [GEO_GET_CONFIGURATION_INTERNAL_SERVER_ERROR](README.md#error-1020-geo_get_configuration_internal_server_error)
+
+---
+
+* 1038 - [GEO_GET_NEARBY_COORDINATE_FORBIDDEN](README.md#error-1038-user_register_forbidden)
 
 # Wallet 90xx
 

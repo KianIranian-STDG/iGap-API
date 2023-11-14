@@ -425,6 +425,15 @@ Internal server error for request [#111](../proto/README.md#action_111)
 |------------|--------|----------|
 | *          | *      | *        |
 
+
+### Error 132 - USER_PROFILE_UPDATE_BAD_PAYLOAD
+
+Bad payload for request [#111](../proto/README.md#action_111)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 ### Error 138 - USER_AVATAR_ADD_BAD_PAYLOAD
 
 Bad payload for request [#114](../proto/README.md#action_114)
@@ -728,6 +737,15 @@ Bad payload for request [#124](../proto/README.md#action_124)
 | Minor Code | Detail              | Reaction |
 |------------|---------------------|----------|
 | 1          | Status is incorrect | *        |
+
+
+### Error 10268 - USER_UPDATE_STATUS_FORBIDDEN
+
+You are forbidden to do the action for request [#124](../proto/README.md#action_124)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
 
 ### Error 167 - USER_UPDATE_STATUS_INTERNAL_SERVER_ERROR
 
@@ -1645,6 +1663,30 @@ Internal server error for request [#155](../proto/README.md#action_155)
 | 4          | Failed to update user's score  | *        |
 | 5          | Failed to set activity         | *        |
 | 6          | Failed to rollback score       | *        |
+
+### Error 10189 - USER_PROFILE_SET_NATIONAL_CODE_BAD_PAYLOAD
+
+Bad payload for request [#159](../proto/README.md#action_159)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 10191 - USER_PROFILE_GET_NATIONAL_CODE_BAD_PAYLOAD
+
+Bad payload for request [#160](../proto/README.md#action_160)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 10192 - USER_PROFILE_GET_NATIONAL_CODE_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#160](../proto/README.md#action_160)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
 
 # Chat Errors(2xx)
 
@@ -2725,6 +2767,24 @@ Bad payload for request [#384](../proto/README.md#action_327)
 | 1          | Invalid room id    | *        |
 | 2          | Hase no permission | *        |
 
+
+### Error 385 - GROUP_CHANGE_MEMBER_ROLE_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#327](../proto/README.md#action_327)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 386 - GROUP_CHANGE_MEMBER_ROLE_FORBIDDEN
+
+Forbidden for request [#327](../proto/README.md#action_327)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 ### Error 387 - GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD
 
 Bad payload for request [#387](../proto/README.md#action_328)
@@ -2733,6 +2793,15 @@ Bad payload for request [#387](../proto/README.md#action_328)
 |------------|-----------------|----------|
 | 1          | Invalid room id | *        |
 | 2          | Room is private | *        |
+
+
+### Error 388 - GROUP_MEMBER_MENTION_LIST_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#387](../proto/README.md#action_387)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
 
 ### Error 389 - GROUP_MEMBER_MENTION_LIST_FORBIDDEN
 
@@ -3549,6 +3618,32 @@ Internal server error for request [#504](../proto/README.md#action_504)
 |------------|--------|----------|
 | *          | *      | *        |
 
+
+### Error 510 - INFO_ADVERTISE_CONFIG_BAD_PAYLOAD
+
+Bad payload for request [#508](../proto/README.md#action_508)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 511 - INFO_ADVERTISE_CONFIG_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#508](../proto/README.md#action_508)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 512 - INFO_ADVERTISE_CONFIG_NOT_FOUND
+
+Info was not found for request [#508](../proto/README.md#action_508)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 # Client Errors(6xx)
 
 ### Error 600 - CLIENT_CONDITION_BAD_PAYLOAD
@@ -4096,17 +4191,17 @@ You are forbidden to do the action for request [#620](../proto/README.md#action_
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 668 - CLIENT_SET_DISCOVERY_ITEM_CLICK_BAD_PAYLOAD
+### Error 668 - CLIENT_SEARCH_FORBIDDEN
 
-Bad payload for request [#621](../proto/README.md#action_621)
+You are forbidden to do the action for request [#621](../proto/README.md#action_621)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 669 - CLIENT_SET_DISCOVERY_ITEM_CLICK_INTERNAL_SERVER_ERROR
+### Error 669 - CLIENT_SEARCH_NOT_FOUND
 
-You are forbidden to do the action for request [#621](../proto/README.md#action_621)
+search not fount for request [#621](../proto/README.md#action_621)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
@@ -4184,9 +4279,45 @@ You are forbidden to do the action for request [#625](../proto/README.md#action_
 | 7          | Cache Error             | *        |
 | 8          | Duplicate entry         | *        |
 
+
+### Error 678 - SEARCH_BAD_PAYLOAD
+
+Bad payload for request [#627](../proto/README.md#action_627)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 679 - SEARCH_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#627](../proto/README.md#action_627)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 680 - SEARCH_NOT_FOUND
+
+search not found for request [#627](../proto/README.md#action_627)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
 ### Error 681 - CLIENT_SEARCH_MEMBER_LIST_BAD_PAYLOAD
 
 Bad payload for request [#628](../proto/README.md#action_628)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 682 - CLIENT_SEARCH_MEMBER_LIST_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#628](../proto/README.md#action_628)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
@@ -4200,6 +4331,14 @@ You are forbidden to do the action for request [#628](../proto/README.md#action_
 |------------|------------------|----------|
 | 1          | Member not found | *        |
 | 2          | No access        | *        |
+
+### Error 684 - CLIENT_SEARCH_MEMBER_LIST_NOT_FOUND
+
+client search member not found for request [#628](../proto/README.md#action_628)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
 
 ### Error 685 - CLIENT_ROOM_CHANGE_OWNER_BAD_PAYLOAD
 
@@ -4215,7 +4354,15 @@ Bad payload for request [#626](../proto/README.md#action_626)
 | 6          | Room not exists           | *        |
 | 7          | Participants count is 0   | *        |
 
-### Error 685 - CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN
+### Error 686 - CLIENT_ROOM_CHANGE_OWNER_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#626](../proto/README.md#action_626)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 687 - CLIENT_ROOM_CHANGE_OWNER_FORBIDDEN
 
 You are forbidden to do the action for request [#626](../proto/README.md#action_626)
 
@@ -4473,7 +4620,7 @@ Internal server error for request [#900](../proto/README.md#action_900)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 902 - SIGNALING_OFFER_BAD_PAYLOAD
+### Error 902 - SIGNALING_CALLED_USER_INVALIED
 
 Bad payload for request [#901](../proto/README.md#action_901)
 
@@ -4499,25 +4646,25 @@ You are forbidden to do the action for request [#901](../proto/README.md#action_
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 905 - SIGNALING_OFFER_BLOCKED_BY_PEER
+### Error 905 - SIGNALING_NAC_HUB_CALL_REQUEST_BAD_PAYLOAD
 
-You have got blocked by the peer for request [#901](../proto/README.md#action_901)
-
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
-
-### Error 906 - SIGNALING_OFFER_PRIVACY_PROTECTION
-
-You cannot call this user because of the protected privacy for the request [#901](../proto/README.md#action_901)
+Bad payload for request [#901](../proto/README.md#action_901)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 907 - SIGNALING_RINGING_BAD_PAYLOAD
+### Error 906 - SIGNALING_NAC_HUB_CALL_REQUEST_INTERNAL_SERVER_ERROR
 
-Bad payload for request [#902](../proto/README.md#action_902)
+Internal server error for request [#901](../proto/README.md#action_901)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 907 - SIGNALING_NAC_HUB_CALL_REQUEST_FORBIDDEN
+
+You are forbidden to do the action for request [#902](../proto/README.md#action_902)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
@@ -4531,17 +4678,17 @@ Internal server error for request [#902](../proto/README.md#action_902)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 909 - SIGNALING_RINGING_FORBIDDEN
+### Error 909 - SIGNALING_NAC_HUB_CALL_LOG_INTERNAL_SERVER_ERROR
 
-You are forbidden to do the action for request [#902](../proto/README.md#action_902)
+Internal server error for request [#902](../proto/README.md#action_902)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 910 - SIGNALING_ACCEPT_BAD_PAYLOAD
+### Error 910 - SIGNALING_NAC_HUB_CALL_LOG_FORBIDDEN
 
-Bad payload for request [#903](../proto/README.md#action_903)
+You are forbidden to do the action for request [#903](../proto/README.md#action_903)
 
 | Minor Code | Detail                | Reaction |
 |------------|-----------------------|----------|
@@ -4697,6 +4844,33 @@ You are forbidden to do the action for request [#909](../proto/README.md#action_
 |------------|--------|----------|
 | *          | *      | *        |
 
+
+### Error 929 - SIGNALING_CALL_FEATURE_BAD_PAYLOAD
+
+Bad payload for request [#912](../proto/README.md#action_912)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 930 - SIGNALING_CALL_FEATURE_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#912](../proto/README.md#action_912)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+
+### Error 931 - SIGNALING_CALL_FEATURE_FORBIDDEN
+
+You are forbidden to do the action for request [#912](../proto/README.md#action_912)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 # Geo errors 10xx
 
 ### Error 1000 - GEO_GET_REGISTER_STATUS_BAD_PAYLOAD
@@ -4780,15 +4954,15 @@ You are forbidden to do the action for request [#1003](../proto/README.md#action
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 1010 - GEO_UPDATE_COMMENT_BAD_PAYLOAD
+### Error 1010 - PEER_INSERT_ELASTIC_INTERNAL_SERVER_ERROR
 
-Bad payload for request [#1004](../proto/README.md#action_1004)
+Internal server error for request [#1004](../proto/README.md#action_1004)
 
 | Minor Code | Detail             | Reaction |
 |------------|--------------------|----------|
 | 1          | Comment is invalid | *        |
 
-### error 1011 - GEO_UPDATE_COMMENT_INTERNAL_SERVER_ERROR
+### error 1011 - PEER_UPDATE_ELASTIC_INTERNAL_SERVER_ERROR
 
 Internal server error for request [#1004](../proto/README.md#action_1004)
 
@@ -4796,9 +4970,9 @@ Internal server error for request [#1004](../proto/README.md#action_1004)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 1012 - GEO_UPDATE_COMMENT_FORBIDDEN
+### Error 1012 - PEER_DELETE_ELASTIC_INTERNAL_SERVER_ERROR
 
-You are forbidden to do the action for request [#1004](../proto/README.md#action_1004)
+Internal server error for request [#1004](../proto/README.md#action_1004)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
@@ -4865,6 +5039,14 @@ Bad payload for request [#1007](../proto/README.md#action_1007)
 ### Error 1020 - GEO_GET_CONFIGURATION_INTERNAL_SERVER_ERROR
 
 Internal server error for request [#1007](../proto/README.md#action_1007)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
+### Error 1038 - USER_REGISTER_FORBIDDEN
+
+You are forbidden to do the action for reques [#100](../proto/README.md#action_100)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
@@ -5016,7 +5198,7 @@ No such user was found for request [#9003](../proto/README.md#action_9003)
 
 # Mpl errors 90xx
 
-### Error 9100 - MPL_GET_BILL_TOKEN_BAD_PAYLOAD
+### Error 9100 - MXB_USER_ACTIVATION_BAD_PAYLOAD
 
 Bad payload for request [#9100](../proto/README.md#action_9100)
 
@@ -5025,7 +5207,7 @@ Bad payload for request [#9100](../proto/README.md#action_9100)
 | 1          | bill_id is invalid | *        |
 | 2          | pay_id is invalid  | *        |
 
-### Error 9101 - MPL_GET_BILL_TOKEN_INTERNAL_SERVER_ERROR
+### Error 9101 - MXB_USER_ACTIVATION_INTERNAL_SERVER_ERROR
 
 Internal server error for request [#9100](../proto/README.md#action_9100)
 
@@ -5033,16 +5215,16 @@ Internal server error for request [#9100](../proto/README.md#action_9100)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9102 - MPL_GET_BILL_TOKEN_BAD_GATEWAY
+### Error 9102 - MXB_USER_ACTIVATION_USER_NOT_FOUND
 
-Server was not able to get a valid or any response from the Mpl server for
+Server was not able to get a valid or any response from the Mxb server for
 request [#9100](../proto/README.md#action_9100)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9103 - MPL_GET_BILL_TOKEN_FORBIDDEN
+### Error 9103 - MXB_USER_ACTIVATION_FORBIDDEN
 
 You are forbidden to do the action for request [#9100](../proto/README.md#action_9100)
 
@@ -5050,7 +5232,7 @@ You are forbidden to do the action for request [#9100](../proto/README.md#action
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9104 - MPL_GET_TOPUP_TOKEN_BAD_PAYLOAD
+### Error 9104 - MXB_USER_INSERTION_BAD_PAYLOAD
 
 Bad payload for request [#9101](../proto/README.md#action_9101)
 
@@ -5060,7 +5242,7 @@ Bad payload for request [#9101](../proto/README.md#action_9101)
 | 2          | amount is invalid               | *        |
 | 2          | type is invalid                 | *        |
 
-### Error 9105 - MPL_GET_TOPUP_TOKEN_INTERNAL_SERVER_ERROR
+### Error 9105 - MXB_USER_INSERTION_INTERNAL_SERVER_ERROR
 
 Internal server error for request [#9101](../proto/README.md#action_9101)
 
@@ -5068,16 +5250,16 @@ Internal server error for request [#9101](../proto/README.md#action_9101)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9106 - MPL_GET_TOPUP_TOKEN_BAD_GATEWAY
+### Error 9106 - MXB_USER_INSERTION_NOT_FOUND
 
-Server was not able to get a valid or any response from the Mpl server for
+Server was not able to get a valid or any response from the Mxb server for
 request [#9101](../proto/README.md#action_9101)
 
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9107 - MPL_GET_TOPUP_TOKEN_FORBIDDEN
+### Error 9107 - MXB_USER_INSERTION_FORBIDDEN
 
 You are forbidden to do the action for request [#9101](../proto/README.md#action_9101)
 
@@ -5085,7 +5267,7 @@ You are forbidden to do the action for request [#9101](../proto/README.md#action
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9108 - MPL_GET_SALES_TOKEN_BAD_PAYLOAD
+### Error 9108 - MXB_USER_SEARCH_BAD_PAYLOAD
 
 Bad payload for request [#9102](../proto/README.md#action_9102)
 
@@ -5097,7 +5279,7 @@ Bad payload for request [#9102](../proto/README.md#action_9102)
 | 4          | description is invalid    | *        |
 | 5          | Inquiry is invalid        | *        |
 
-### Error 9109 - MPL_GET_SALES_TOKEN_INTERNAL_SERVER_ERROR
+### Error 9109 - MXB_USER_SEARCH_INTERNAL_SERVER_ERROR
 
 Internal server error for request [#9102](../proto/README.md#action_9102)
 
@@ -5105,9 +5287,9 @@ Internal server error for request [#9102](../proto/README.md#action_9102)
 |------------|--------|----------|
 | *          | *      | *        |
 
-### Error 9110 - MPL_GET_SALES_TOKEN_BAD_GATEWAY
+### Error 9110 - MXB_USER_SEARCH_NOT_FOUND
 
-Server was not able to get a valid or any response from the Mpl server for
+Server was not able to get a valid or any response from the Mxb server for
 request [#9102](../proto/README.md#action_9102)
 
 | Minor Code | Detail | Reaction |
