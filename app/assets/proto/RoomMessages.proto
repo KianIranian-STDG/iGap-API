@@ -1,0 +1,36 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoRoomMessages";
+
+message RoomMessages {
+	Request request = 1;
+
+	message MessageInfo {
+		uint64 room_id = 1;
+		uint64 member_id = 2;
+		uint64 start_message_id = 3;
+		uint64 seen_version_id = 4;
+		uint64 last_read_message_id = 5;
+		uint64 document_id = 6;
+		uint64 version_document_id = 7;
+		uint64 end_message_id = 8;
+		uint32 room_type = 9;
+	}
+
+	repeated MessageInfo message_info = 2;
+}
+
+message RoomMessagesResponse {
+	Response response = 1;
+	
+	message MessageInfo {
+        uint64 room_id = 1;
+        RoomMessage room_message = 2;
+    }
+    repeated MessageInfo message_info = 3;
+}

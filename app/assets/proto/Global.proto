@@ -81,6 +81,15 @@ enum SearchType {
     SEARCH_GIF = 6;
     SEARCH_CONTACT = 7;
     SEARCH_MEDIA = 8; // video & image & gif
+    SEARCH_LINK = 9;
+}
+
+// This enum is exactly copy of 'Group.Role' and 'Channel.Role'. This action has been did because of same usage of this enum in another classes.
+enum MemberRole {
+    MEMBER = 0;
+    MODERATOR = 1 [deprecated = true];
+    ADMIN = 2;
+    OWNER = 3;
 }
 
 message RoomMessageLocation {
@@ -112,21 +121,29 @@ message RoomMessageLog {
     enum ExtraType {
         NO_EXTRA = 0;
         TARGET_USER = 1;
+        TARGET_MESSAGE = 2;
     }
     ExtraType extra_type = 2;
 
-    message TargetUser {
-        uint64 id = 1 [jstype=JS_STRING];
+    message Target {
+        uint64 user_id = 1 [jstype=JS_STRING];
+        uint64 message_id = 2 [jstype=JS_STRING];
     }
-    TargetUser target_user = 3;
+    Target target = 3;
+    uint64 author_user_id = 4 [jstype=JS_STRING];
 }
-
 message RoomMessageContact {
     string first_name = 1;
     string last_name = 2;
     string nickname = 3;
     repeated string phone = 4;
     repeated string email = 5;
+
+    message ContactInfo {
+        string phone = 1;
+        uint64 user_id = 2 [jstype=JS_STRING];
+    }
+    repeated ContactInfo contact_info = 6;
 }
 
 message RoomMessageWallet {
@@ -224,7 +241,7 @@ message RoomMessageForwardFrom {
     uint64 room_id = 1 [jstype=JS_STRING];
     uint64 message_id = 2 [jstype=JS_STRING];
     uint64 document_id = 3 [jstype=JS_STRING];
-
+    string forward_from = 4;
 }
 
 message RoomMessageStory {
@@ -303,6 +320,8 @@ message RegisteredUser {
     bool verified = 17;
     bool bot = 18;
     bool mxb_enable = 19;
+    string email = 20;
+    string author_hash = 21;
 }
 
 enum ClientAction {
@@ -326,6 +345,7 @@ enum ClientAction {
 message Avatar {
     uint64 id = 1 [jstype=JS_STRING];
     File file = 2;
+    uint64 owner_id = 3 [jstype=JS_STRING];
 }
 
 enum RoomType {
@@ -359,6 +379,11 @@ message RoomMessage {
             uint64 room_id = 1 [jstype=JS_STRING];
         }
         Room room = 3;
+
+        message ForwardFrom {
+            string title = 1;
+        }
+        ForwardFrom forward = 4;
     }
     Author author = 8;
 
@@ -447,6 +472,31 @@ message Room {
 
     uint32 app_id = 19;
     RoomAccess permission = 20;
+    bool pay = 21;
+}
+
+message MxbRoom {
+    uint64 id = 1 [jstype=JS_STRING];
+    enum Type {
+        GROUP = 0;
+        CHANNEL = 1;
+    }
+    Type type = 2;
+
+    enum RoomPrivacy {
+        PRIVATE = 0;
+        PUBLIC = 1;
+    }
+    RoomPrivacy privacy = 3;
+
+    string title = 4;
+    repeated uint64 admins = 5;
+    uint64 owner_id = 6;
+    string avatar  = 7; //base64 avatar image
+    string description = 8;
+    string username = 9;
+    repeated uint32 listeners = 10;
+    bool is_global = 11;
 }
 
 message ChatRoom {
@@ -488,7 +538,7 @@ message GroupRoom {
     }
     PublicExtra public_extra = 11;
     GroupChangeMemberRights.MemberRights room_rights = 12;
-    bool is_mention = 13;
+    repeated uint64 mention_message_ids = 13;
 }
 
 message ChannelRoom {
@@ -537,6 +587,16 @@ message Thumbnail {
     string mime = 6;
 }
 
+message Waveform {
+
+    repeated Data data = 1;
+
+    message Data {
+        float pos = 1;
+        float neg = 2;
+    }
+}
+
 message File {
     string token = 1;
     string name = 2;
@@ -550,6 +610,7 @@ message File {
     string cache_id = 10;
     string mime = 11;
     string public_url = 12;
+    Waveform waveform = 13;
 }
 
 
@@ -826,7 +887,7 @@ message BotInfo {
     repeated BotAction actions = 3;
 }
 
-message Mention{
+message Mention {
     repeated uint64 userIds = 1;
 }
 

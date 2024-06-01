@@ -1,0 +1,23 @@
+syntax = "proto3";
+package proto.internalApi;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoAddLogMessage";
+
+message AddLogMessage {
+    Request request = 1;
+    Room.Type roomType = 2;
+    uint64 roomId = 3;
+    RoomMessageLog.Type logType = 4;
+    uint64 logTargetUserId = 5;
+    uint64 logMessageId = 6;
+    uint64 replyToMessageId = 7;
+}
+
+message AddLogMessageResponse {
+    Response response = 1;
+    RoomMessage room_message = 2;
+}

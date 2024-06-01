@@ -41,4 +41,5 @@ message UserLoginResponse {
     bool need_fcm_token = 12;
     string contact_list_version = 13;
     uint64 user_id = 14;
+    string direct_register_token = 15;
 }

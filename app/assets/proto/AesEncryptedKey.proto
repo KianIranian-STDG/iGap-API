@@ -5,15 +5,14 @@ import "Response.proto";
 import "Global.proto";
 
 option java_package = "net.iGap.proto";
-option java_outer_classname = "ProtoChatGetRoom";
+option java_outer_classname = "ProtoAesEncryptedKey";
 
-message ChatGetRoom {
+message AesEncryptedKey {
     Request request = 1;
-    uint64 peer_id = 2;
-    bool only_room_id = 3;
+    string aes_key = 2;
 }
 
-message ChatGetRoomResponse {
+message AesEncryptedKeyResponse {
     Response response = 1;
-    Room room = 2;
+    bool ok = 2;
 }

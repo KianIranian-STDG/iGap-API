@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMxbSearchRoom";
+
+message MxbSearchRoom {
+  Request request = 1;
+  string username = 2;
+}
+
+message MxbSearchRoomResponse {
+  Response response = 1;
+  repeated MxbRoom mxb_rooms = 3;
+}

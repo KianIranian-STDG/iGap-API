@@ -5,15 +5,16 @@ import "Response.proto";
 import "Global.proto";
 
 option java_package = "net.iGap.proto";
-option java_outer_classname = "ProtoChatGetRoom";
+option java_outer_classname = "ProtoUpdateDraft";
 
-message ChatGetRoom {
+message UpdateDraft {
     Request request = 1;
-    uint64 peer_id = 2;
-    bool only_room_id = 3;
+    uint64 room_id = 2;
+    RoomDraft draft = 3;
 }
 
-message ChatGetRoomResponse {
+message UpdateDraftResponse {
     Response response = 1;
-    Room room = 2;
+    uint64 room_id = 2;
+    RoomDraft draft = 3;
 }

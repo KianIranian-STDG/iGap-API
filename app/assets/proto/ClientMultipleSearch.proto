@@ -1,0 +1,41 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientMultipleSearch";
+
+message ClientMultipleSearch {
+    Request request = 1;
+    string query = 2;
+}
+
+message ClientMultipleSearchResponse {
+    Response response = 1;
+
+    message Info {
+        enum Category {
+            MINE = 0;
+            GLOBAL = 1;
+        }
+
+        enum Type {
+            USER = 0;
+            ROOM = 1;
+        }
+
+        Category info = 1;
+        Type type = 2;
+        RegisteredUser user = 3;
+        Room room = 4;
+    }
+
+    message Content {
+
+    }
+
+    repeated Info info = 2;
+    repeated Content content = 3;
+}

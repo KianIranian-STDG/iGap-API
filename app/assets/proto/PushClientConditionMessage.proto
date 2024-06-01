@@ -1,0 +1,38 @@
+syntax = "proto3";
+package proto;
+import "Response.proto";
+import "ChatSendMessage.proto";
+import "GroupSendMessage.proto";
+import "ChannelSendMessage.proto";
+import "ChatEditMessage.proto";
+import "GroupEditMessage.proto";
+import "ChannelEditMessage.proto";
+import "ChatDeleteMessage.proto";
+import "GroupDeleteMessage.proto";
+import "ChannelDeleteMessage.proto";
+import "ChatUpdateStatus.proto";
+import "GroupUpdateStatus.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoPushClientConditionMessage";
+
+message PushClientConditionMessage {
+    Response response = 1;
+
+    message ClientConditionUpdate {
+        uint64 room_id = 1;
+        repeated ChatSendMessageResponse chat_send_messages = 2;
+        repeated GroupSendMessageResponse group_send_messages = 3;
+        repeated ChannelSendMessageResponse channel_send_messages = 4;
+        repeated ChatEditMessageResponse chat_edit_messages = 5;
+        repeated GroupEditMessageResponse group_edit_messages = 6;
+        repeated ChannelEditMessageResponse channel_edit_messages = 7;
+        repeated ChatDeleteMessageResponse chat_delete_messages = 8;
+        repeated GroupDeleteMessageResponse group_delete_messages = 9;
+        repeated ChannelDeleteMessageResponse channel_delete_messages = 10;
+        repeated ChatUpdateStatusResponse chat_update_status = 11;
+        repeated GroupUpdateStatusResponse group_update_status = 12;
+    }
+
+    repeated ClientConditionUpdate client_condition_updates = 2;
+}

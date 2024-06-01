@@ -10,7 +10,7 @@ option java_outer_classname = "ProtoStoryRoomAddNew";
 
 message StoryRoomAddNew {
     Request request = 1;
-    uint64 room_id = 2 [jstype=JS_STRING];
+    uint64 room_id = 2;
     repeated StoryAddRequest token_batch = 3;
 }
 

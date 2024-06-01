@@ -10,12 +10,6 @@ message MplGetBillToken {
     Request request = 1;
     uint64 bill_id = 2;
     uint64 pay_id = 3;
-    enum Type {
-        NONE = 0;
-        MID_TERM = 1;
-        LAST_TERM = 2;
-    }
-    Type type = 4;
 }
 
 message MplGetBillTokenResponse {
@@ -24,8 +18,4 @@ message MplGetBillTokenResponse {
     string token = 3;
     uint32 expire_time = 4;
     string message = 5;
-    uint32 discount_amount = 6;
-    uint32 original_amount = 7;
-    uint32 new_pay_id = 8;
-    string organization_name = 9;
 }

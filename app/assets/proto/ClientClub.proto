@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientClub";
+
+message ClientClub {
+    Request request = 1;
+    uint64 createAt = 2;
+    uint64 numberInvited = 3;
+}
+
+message ClientClubResponse {
+    Response response = 1;
+    string totalCampaign = 2;
+    string charity = 3;
+}

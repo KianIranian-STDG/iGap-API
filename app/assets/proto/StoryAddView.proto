@@ -13,7 +13,7 @@ message StoryAddView {
 message StoryAddViewResponse {
     Response response = 1;
     uint32 viewed_at = 2;
-    uint64 story_id = 3 [jstype=JS_STRING];
-    uint64 user_id = 4 [jstype=JS_STRING];
-    uint64 story_owner_user_id = 5 [jstype=JS_STRING];
+    uint64 story_id = 3;
+    uint64 user_id = 4;
+    uint64 story_owner_user_id = 5;
 }

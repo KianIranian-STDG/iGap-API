@@ -4,15 +4,14 @@ import "Request.proto";
 import "Response.proto";
 
 option java_package = "net.iGap.proto";
-option java_outer_classname = "ProtoMxbUser";
+option java_outer_classname = "ProtoMxbUserActivation";
 
-message MxbUser {
+message MxbUserActivation {
   Request request = 1;
-  int64 mxb_user_id = 2;
-  StatusAction status_action = 3;
+  StatusAction status_action = 2;
 }
 
-message MxbUserResponse {
+message MxbUserActivationResponse {
   Response response = 1;
   StatusAction status_action = 2;
 }

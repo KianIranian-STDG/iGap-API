@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingCallFeature";
+
+message SignalingCallFeature {
+    Request request = 1;
+
+    enum Type {
+        HOLD = 0;
+        CAMERA = 1;
+        MUTE = 2;
+    }
+    Type type = 2;
+    bool type_status = 3;
+}
+
+message SignalingCallFeatureResponse {
+    Response response = 1;
+    SignalingCallFeature.Type type = 2;
+    bool type_status = 3;
+}

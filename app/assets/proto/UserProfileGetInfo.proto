@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserProfileGetInfo";
+
+message UserProfileGetInfo {
+    Request request = 1;
+}
+
+message UserProfileGetInfoResponse {
+    Response response = 1;
+    string bio = 2;
+	string email = 3;
+	Gender gender = 4;
+	string nickname = 5;
+	string username = 6;
+}
