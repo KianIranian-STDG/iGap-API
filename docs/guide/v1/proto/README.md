@@ -69,8 +69,8 @@
 | <a name="action_30126">30126</a> | [Details](UserSessionTerminateResponse.md)                            | [UserSessionTerminateResponse](../../../../app/assets/proto/UserSessionTerminate.proto)                                                       |
 | <a name="action_127">127</a>     | [Details](UserSessionLogout.md)                                       | [UserSessionLogout](../../../../app/assets/proto/UserSessionLogout.proto)                                                                     |
 | <a name="action_30127">30127</a> | [Details](UserSessionLogoutResponse.md)                               | [UserSessionLogoutResponse](../../../../app/assets/proto/UserSessionLogout.proto)                                                             |
-| <a name="action_127">127</a>     | [Details](UserSessionLogout.md)                                       | [UserSessionLogout](../../../../app/assets/proto/UserSessionLogout.proto)                                                                     |
-| <a name="action_30127">30127</a> | [Details](UserSessionLogoutResponse.md)                               | [UserSessionLogoutResponse](../../../../app/assets/proto/UserSessionLogout.proto)                                                             |
+| <a name="action_127">127</a>     | [Details](UserSessionsTerminate.md)                                   | [UserSessionsTerminate](../../../../app/assets/proto/UserSessionsTerminate.proto)                                                             |
+| <a name="action_30127">30127</a> | [Details](UserSessionsTerminateResponse.md)                           | [UserSessionsTerminateResponse](../../../../app/assets/proto/UserSessionsTerminate.proto)                                                     |
 | <a name="action_128">128</a>     | [Details](UserContactsBlock.md)                                       | [UserContactsBlock](../../../../app/assets/proto/UserContactsBlock.proto)                                                                     |
 | <a name="action_30128">30128</a> | [Details](UserContactsBlockResponse.md)                               | [UserContactsBlockResponse](../../../../app/assets/proto/UserContactsBlock.proto)                                                             |
 | <a name="action_129">129</a>     | [Details](UserContactsUnblock.md)                                     | [UserContactsUnblock](../../../../app/assets/proto/UserContactsUnblock.proto)                                                                 |
@@ -133,6 +133,12 @@
 | <a name="action_30162">30162</a> | [Details](ChangePhoneNumberResponse.md)                               | [ChangePhoneNumberResponse](../../../../app/assets/proto/ChangePhoneNumber.proto)                                                             |
 | <a name="action_163">163</a>     | [Details](VerifyNewPhoneNumber.md)                                    | [VerifyNewPhoneNumber](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                               |
 | <a name="action_30163">30163</a> | [Details](VerifyNewPhoneNumberResponse.md)                            | [VerifyNewPhoneNumberResponse](../../../../app/assets/proto/VerifyNewPhoneNumber.proto)                                                       |
+| <a name="action_164">164</a>     | [Details](UserProfileUpdate.md)                                       | [UserProfileUpdate](../../../../app/assets/proto/UserProfileUpdate.proto)                                                                     |
+| <a name="action_30164">30164</a> | [Details](UserProfileUpdateResponse.md)                               | [UserProfileUpdateResponse](../../../../app/assets/proto/UserProfileUpdate.proto)                                                             |
+| <a name="action_165">165</a>     | [Details](UserProfileSetNationalCode.md)                              | [UserProfileSetNationalCode](../../../../app/assets/proto/UserProfileSetNationalCode.proto)                                                   |
+| <a name="action_30165">30165</a> | [Details](UserProfileSetNationalCodeResponse.md)                      | [UserProfileSetNationalCodeResponse](../../../../app/assets/proto/UserProfileSetNationalCode.proto)                                           |
+| <a name="action_166">166</a>     | [Details](UsersInfo.md)                                               | [UsersInfo](../../../../app/assets/proto/UsersInfo.proto)                                                                                     |
+| <a name="action_30166">30166</a> | [Details](UsersInfoResponse.md)                                       | [UsersInfoResponse](../../../../app/assets/proto/UsersInfo.proto)                                                                             |
 
 # Chat 2xx , 302xx
 
@@ -287,20 +293,22 @@
 
 # Info 5xx , 305xx
 
-| Id                               | Details                             | Proto file                                                                |
-|----------------------------------|-------------------------------------|---------------------------------------------------------------------------|
-| <a name="action_500">500</a>     | [Details](InfoLocation.md)          | [InfoLocation](../../../../app/assets/proto/InfoLocation.proto)           |
-| <a name="action_30500">30500</a> | [Details](InfoLocationResponse.md)  | [InfoLocationResponse](../../../../app/assets/proto/InfoLocation.proto)   |
-| <a name="action_501">501</a>     | [Details](InfoCountry.md)           | [InfoCountry](../../../../app/assets/proto/InfoCountry.proto)             |
-| <a name="action_30501">30501</a> | [Details](InfoCountryResponse.md)   | [InfoCountryResponse](../../../../app/assets/proto/InfoCountry.proto)     |
-| <a name="action_502">502</a>     | [Details](InfoTime.md)              | [InfoTime](../../../../app/assets/proto/InfoTime.proto)                   |
-| <a name="action_30502">30502</a> | [Details](InfoTimeResponse.md)      | [InfoTimeResponse](../../../../app/assets/proto/InfoTime.proto)           |
-| <a name="action_503">503</a>     | [Details](InfoPage.md)              | [InfoPage](../../../../app/assets/proto/InfoPage.proto)                   |
-| <a name="action_30503">30503</a> | [Details](InfoPageResponse.md)      | [InfoPageResponse](../../../../app/assets/proto/InfoPage.proto)           |
-| <a name="action_504">504</a>     | [Details](InfoWallpaper.md)         | [InfoWallpaper](../../../../app/assets/proto/InfoWallpaper.proto)         |
-| <a name="action_30504">30504</a> | [Details](InfoWallpaperResponse.md) | [InfoWallpaperResponse](../../../../app/assets/proto/InfoWallpaper.proto) |
-| <a name="action_505">505</a>     | [Details](InfoUpdate.md)            | [InfoUpdate](../../../../app/assets/proto/InfoUpdate.proto)               |
-| <a name="action_30505">30505</a> | [Details](InfoUpdateResponse.md)    | [InfoUpdateResponse](../../../../app/assets/proto/InfoUpdate.proto)       |
+| Id                               | Details                                   | Proto file                                                                |
+|----------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
+| <a name="action_500">500</a>     | [Details](InfoLocation.md)                | [InfoLocation](../../../../app/assets/proto/InfoLocation.proto)           |
+| <a name="action_30500">30500</a> | [Details](InfoLocationResponse.md)        | [InfoLocationResponse](../../../../app/assets/proto/InfoLocation.proto)   |
+| <a name="action_501">501</a>     | [Details](InfoCountry.md)                 | [InfoCountry](../../../../app/assets/proto/InfoCountry.proto)             |
+| <a name="action_30501">30501</a> | [Details](InfoCountryResponse.md)         | [InfoCountryResponse](../../../../app/assets/proto/InfoCountry.proto)     |
+| <a name="action_502">502</a>     | [Details](InfoTime.md)                    | [InfoTime](../../../../app/assets/proto/InfoTime.proto)                   |
+| <a name="action_30502">30502</a> | [Details](InfoTimeResponse.md)            | [InfoTimeResponse](../../../../app/assets/proto/InfoTime.proto)           |
+| <a name="action_503">503</a>     | [Details](InfoPage.md)                    | [InfoPage](../../../../app/assets/proto/InfoPage.proto)                   |
+| <a name="action_30503">30503</a> | [Details](InfoPageResponse.md)            | [InfoPageResponse](../../../../app/assets/proto/InfoPage.proto)           |
+| <a name="action_504">504</a>     | [Details](InfoWallpaper.md)               | [InfoWallpaper](../../../../app/assets/proto/InfoWallpaper.proto)         |
+| <a name="action_30504">30504</a> | [Details](InfoWallpaperResponse.md)       | [InfoWallpaperResponse](../../../../app/assets/proto/InfoWallpaper.proto) |
+| <a name="action_505">505</a>     | [Details](InfoUpdate.md)                  | [InfoUpdate](../../../../app/assets/proto/InfoUpdate.proto)               |
+| <a name="action_30505">30505</a> | [Details](InfoUpdateResponse.md)          | [InfoUpdateResponse](../../../../app/assets/proto/InfoUpdate.proto)       |
+| <a name="action_506">506</a>     | [Details](InfoAdvertiseConfig.md)         | [InfoAdvertiseConfig](../../../../app/assets/proto/Advertise.proto)                |
+| <a name="action_30506">30506</a> | [Details](InfoAdvertiseConfigResponse.md) | [InfoAdvertiseConfigResponse](../../../../app/assets/proto/Advertise.proto)        |
 
 # Client 6xx , 306xx
 
@@ -332,8 +340,8 @@
 | <a name="action_30611">30611</a> | [Details](ClientUnsubscribeFromRoomResponse.md)       | [ClientUnsubscribeFromRoomResponse](../../../../app/assets/proto/ClientUnsubscribeFromRoom.proto)             |
 | <a name="action_612">612</a>     | [Details](ClientSearchUsername.md)                    | [ClientSearchUsername](../../../../app/assets/proto/ClientSearchUsername.proto)                               |
 | <a name="action_30612">30612</a> | [Details](ClientSearchUsernameResponse.md)            | [ClientSearchUsernameResponse](../../../../app/assets/proto/ClientSearchUsername.proto)                       |
-| <a name="action_613">613</a>     | [Details](ClientCountRoomHistory.md)                  | [ClientCountRoomHistory](../../../../app/assets/proto/ClientCountRoomHistory.proto)                           |
-| <a name="action_30613">30613</a> | [Details](ClientCountRoomHistoryResponse.md)          | [ClientCountRoomHistoryResponse](../../../../app/assets/proto/ClientCountRoomHistory.proto)                   |
+| <a name="action_613">613</a>     | [Details](ClientSearchMultiple.md)                    | [ClientMultipleSearch](../../../../app/assets/proto/ClientMultipleSearch.proto)                               |
+| <a name="action_30613">30613</a> | [Details](ClientSearchMultipleResponse.md)            | [ClientMultipleSearchResponse](../../../../app/assets/proto/ClientMultipleSearch.proto)                       |
 | <a name="action_614">614</a>     | [Details](ClientMuteRoom.md)                          | [ClientMuteRoom](../../../../app/assets/proto/ClientMuteRoom.proto)                                           |
 | <a name="action_30614">30614</a> | [Details](ClientMuteRoomResponse.md)                  | [ClientMuteRoomResponse](../../../../app/assets/proto/ClientMuteRoom.proto)                                   |
 | <a name="action_615">615</a>     | [Details](ClientPinRoom.md)                           | [ClientPinRoom](../../../../app/assets/proto/ClientPinRoom.proto)                                             |
@@ -346,8 +354,8 @@
 | <a name="action_30618">30618</a> | [Details](ClientGetPromoteResponse.md)                | [ClientGetPromoteResponse](../../../../app/assets/proto/ClientGetPromote.proto)                               |
 | <a name="action_619">619</a>     | [Details](ClientGetFavoriteMenu.md)                   | [ClientGetFavoriteMenu](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                             |
 | <a name="action_30619">30619</a> | [Details](ClientGetFavoriteMenuResponse.md)           | [ClientGetFavoriteMenuResponse](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                     |
-| <a name="action_620">620</a>     | [Details](ClientGetDiscovery.md)                      | [ClientGetDiscovery](../../../../app/assets/proto/ClientGetDiscovery.proto)                                   |
-| <a name="action_30620">30620</a> | [Details](ClientGetDiscoveryResponse.md)              | [ClientGetDiscoveryResponse](../../../../app/assets/proto/ClientGetDiscovery.proto)                           |
+| <a name="action_620">620</a>     | [Details](ClientSearch.md)                            | [ClientSearch](../../../../app/assets/proto/ClientSearch.proto)                                               |
+| <a name="action_30620">30620</a> | [Details](ClientSearch.md)                            | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                 |
 | <a name="action_621">621</a>     | [Details](ClientSetDiscoveryItemClick.md)             | [ClientSetDiscoveryItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)                 |
 | <a name="action_30621">30621</a> | [Details](ClientSetDiscoveryItemClickResponse.md)     | [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)         |
 | <a name="action_623">623</a>     | [Details](ClientSetDiscoveryItemAgreement.md)         | [ClientSetDiscoveryItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)         |
@@ -423,6 +431,8 @@
 | <a name="action_30910">30910</a> | [Details](CallRequestResponse.md)               | [CallRequestResponse](../../../../app/assets/proto/CallRequest.proto)                             |
 | <a name="action_911">911</a>     | [Details](CallInfo.md)                          | [CallInfo](../../../../app/assets/proto/CallInfo.proto)                                           |
 | <a name="action_30911">30911</a> | [Details](CallInfoResponse.md)                  | [CallInfoResponse](../../../../app/assets/proto/CallInfo.proto)                                   |
+| <a name="action_912">912</a>     | [Details](SignalingCallFeature.md)              | [SignalingCallFeature](../../../../app/assets/proto/SignalingCallFeature.proto)                   |
+| <a name="action_30912">30912</a> | [Details](SignalingCallFeatureResponse.md)      | [SignalingCallFeatureResponse](../../../../app/assets/proto/SignalingCallFeature.proto)           |
 
 # Geo 10xx , 310xx
 
@@ -444,6 +454,8 @@
 | <a name="action_31006">31006</a> | [Details](GeoGetNearbyCoordinateResponse.md) | [GeoGetNearbyCoordinateResponse](../../../../app/assets/proto/GeoGetNearbyCoordinate.proto) |
 | <a name="action_1007">1007</a>   | [Details](GeoGetConfiguration.md)            | [GeoGetConfiguration](../../../../app/assets/proto/GeoGetConfiguration.proto)               |
 | <a name="action_31007">31007</a> | [Details](GeoGetConfigurationResponse.md)    | [GeoGetConfigurationResponse](../../../../app/assets/proto/GeoGetConfiguration.proto)       |
+| <a name="action_1008">1008</a>   | [Details](UserChangePhoneNumber.md)          | [ChangePhoneNumber](../../../../app/assets/proto/ChangePhoneNumber.proto)                   |
+| <a name="action_31008">31008</a> | [Details](UserChangePhoneNumberResponse.md)  | [ChangePhoneNumberResponse](../../../../app/assets/proto/ChangePhoneNumber.proto)         |
 
 # Update Queue 11xx , 311xx
 
@@ -488,18 +500,18 @@
 
 | Id                               | Details                                      | Proto file                                                                                  |
 |----------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------|
-| <a name="action_9100">9100</a>   | [Details](MplGetBillToken.md)                | [MplGetBillToken](../../../../app/assets/proto/MplGetBillToken.proto)                       |
-| <a name="action_39100">39100</a> | [Details](MplGetBillTokenResponse.md)        | [MplGetBillTokenResponse](../../../../app/assets/proto/MplGetBillToken.proto)               |
-| <a name="action_9101">9101</a>   | [Details](MplGetTopupToken.md)               | [MplGetTopupToken](../../../../app/assets/proto/MplGetTopupToken.proto)                     |
-| <a name="action_39101">39101</a> | [Details](MplGetTopupTokenResponse.md)       | [MplGetTopupTokenResponse](../../../../app/assets/proto/MplGetTopupToken.proto)             |
-| <a name="action_9102">9102</a>   | [Details](MplGetSalesToken.md)               | [MplGetSalesToken](../../../../app/assets/proto/MplGetSalesToken.proto)                     |
-| <a name="action_39102">39102</a> | [Details](MplGetSalesTokenResponse.md)       | [MplGetSalesTokenResponse](../../../../app/assets/proto/MplGetSalesToken.proto)             |
-| <a name="action_9103">9103</a>   | [Details](MplSetSalesResult.md)              | [MplSetSalesResult](../../../../app/assets/proto/MplSetSalesResult.proto)                   |
-| <a name="action_39103">39103</a> | [Details](MplSetSalesResultResponse.md)      | [MplSetSalesResultResponse](../../../../app/assets/proto/MplSetSalesResult.proto)           |
-| <a name="action_9104">9104</a>   | [Details](MplSalesConfirm.md)                | [MplSalesConfirm](../../../../app/assets/proto/MplSalesConfirm.proto)                       |
-| <a name="action_39104">39104</a> | [Details](MplSalesConfirmResponse.md)        | [MplSalesConfirmResponse](../../../../app/assets/proto/MplSalesConfirm.proto)               |
-| <a name="action_9106">9106</a>   | [Details](MplGetCardToCardToken.md)          | [MplGetCardToCardToken](../../../../app/assets/proto/MplGetCardToCardToken.proto)           |
-| <a name="action_39106">39106</a> | [Details](MplGetCardToCardTokenResponse.md)  | [MplGetCardToCardTokenResponse](../../../../app/assets/proto/MplGetCardToCardToken.proto)   |
+| <a name="action_9100">9100</a>   | [Details](MxbUserActivation.md)              | [MxbUserActivation](../../../../app/assets/proto/MxbUserActivation.proto)                       |
+| <a name="action_39100">39100</a> | [Details](MxbUserActivationResponse.md)      | [MxbUserActivationResponse](../../../../app/assets/proto/MxbUserActivation.proto)               |
+| <a name="action_9101">9101</a>   | [Details](MxbUserInsertion.md)               | [MxbUserInsertion](../../../../app/assets/proto/MxbUserInsertion.proto)                     |
+| <a name="action_39101">39101</a> | [Details](MxbUserInsertionResponse.md)       | [MxbUserInsertionResponse](../../../../app/assets/proto/MxbUserInsertion.proto)             |
+| <a name="action_9102">9102</a>   | [Details](MxbSearch.md)                      | [MxbSearch](../../../../app/assets/proto/MxbSearch.proto)                     |
+| <a name="action_39102">39102</a> | [Details](MxbSearchResponse.md)              | [MxbSearchResponse](../../../../app/assets/proto/MxbSearch.proto)             |
+| <a name="action_9103">9103</a>   | [Details](MxbCreateRoom.md)                  | [MxbCreateRoom](../../../../app/assets/proto/MxbCreateRoom.proto)                   |
+| <a name="action_39103">39103</a> | [Details](MxbCreateRoomResponse.md)          | [MxbCreateRoomResponse](../../../../app/assets/proto/MxbCreateRoom.proto)           |
+| <a name="action_9104">9104</a>   | [Details](MxbJoinRoom.md)                    | [MxbJoinRoom](../../../../app/assets/proto/MxbJoinRoom.proto)                   |
+| <a name="action_39104">39104</a> | [Details](MxbJoinRoomResponse.md)          | [MxbJoinRoomResponse](../../../../app/assets/proto/MxbJoinRoom.proto)           |
+| <a name="action_9106">9106</a>   | [Details](MxbSearchRoom.md)                  | [MxbSearchRoom](../../../../app/assets/proto/MxbSearchRoom.proto)           |
+| <a name="action_39106">39106</a> | [Details](MxbSearchRoomResponse.md)          | [MxbSearchRoomResponse](../../../../app/assets/proto/MxbSearchRoom.proto)   |
 | <a name="action_9107">9107</a>   | [Details](MplSalesList.md)                   | [MplSalesList](../../../../app/assets/proto/MplSalesList.proto)                             |
 | <a name="action_39107">39107</a> | [Details](MplSalesListResponse.md)           | [MplSalesListResponse](../../../../app/assets/proto/MplSalesList.proto)                     |
 | <a name="action_9108">9108</a>   | [Details](MplSetCardToCardResult.md)         | [MplSetCardToCardResult](../../../../app/assets/proto/MplSetCardToCardResult.proto)         |
