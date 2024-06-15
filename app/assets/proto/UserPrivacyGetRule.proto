@@ -15,4 +15,5 @@ message UserPrivacyGetRule {
 message UserPrivacyGetRuleResponse {
     Response response = 1;
     PrivacyLevel level = 3;
+    PrivacyType type = 2;
 }

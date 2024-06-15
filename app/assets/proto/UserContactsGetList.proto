@@ -14,4 +14,5 @@ message UserContactsGetList {
 message UserContactsGetListResponse {
     Response response = 1;
     repeated RegisteredUser registered_user = 2;
+    string contact_list_version = 3;
 }

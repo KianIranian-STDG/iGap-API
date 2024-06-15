@@ -11,24 +11,32 @@ message ClientRoomMemberSearch {
     Request request = 1;
     uint64 room_id = 2;
     string query = 3;
-    Role role = 4;
+    MemberRole role = 4;
 }
 
 message ClientRoomMemberSearchResponse {
     Response response = 1;
-    uint64 room_id = 2;
+    uint64 room_id = 2 [deprecated=true];
+    repeated Info info = 3 [deprecated=true];
+    repeated Result result = 4;
 
     message Info {
         RegisteredUser user = 1;
         RoomAccess room_access = 2;
         Role role = 3;
     }
-    repeated Info infos = 3;
-}
+    enum Role {
+        MEMBER = 0;
+        MODERATOR = 1;
+        ADMIN = 2;
+        OWNER = 3;
+    }
 
-enum Role {
-    MEMBER = 0;
-    MODERATOR = 1;
-    ADMIN = 2;
-    OWNER = 3;
+    message Result {
+        uint64 room_id = 2;
+        uint64 user_id = 3;
+        MemberRole role = 4;
+        string display_name = 5;
+        string username = 6;
+    }
 }

@@ -30,9 +30,10 @@ message SignalingGetLogResponse {
 
         enum Status {
             MISSED = 0;
-            CANCELED = 1;
+            NO_ANSWER = 1;
             INCOMING = 2;
             OUTGOING = 3;
+            REJECTED = 4;
         }
         Status status = 3;
 

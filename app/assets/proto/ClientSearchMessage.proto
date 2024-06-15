@@ -9,24 +9,37 @@ option java_outer_classname = "ProtoClientSearchMessage";
 
 message ClientSearchMessage {
     Request request = 1;
-    string query = 2;
-    uint64 roomId = 3;
-    uint64 start_time = 4;
-    uint64 end_time = 5;
-    uint32 room_offset = 6;
-    uint32 room_limit = 7;
-    SearchType type = 8;
+    string query = 2; // without query server find all message
+    uint64 roomId = 3; // without roomId server search in all user's rooms
+    SearchType type = 4; // type of search clients can send request by that
+    PageInfo page_info = 5; // for fetching next page with same query, client must be send
 }
 
 message ClientSearchMessageResponse {
     Response response = 1;
     repeated Result result = 2;
-    bool rooms_continues = 3;
-    uint32 total = 4;
+    PageInfo future_page_info = 3;
+    uint32 total_count = 4;
 
     message Result {
         uint64 room_id = 1;
-        RoomMessage message = 2;
+        uint64 message_id = 2;
+        uint64 sender_user_id = 3;
+        RoomType room_type = 4;
+        string message = 5;
+        RoomMessageType message_type = 6;
+        uint64 create_time = 7;
+        File file = 8;
+        uint32 view_count = 9;
+        uint32 reaction_count = 10;
+        bool has_link = 11;
+        bool is_bot = 12;
     }
+}
+
+// basic info which client must be send for get next page result
+message PageInfo {
+    uint64 start_time = 1; // for fetch next page, client must be set 'start_time' by server info
+    uint32 ignore_size = 2; // for fetch next page, client must be set 'ignore_size' by server info
 }
 

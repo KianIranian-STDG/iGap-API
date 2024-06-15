@@ -15,6 +15,15 @@ message GroupRoomMemberMention {
 
 message GroupRoomMemberMentionResponse {
     Response response = 1;
-    uint64 room_id = 2;
-    repeated RegisteredUser users = 3;
+    uint64 room_id = 2 [deprecated=true];
+    repeated RegisteredUser users = 3 [deprecated=true];
+    repeated Info info = 4;
+
+    message Info {
+        uint64 room_id = 2;
+        uint64 user_id = 3;
+        MemberRole role = 4;
+        string display_name = 5;
+        string username = 6;
+    }
 }

@@ -18,7 +18,7 @@ message GroupedStories {
         Room = 1;
     }
     Originator originator = 1;
-    uint64 originator_id = 2 [jstype=JS_STRING];
+    uint64 originator_id = 2;
     string originator_name = 3;
     bool seen_all_group_stories = 4;
     repeated Story stories = 5;

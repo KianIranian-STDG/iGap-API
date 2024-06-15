@@ -19,4 +19,5 @@ message UserContactsEditResponse {
     string first_name = 3;
     string last_name = 4;
     string initials = 5;
+    uint64 user_id = 6 [jstype=JS_STRING];
 }
