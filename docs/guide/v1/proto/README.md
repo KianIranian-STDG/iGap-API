@@ -2,8 +2,8 @@
 
 | Id                               | Details                                      | Proto file                                                                              |
 |----------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------|
-| <a name="action_0">0</a>         | [Details](ErrorResponse.md)                  | [ErrorResponse](../../../../app/assets/proto/Error.proto)                               |
-| <a name="action_30001">30001</a> | [Details](ConnectionSecuringResponse.md)     | [ConnectionSecuringResponse](../../../../app/assets/proto/ConnectionSecuring.proto)     |
+| <a name="action_0">0</a>         | [Details](Error)                  | [ErrorResponse](../../../../app/assets/proto/Error.proto)                               |
+| <a name="action_30001">30001</a> | [Details](ConnectionSecuring)     | [ConnectionSecuringResponse](../../../../app/assets/proto/ConnectionSecuring.proto)     |
 | <a name="action_2">2</a>         | [Details](ConnectionSymmetricKey.md)         | [ConnectionSymmetricKey](../../../../app/assets/proto/ConnectionSecuring.proto)         |
 | <a name="action_30002">30002</a> | [Details](ConnectionSymmetricKeyResponse.md) | [ConnectionSymmetricKeyResponse](../../../../app/assets/proto/ConnectionSecuring.proto) |
 | <a name="action_3">3</a>         | [Details](Heartbeat.md)                      | [Heartbeat](../../../../app/assets/proto/Heartbeat.proto)                               |
