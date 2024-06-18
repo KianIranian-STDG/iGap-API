@@ -17,6 +17,7 @@ message ClientRoomReport {
         PORNOGRAPHY = 2;
         VIOLENCE = 3;
         ABUSE = 4;
+        POLITICAL = 5;
     }
     Reason reason = 4;
 

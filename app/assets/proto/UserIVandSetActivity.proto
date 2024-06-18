@@ -9,7 +9,6 @@ option java_outer_classname = "ProtoUserIVandSetActivity";
 message UserIVandSetActivity {
     Request request = 1;
     string plancode = 2;
-    uint64 value = 3;
 }
 
 message UserIVandSetActivityResponse {

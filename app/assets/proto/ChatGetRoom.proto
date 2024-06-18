@@ -10,6 +10,7 @@ option java_outer_classname = "ProtoChatGetRoom";
 message ChatGetRoom {
     Request request = 1;
     uint64 peer_id = 2;
+    bool only_room_id = 3;
 }
 
 message ChatGetRoomResponse {

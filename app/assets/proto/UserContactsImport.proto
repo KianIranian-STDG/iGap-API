@@ -27,4 +27,5 @@ message UserContactsImportResponse {
         uint64 user_id = 2;
     }
     repeated Contact registered_contacts = 2;
+    string contact_list_version = 3;
 }

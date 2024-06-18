@@ -13,12 +13,12 @@ message StoryGetOwnStoryViews {
 }
 
 message StoryView {
-    uint64 user_id = 1 [jstype=JS_STRING];
+    uint64 user_id = 1;
     uint32 viewed_at = 2;
 }
 
 message GroupedViews {
-    uint64 story_id = 1 [jstype=JS_STRING];
+    uint64 story_id = 1;
     uint32 views = 2;
     repeated StoryView story_views = 3;
 }

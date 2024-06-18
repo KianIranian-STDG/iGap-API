@@ -12,6 +12,7 @@ message ClientGetRoomHistory {
     uint64 room_id = 2;
     uint64 first_message_id = 3;
 
+
     enum Direction {
         UP = 0;
         DOWN = 1;
@@ -20,6 +21,7 @@ message ClientGetRoomHistory {
 
     uint32 limit = 5;
     uint64 documentId = 6;
+    uint64 target_message_id = 7;
 }
 
 message ClientGetRoomHistoryResponse {
