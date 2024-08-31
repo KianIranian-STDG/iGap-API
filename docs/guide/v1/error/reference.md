@@ -368,6 +368,7 @@
 * 200 - [CHAT_GET_ROOM_BAD_PAYLOAD](README.md#error-200-chat_get_room_bad_payload)
 * 201 - [CHAT_GET_ROOM_INTERNAL_SERVER_ERROR](README.md#error-201-chat_get_room_internal_server_error)
 * 202 - [CHAT_GET_ROOM_PEER_NOT_FOUND](README.md#error-202-chat_get_room_peer_not_found)
+* 235 - [CHAT_GET_ROOM_FORBIDDEN](README.md#error-235-chat_get_room_forbidden)
 
 ---
 
@@ -827,6 +828,7 @@
 * 612 - [CLIENT_GET_ROOM_BAD_PAYLOAD](README.md#error-612-client_get_room_bad_payload)
 * 613 - [CLIENT_GET_ROOM_INTERNAL_SERVER_ERROR](README.md#error-613-client_get_room_internal_server_error)
 * 614 - [CLIENT_GET_ROOM_NOT_FOUND](README.md#error-614-client_get_room_not_found)
+* 688 - [CLIENT_GET_ROOM_FORBIDDEN](README.md#error-688-client_get_room_forbidden)
 
 ---
 
@@ -845,6 +847,7 @@
 * 621 - [CLIENT_RESOLVE_USERNAME_BAD_PAYLOAD](README.md#error-621-client_resolve_username_bad_payload)
 * 622 - [CLIENT_RESOLVE_USERNAME_INTERNAL_SERVER_ERROR](README.md#error-622-client_resolve_username_internal_server_error)
 * 623 - [CLIENT_RESOLVE_USERNAME_NOT_FOUND](README.md#error-623-client_resolve_username_not_found)
+* 689 - [CLIENT_RESOLVE_USERNAME_FORBIDDEN](README.md#error-689-client_resolve_username_forbidden)
 
 ---
 
@@ -857,6 +860,7 @@
 * 627 - [CLIENT_CHECK_INVITE_LINK_BAD_PAYLOAD](README.md#error-627-client_check_invite_link_bad_payload)
 * 628 - [CLIENT_CHECK_INVITE_LINK_INTERNAL_SERVER_ERROR](README.md#error-628-client_check_invite_link_internal_server_error)
 * 629 - [CLIENT_CHECK_INVITE_LINK_NOT_FOUND](README.md#error-629-client_check_invite_link_not_found)
+* 690 - [CLIENT_CHECK_INVITE_LINK_FORBIDDEN](README.md#error-690-client_check_invite_link_forbidden)
 
 ---
 
