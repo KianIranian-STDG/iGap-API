@@ -42,4 +42,5 @@ message UserLoginResponse {
     string contact_list_version = 13;
     uint64 user_id = 14;
     string direct_register_token = 15;
+    uint32 app_build_version = 16;
 }
