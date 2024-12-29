@@ -47,9 +47,15 @@ New client just connected to this session, you are not allowed to continue
 
 This operation is not permitted
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail                                       | Reaction |
+|------------|----------------------------------------------|----------|
+| 1, 2, 3, 4 | Room is suspended                            | *        |
+| 5          | Room is suspended in channelGetMessagesStats | *        |
+| 6          | Room is suspended in getUnreadCount          | *        |
+| 7          | Room is suspended in searchRoomHistory       | *        |
+| 8          | Room is suspended in deleteMessage           | *        |
+| 9, 10, 11  | Room is suspended in sendMessage             | *        |
+| 12         | Room is suspended in getLastMessage          | *        |
 
 ### Error 5 - TIMEOUT
 
@@ -1804,9 +1810,9 @@ Internal server error for request [#201](../proto/README.md#action_201)
 
 You are forbidden to do the action for request [#201](../proto/README.md#action_201)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 233 - CHAT_SEND_MESSAGE_BLOCKED_BY_PEER
 
@@ -2185,9 +2191,9 @@ Internal server error for request [#310](../proto/README.md#action_310)
 
 You are forbidden to do the action for request [#310](../proto/README.md#action_310)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 309 - GROUP_UPDATE_STATUS_BAD_PAYLOAD
 
@@ -2966,9 +2972,9 @@ Internal server error for request [#410](../proto/README.md#action_410)
 
 You are forbidden to do the action for request [#410](../proto/README.md#action_410)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 409 - CHANNEL_DELETE_BAD_PAYLOAD
 
