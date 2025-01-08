@@ -47,9 +47,15 @@ New client just connected to this session, you are not allowed to continue
 
 This operation is not permitted
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail                                       | Reaction |
+|------------|----------------------------------------------|----------|
+| 1, 2, 3, 4 | Room is suspended                            | *        |
+| 5          | Room is suspended in channelGetMessagesStats | *        |
+| 6          | Room is suspended in getUnreadCount          | *        |
+| 7          | Room is suspended in searchRoomHistory       | *        |
+| 8          | Room is suspended in deleteMessage           | *        |
+| 9, 10, 11  | Room is suspended in sendMessage             | *        |
+| 12         | Room is suspended in getLastMessage          | *        |
 
 ### Error 5 - TIMEOUT
 
@@ -1742,6 +1748,14 @@ There is no active user with the given peer_ID for request [#200](../proto/READM
 | 2          | *                              | *        |
 | 3          | Peer's account has got blocked | *        |
 
+### Error 235 - CHAT_GET_ROOM_FORBIDDEN
+
+Forbidden for request [#200](../proto/README.md#action_200)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 ### Error 203 - CHAT_SEND_MESSAGE_BAD_PAYLOAD
 
 Bad payload for request [#201](../proto/README.md#action_201)
@@ -1796,9 +1810,9 @@ Internal server error for request [#201](../proto/README.md#action_201)
 
 You are forbidden to do the action for request [#201](../proto/README.md#action_201)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 233 - CHAT_SEND_MESSAGE_BLOCKED_BY_PEER
 
@@ -1965,9 +1979,9 @@ Internal server error for request [#207](../proto/README.md#action_207)
 
 You are forbidden to do the action for request [#207](../proto/README.md#action_207)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 224 - CHAT_GET_DRAFT_BAD_PAYLOAD
 
@@ -1989,9 +2003,9 @@ Internal server error for request [#208](../proto/README.md#action_208)
 
 You are forbidden to do the action for request [#208](../proto/README.md#action_208)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 227 - CHAT_CONVERT_TO_GROUP_BAD_PAYLOAD
 
@@ -2015,9 +2029,9 @@ Internal server error for request [#209](../proto/README.md#action_209)
 
 You are forbidden to do the action for request [#209](../proto/README.md#action_209)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 3          | Room is suspended | *        |
 
 ### Error 230 - CHAT_SET_ACTION_BAD_PAYLOAD
 
@@ -2041,9 +2055,9 @@ Internal server error for request [#210](../proto/README.md#action_210)
 
 You are forbidden to do the action for request [#210](../proto/README.md#action_210)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 # Group Errors(3xx)
 
@@ -2102,9 +2116,9 @@ This user has already joined this room for request [#301](../proto/README.md#act
 
 You are forbidden to do the action for request [#301](../proto/README.md#action_301)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 362 - GROUP_ADD_MEMBER_PARTICIPANTS_COUNT_LIMIT_EXCEEDED
 
@@ -2177,9 +2191,9 @@ Internal server error for request [#310](../proto/README.md#action_310)
 
 You are forbidden to do the action for request [#310](../proto/README.md#action_310)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 309 - GROUP_UPDATE_STATUS_BAD_PAYLOAD
 
@@ -2303,9 +2317,9 @@ Internal server error for request [#302](../proto/README.md#action_302)
 
 You are forbidden to do the action for request [#302](../proto/README.md#action_302)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 324 - GROUP_KICK_MODERATOR_BAD_PAYLOAD
 
@@ -2353,9 +2367,9 @@ Internal server error for request [#306](../proto/README.md#action_306)
 
 You are forbidden to do the action for request [#306](../proto/README.md#action_306)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 330 - GROUP_EDIT_BAD_PAYLOAD
 
@@ -2404,9 +2418,9 @@ Internal server error for request [#307](../proto/README.md#action_307)
 
 You are forbidden to do the action for request [#307](../proto/README.md#action_307)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 335 - GROUP_LEFT_BAD_PAYLOAD
 
@@ -2453,9 +2467,9 @@ Internal server error for request [#312](../proto/README.md#action_312)
 
 You are forbidden to do the action for request [#312](../proto/README.md#action_312)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 341 - GROUP_AVATAR_DELETE_BAD_PAYLOAD
 
@@ -2478,9 +2492,9 @@ Internal server error for request [#313](../proto/README.md#action_313)
 
 You are forbidden to do the action for request [#313](../proto/README.md#action_313)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 344 - GROUP_AVATAR_GET_LIST_BAD_PAYLOAD
 
@@ -2502,9 +2516,9 @@ Internal server error for request [#314](../proto/README.md#action_314)
 
 You are forbidden to do the action for request [#314](../proto/README.md#action_314)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 347 - GROUP_UPDATE_DRAFT_BAD_PAYLOAD
 
@@ -2528,9 +2542,9 @@ Internal server error for request [#315](../proto/README.md#action_315)
 
 You are forbidden to do the action for request [#315](../proto/README.md#action_315)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 350 - GROUP_GET_DRAFT_BAD_PAYLOAD
 
@@ -2552,9 +2566,9 @@ Internal server error for request [#316](../proto/README.md#action_316)
 
 You are forbidden to do the action for request [#316](../proto/README.md#action_316)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 353 - GROUP_GET_MEMBER_LIST_BAD_PAYLOAD
 
@@ -2579,9 +2593,9 @@ Internal server error for request [#317](../proto/README.md#action_317)
 
 You are forbidden to do the action for request [#317](../proto/README.md#action_317)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 356 - GROUP_DELETE_BAD_PAYLOAD
 
@@ -2629,9 +2643,9 @@ Internal server error for request [#319](../proto/README.md#action_319)
 
 You are forbidden to do the action for request [#319](../proto/README.md#action_319)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 364 - GROUP_CHECK_USERNAME_BAD_PAYLOAD
 
@@ -2681,9 +2695,9 @@ request [#322](../proto/README.md#action_322)
 
 You are forbidden to do the action for request [#322](../proto/README.md#action_322)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 370 - GROUP_REMOVE_USERNAME_BAD_PAYLOAD
 
@@ -2729,9 +2743,9 @@ Internal server error for request [#324](../proto/README.md#action_324)
 
 You are forbidden to do the action for request [#324](../proto/README.md#action_324)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 376 - GROUP_EDIT_MESSAGE_BAD_PAYLOAD
 
@@ -2780,9 +2794,9 @@ Internal server error for request [#326](../proto/README.md#action_326)
 
 You are forbidden to do the action for request [#326](../proto/README.md#action_326)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 384 - GROUP_CHANGE_MEMBER_ROLE_BAD_PAYLOAD
 
@@ -2805,9 +2819,9 @@ Internal server error for request [#384](../proto/README.md#action_384)
 
 You are forbidden to do the action for request [#384](../proto/README.md#action_384)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 387 - GROUP_MEMBER_MENTION_LIST_BAD_PAYLOAD
 
@@ -2891,9 +2905,9 @@ This user has already joined this room for request [#401](../proto/README.md#act
 
 You are forbidden to do the action for request [#401](../proto/README.md#action_401)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 478 - CHANNEL_ADD_MEMBER_PRIVACY_PROTECTION
 
@@ -2958,9 +2972,9 @@ Internal server error for request [#410](../proto/README.md#action_410)
 
 You are forbidden to do the action for request [#410](../proto/README.md#action_410)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 51         | Room is suspended | *        |
 
 ### Error 409 - CHANNEL_DELETE_BAD_PAYLOAD
 
@@ -3034,9 +3048,9 @@ Internal server error for request [#417](../proto/README.md#action_417)
 
 You are forbidden to do the action for request [#417](../proto/README.md#action_417)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 418 - CHANNEL_ADD_MODERATOR_BAD_PAYLOAD
 
@@ -3084,9 +3098,9 @@ Internal server error for request [#402](../proto/README.md#action_402)
 
 You are forbidden to do the action for request [#402](../proto/README.md#action_402)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 424 - CHANNEL_KICK_MODERATOR_BAD_PAYLOAD
 
@@ -3134,9 +3148,9 @@ Internal server error for request [#406](../proto/README.md#action_406)
 
 You are forbidden to do the action for request [#406](../proto/README.md#action_406)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 430 - CHANNEL_EDIT_BAD_PAYLOAD
 
@@ -3185,9 +3199,9 @@ Internal server error for request [#407](../proto/README.md#action_407)
 
 You are forbidden to do the action for request [#407](../proto/README.md#action_407)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 435 - CHANNEL_LEFT_BAD_PAYLOAD
 
@@ -3234,9 +3248,9 @@ Internal server error for request [#412](../proto/README.md#action_412)
 
 You are forbidden to do the action for request [#412](../proto/README.md#action_412)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 441 - CHANNEL_AVATAR_DELETE_BAD_PAYLOAD
 
@@ -3259,9 +3273,9 @@ Internal server error for request [#413](../proto/README.md#action_413)
 
 You are forbidden to do the action for request [#413](../proto/README.md#action_413)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 444 - CHANNEL_AVATAR_GET_LIST_BAD_PAYLOAD
 
@@ -3283,9 +3297,9 @@ Internal server error for request [#414](../proto/README.md#action_414)
 
 You are forbidden to do the action for request [#414](../proto/README.md#action_414)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 447 - CHANNEL_UPDATE_DRAFT_BAD_PAYLOAD
 
@@ -3309,9 +3323,9 @@ Internal server error for request [#415](../proto/README.md#action_415)
 
 You are forbidden to do the action for request [#415](../proto/README.md#action_415)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 450 - CHANNEL_GET_DRAFT_BAD_PAYLOAD
 
@@ -3333,9 +3347,9 @@ Internal server error for request [#416](../proto/README.md#action_416)
 
 You are forbidden to do the action for request [#416](../proto/README.md#action_416)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 453 - CHANNEL_CHECK_USERNAME_BAD_PAYLOAD
 
@@ -3385,9 +3399,9 @@ request [#419](../proto/README.md#action_419)
 
 You are forbidden to do the action for request [#419](../proto/README.md#action_419)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 5          | Room is suspended | *        |
 
 ### Error 460 - CHANNEL_REMOVE_USERNAME_BAD_PAYLOAD
 
@@ -3433,9 +3447,9 @@ Internal server error for request [#421](../proto/README.md#action_421)
 
 You are forbidden to do the action for request [#421](../proto/README.md#action_421)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 466 - CHANNEL_UPDATE_SIGNATURE_BAD_PAYLOAD
 
@@ -3458,9 +3472,9 @@ Internal server error for request [#422](../proto/README.md#action_422)
 
 You are forbidden to do the action for request [#422](../proto/README.md#action_422)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 469 - CHANNEL_GET_MESSAGES_STATS_BAD_PAYLOAD
 
@@ -3562,9 +3576,9 @@ Internal server error for request [#426](../proto/README.md#action_426)
 
 You are forbidden to do the action for request [#426](../proto/README.md#action_426)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 483 - CHANNEL_PIN_MESSAGE_BAD_PAYLOAD
 
@@ -3587,9 +3601,9 @@ Internal server error for request [#427](../proto/README.md#action_427)
 
 You are forbidden to do the action for request [#427](../proto/README.md#action_427)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 # Info Errors(5xx)
 
@@ -3773,6 +3787,14 @@ No Such room with the requested ID was found for request [#602](../proto/README.
 |------------|--------|----------|
 | *          | *      | *        |
 
+### Error 688 - CLIENT_GET_ROOM_FORBIDDEN
+
+Forbidden for request [#602](../proto/README.md#action_602)
+
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 1          | Room is suspended | *        |
+
 ### Error 615 - CLIENT_GET_ROOM_HISTORY_BAD_PAYLOAD
 
 Bad payload for request [#603](../proto/README.md#action_603)
@@ -3851,6 +3873,14 @@ There is no user with the requested username for the request [#606](../proto/REA
 |------------|--------|----------|
 | *          | *      | *        |
 
+### Error 689 - CLIENT_RESOLVE_USERNAME_FORBIDDEN
+
+Forbidden for request [#606](../proto/README.md#action_606)
+
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 1          | Room is suspended | *        |
+
 ### Error 624 - CLIENT_GET_ROOM_MESSAGE_BAD_PAYLOAD
 
 Bad payload for request [#604](../proto/README.md#action_604)
@@ -3899,6 +3929,14 @@ Invite Link of the room is invalid for request [#607](../proto/README.md#action_
 | Minor Code | Detail | Reaction |
 |------------|--------|----------|
 | *          | *      | *        |
+
+### Error 690 - CLIENT_CHECK_INVITE_LINK_FORBIDDEN
+
+Forbidden for request [#607](../proto/README.md#action_607)
+
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 1          | Room is suspended | *        |
 
 ### Error 630 - CLIENT_JOIN_BY_INVITE_LINK_BAD_PAYLOAD
 
@@ -4002,9 +4040,9 @@ Internal server error for request [#610](../proto/README.md#action_610)
 
 You are forbidden to do the action for request [#610](../proto/README.md#action_610)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 643 - CLIENT_UNSUBSCRIBE_FROM_ROOM_BAD_PAYLOAD
 
@@ -4013,6 +4051,7 @@ Bad payload for request [#611](../proto/README.md#action_611)
 | Minor Code | Detail             | Reaction |
 |------------|--------------------|----------|
 | 1          | Room_ID is invalid | *        |
+| 6          | Room is suspended  | *        |
 
 ### Error 644 - CLIENT_UNSUBSCRIBE_FROM_ROOM_INTERNAL_SERVER_ERROR
 
@@ -4075,9 +4114,9 @@ Internal server error for request [#614](../proto/README.md#action_614)
 
 You are forbidden to do the action for request [#614](../proto/README.md#action_614)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 653 - CLIENT_PIN_ROOM_BAD_PAYLOAD
 
@@ -4100,9 +4139,9 @@ Internal server error for request [#615](../proto/README.md#action_615)
 
 You are forbidden to do the action for request [#615](../proto/README.md#action_615)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail            | Reaction |
+|------------|-------------------|----------|
+| 6          | Room is suspended | *        |
 
 ### Error 656 - CLIENT_ROOM_REPORT_BAD_PAYLOAD
 

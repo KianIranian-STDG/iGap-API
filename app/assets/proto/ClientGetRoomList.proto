@@ -15,4 +15,5 @@ message ClientGetRoomList {
 message ClientGetRoomListResponse {
     Response response = 1;
     repeated Room rooms = 2;
+    repeated uint64 suspended_room_ids = 3;
 }
