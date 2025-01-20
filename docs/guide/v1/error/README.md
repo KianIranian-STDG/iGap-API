@@ -4139,9 +4139,10 @@ Internal server error for request [#615](../proto/README.md#action_615)
 
 You are forbidden to do the action for request [#615](../proto/README.md#action_615)
 
-| Minor Code | Detail            | Reaction |
-|------------|-------------------|----------|
-| 6          | Room is suspended | *        |
+| Minor Code | Detail                         | Reaction |
+|------------|--------------------------------|----------|
+| 6          | Room is suspended              | *        |
+| 1          | More pinned rooms than allowed | *        |
 
 ### Error 656 - CLIENT_ROOM_REPORT_BAD_PAYLOAD
 
