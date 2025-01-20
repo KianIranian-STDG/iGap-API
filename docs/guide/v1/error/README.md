@@ -3938,6 +3938,39 @@ Forbidden for request [#607](../proto/README.md#action_607)
 |------------|-------------------|----------|
 | 1          | Room is suspended | *        |
 
+### Error 691 - CLIENT_LINK_PREVIEW_BAD_PAYLOAD
+
+Bad payload for request [#630](../proto/README.md#action_630)
+
+| Minor Code | Detail                         | Reaction |
+|------------|--------------------------------|----------|
+| 1          | Link is empty                  | *        |
+| 2          | RoomId less than or equal to 0 | *        |
+
+### Error 692 - CLIENT_LINK_PREVIEW_INTERNAL_SERVER_ERROR
+
+Internal server error for request [#630](../proto/README.md#action_630)
+
+| Minor Code | Detail                        | Reaction |
+|------------|-------------------------------|----------|
+| 1          | Error fetching preview links  | *        |
+
+### Error 693 - CLIENT_LINK_PREVIEW_FORBIDDEN
+
+Forbidden for request [#630](../proto/README.md#action_630)
+
+| Minor Code | Detail | Reaction |
+|------------|-------|----------|
+| 1          | Preview link not found      | *        |
+
+### Error 694 - CLIENT_LINK_PREVIEW_NOT_FOUND
+
+Invalid search argument [#630](../proto/README.md#action_630)
+
+| Minor Code | Detail | Reaction |
+|------------|--------|----------|
+| *          | *      | *        |
+
 ### Error 630 - CLIENT_JOIN_BY_INVITE_LINK_BAD_PAYLOAD
 
 Bad payload for request [#608](../proto/README.md#action_608)
