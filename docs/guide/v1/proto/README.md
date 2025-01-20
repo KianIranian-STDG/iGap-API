@@ -355,7 +355,7 @@
 | <a name="action_619">619</a>     | [Details](ClientGetFavoriteMenu.md)                   | [ClientGetFavoriteMenu](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                             |
 | <a name="action_30619">30619</a> | [Details](ClientGetFavoriteMenuResponse.md)           | [ClientGetFavoriteMenuResponse](../../../../app/assets/proto/ClientGetFavoriteMenu.proto)                     |
 | <a name="action_620">620</a>     | [Details](ClientSearch.md)                            | [ClientSearch](../../../../app/assets/proto/ClientSearch.proto)                                               |
-| <a name="action_30620">30620</a> | [Details](ClientSearch.md)                            | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                 |
+| <a name="action_30620">30620</a> | [Details](ClientSearch.md)                            | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                       |
 | <a name="action_621">621</a>     | [Details](ClientSetDiscoveryItemClick.md)             | [ClientSetDiscoveryItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)                 |
 | <a name="action_30621">30621</a> | [Details](ClientSetDiscoveryItemClickResponse.md)     | [ClientSetDiscoveryResponseItemClick](../../../../app/assets/proto/ClientSetDiscoveryItemClick.proto)         |
 | <a name="action_623">623</a>     | [Details](ClientSetDiscoveryItemAgreement.md)         | [ClientSetDiscoveryItemAgreement](../../../../app/assets/proto/ClientSetDiscoveryItemAgreement.proto)         |
@@ -370,6 +370,8 @@
 | <a name="action_30627">30627</a> | [Details](ClientSearchResponse.md)                    | [ClientSearchResponse](../../../../app/assets/proto/ClientSearch.proto)                                       |
 | <a name="action_628">628</a>     | [Details](ClientRoomMemberSearch.md)                  | [ClientRoomMemberSearch](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                           |
 | <a name="action_30628">30628</a> | [Details](ClientRoomMemberSearchResponse.md)          | [ClientRoomMemberSearchResponse](../../../../app/assets/proto/ClientRoomMemberSearch.proto)                   |
+| <a name="action_630">630</a>     | [Details](LinkPreview.md)                             | [LinkPreview](../../../../app/assets/proto/PushLinkPreview.proto)                                             |
+| <a name="action_30630">30630</a> | [Details](LinkPreviewResponse.md)                     | [LinkPreviewResponse](../../../../app/assets/proto/PushLinkPreview.proto)                                     |
 
 # File 7xx , 307xx
 

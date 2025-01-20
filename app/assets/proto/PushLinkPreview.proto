@@ -1,0 +1,43 @@
+syntax = "proto3";
+package proto;
+
+import "Response.proto";
+import "Request.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoPushLinkPreview";
+
+message LinkPreview {
+  Request request = 1;
+  string link = 2;
+  uint64 room_id = 3;
+}
+
+message LinkPreviewResponse {
+  Response response = 1;
+  uint64 room_id = 2;
+
+  message LinkPreview {
+    uint64 message_id = 1 [jstype=JS_STRING];
+
+    message LinkMetaData {
+      enum Type {
+        MUSIC = 0;
+        VIDEO = 1;
+        ARTICLE = 2;
+        BOOK = 3;
+        PROFILE = 4;
+        WEBSITE = 5;
+      }
+
+      string url = 1;
+      string site_name = 2;
+      string title = 3;
+      string description = 4;
+      Type type = 5;
+      string image_cdn = 6;
+    }
+    LinkMetaData link_meta_data = 2;
+  }
+  repeated LinkPreview link_previews = 3;
+}

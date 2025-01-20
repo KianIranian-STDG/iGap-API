@@ -12,11 +12,18 @@ message ClientPinRoom {
     Request request = 1;
     uint64 room_id = 2;
     bool pin = 3;
+    uint32 order = 4;
 }
 
 message ClientPinRoomResponse {
     Response response = 1;
     uint64 room_id = 2 [deprecated = true];
-    uint64 pin_id = 3;
-    Room room = 4;
+    uint64 pin_id = 3 [deprecated = true];
+    Room room = 4 [deprecated = true];
+
+    message PinRoom {
+        uint64 room_id = 1;
+        uint64 pin_version = 2;
+    }
+    repeated PinRoom pin_rooms = 5;
 }
