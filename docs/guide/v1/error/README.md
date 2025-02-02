@@ -600,10 +600,11 @@ Destruction Code for deleting user account has been requested too many times
 
 Bad payload for request [#119](../proto/README.md#action_119)
 
-| Minor Code | Detail                                  | Reaction |
-|------------|-----------------------------------------|----------|
-| 1          | Account destruction token is incorrect  | *        |
-| 2          | Account destruction reason is not valid | *        |
+| Minor Code | Detail                                                             | Reaction |
+|------------|--------------------------------------------------------------------|----------|
+| 1          | Account destruction token is incorrect                             | *        |
+| 2          | Account destruction reason is not valid                            | *        |
+| 3          | New registered session can not delete account for a period of time | *        |
 
 ### Error 155 - USER_DELETE_INTERNAL_SERVER_ERROR
 
@@ -823,17 +824,18 @@ Internal server error for request [#126](../proto/README.md#action_126)
 
 You are forbidden to do the action for request [#126](../proto/README.md#action_126)
 
-| Minor Code | Detail | Reaction |
-|------------|--------|----------|
-| *          | *      | *        |
+| Minor Code | Detail                                                                      | Reaction |
+|------------|-----------------------------------------------------------------------------|----------|
+| 2          | New registered session can not terminate other session for a period of time | *        |
 
 ### Error 173 - USER_SESSIONS_TERMINATE_BAD_PAYLOAD
 
 Bad payload for request [#127](../proto/README.md#action_127)
 
-| Minor Code | Detail                | Reaction |
-|------------|-----------------------|----------|
-| 1          | Session_ID is invalid | *        |
+| Minor Code | Detail                                                                       | Reaction |
+|------------|------------------------------------------------------------------------------|----------|
+| 1          | Session_ID is invalid                                                        | *        |
+| 2          | New registered session can not terminate other sessions for a period of time | *        |
 
 ### Error 174 - USER_SESSIONS_TERMINATE_INTERNAL_SERVER_ERROR
 
