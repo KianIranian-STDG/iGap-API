@@ -109,8 +109,8 @@ message RoomMessageLog {
         ROOM_CONVERTED_TO_PRIVATE = 7;
         MEMBER_JOINED_BY_INVITE_LINK = 8;
         ROOM_DELETED = 9;
-        MISSED_VOICE_CALL = 10;
-        MISSED_VIDEO_CALL = 11;
+        VOICE_CALL = 10;
+        VIDEO_CALL = 11;
         MISSED_SCREEN_SHARE = 12;
         MISSED_SECRET_CHAT = 13;
         PINNED_MESSAGE = 14;
@@ -131,6 +131,12 @@ message RoomMessageLog {
     }
     Target target = 3;
     uint64 author_user_id = 4 [jstype=JS_STRING];
+
+    message CallDetail {
+        uint32 call_status = 1;
+        uint32 duration = 2;
+    }
+    CallDetail call_detail = 5;
 }
 message RoomMessageContact {
     string first_name = 1;
