@@ -864,6 +864,13 @@
 
 ---
 
+* 691 - [CLIENT_LINK_PREVIEW_BAD_PAYLOAD](README.md#error-691-client_link_preview_bad_payload)
+* 692 - [CLIENT_LINK_PREVIEW_INTERNAL_SERVER_ERROR](README.md#error-692-client_link_preview_internal_server_error)
+* 693 - [CLIENT_LINK_PREVIEW_NOT_FOUND](README.md#error-693-client_link_preview_forbidden)
+* 694 - [CLIENT_LINK_PREVIEW_FORBIDDEN](README.md#error-694-client_link_preview_not_found)
+
+---
+
 * 630 - [CLIENT_JOIN_BY_INVITE_LINK_BAD_PAYLOAD](README.md#error-630-client_join_by_invite_link_bad_payload)
 * 631 - [CLIENT_JOIN_BY_INVITE_LINK_INTERNAL_SERVER_ERROR](README.md#error-631-client_join_by_invite_link_internal_server_error)
 * 632 - [CLIENT_JOIN_BY_INVITE_LINK_FORBIDDEN](README.md#error-632-client_join_by_invite_link_forbidden)
